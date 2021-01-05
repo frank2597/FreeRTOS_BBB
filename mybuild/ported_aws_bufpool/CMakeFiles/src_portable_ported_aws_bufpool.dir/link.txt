@@ -1,0 +1,2 @@
+/usr/bin/arm-linux-gnueabihf-ar qc libsrc_portable_ported_aws_bufpool.a  CMakeFiles/src_portable_ported_aws_bufpool.dir/aws_bufferpool_static_thread_safe.c.o
+/usr/bin/arm-linux-gnueabihf-ranlib libsrc_portable_ported_aws_bufpool.a

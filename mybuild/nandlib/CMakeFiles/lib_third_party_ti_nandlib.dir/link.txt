@@ -1,0 +1,2 @@
+/usr/bin/arm-linux-gnueabihf-ar qc liblib_third_party_ti_nandlib.a  CMakeFiles/lib_third_party_ti_nandlib.dir/nand_gpmc.c.o CMakeFiles/lib_third_party_ti_nandlib.dir/nandlib.c.o
+/usr/bin/arm-linux-gnueabihf-ranlib liblib_third_party_ti_nandlib.a

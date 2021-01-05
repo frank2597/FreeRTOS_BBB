@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/include/elm.h
+hw_elm.h
+/home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/include/hw_elm.h
+
+/home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/include/gpmc.h
+hw_gpmc.h
+/home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/include/hw_gpmc.h
+
+/home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/include/hw/hw_elm.h
+
+/home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/include/hw/hw_gpmc.h
+
+/home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/include/hw/hw_types.h
+
+/home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/nandlib/include/nand_gpmc.h
+nandlib.h
+/home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/nandlib/include/nandlib.h
+
+/home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/nandlib/include/nandlib.h
+
+/home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/nandlib/nand_gpmc.c
+gpmc.h
+/home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/nandlib/gpmc.h
+elm.h
+/home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/nandlib/elm.h
+nandlib.h
+/home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/nandlib/nandlib.h
+nand_gpmc.h
+/home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/nandlib/nand_gpmc.h
+hw_types.h
+/home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/nandlib/hw_types.h
+
+/home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/nandlib/nandlib.c
+nandlib.h
+/home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/nandlib/nandlib.h
+hw_types.h
+/home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/nandlib/hw_types.h
+

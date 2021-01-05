@@ -1,0 +1,2 @@
+/usr/bin/arm-linux-gnueabihf-ar qc libsrc_application.a  CMakeFiles/src_application.dir/TaskLED2.c.o CMakeFiles/src_application.dir/app_InitOSEvents.c.o CMakeFiles/src_application.dir/app_MultiSinkLogger.c.o CMakeFiles/src_application.dir/app_utils.c.o CMakeFiles/src_application.dir/enet_wrapper.c.o CMakeFiles/src_application.dir/imageLoad.S.o CMakeFiles/src_application.dir/main.c.o
+/usr/bin/arm-linux-gnueabihf-ranlib libsrc_application.a

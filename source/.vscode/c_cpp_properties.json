@@ -1,0 +1,65 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "compilerPath": "/usr/bin/gcc",
+            "knownCompilers": [
+                {
+                    "path": "/usr/bin/gcc",
+                    "isC": true
+                },
+                {
+                    "path": "/usr/bin/g++",
+                    "isC": false
+                },
+                {
+                    "path": "/usr/bin/cpp",
+                    "isC": false
+                },
+                {
+                    "path": "C:\\MinGW\\bin\\gcc.exe",
+                    "isC": true
+                },
+                {
+                    "path": "C:\\MinGW\\bin\\g++.exe",
+                    "isC": false
+                },
+                {
+                    "path": "C:\\MinGW\\bin\\cpp.exe",
+                    "isC": false
+                },
+                {
+                    "path": "C:\\MinGW\\bin\\gcc.exe",
+                    "isC": true
+                },
+                {
+                    "path": "C:\\MinGW\\bin\\g++.exe",
+                    "isC": false
+                },
+                {
+                    "path": "/usr/bin/gcc",
+                    "isC": false
+                }
+            ],
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "clang-x64",
+            "configurationProvider": "vector-of-bool.cmake-tools",
+            "browse": {
+                "path": [
+                    "${workspaceFolder}/**"
+                ],
+                "limitSymbolsToIncludedHeaders": true
+            }
+        }
+    ],
+    "version": 4
+}

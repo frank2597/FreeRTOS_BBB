@@ -1,0 +1,2 @@
+/usr/bin/arm-linux-gnueabihf-ar qc liblib_third_party_ti_system_config_armv7a.a  CMakeFiles/lib_third_party_ti_system_config_armv7a.dir/cache.c.o CMakeFiles/lib_third_party_ti_system_config_armv7a.dir/mmu.c.o CMakeFiles/lib_third_party_ti_system_config_armv7a.dir/gcc/cp15.S.o CMakeFiles/lib_third_party_ti_system_config_armv7a.dir/gcc/cpu.c.o CMakeFiles/lib_third_party_ti_system_config_armv7a.dir/am335x/clock.c.o CMakeFiles/lib_third_party_ti_system_config_armv7a.dir/am335x/device.c.o
+/usr/bin/arm-linux-gnueabihf-ranlib liblib_third_party_ti_system_config_armv7a.a
