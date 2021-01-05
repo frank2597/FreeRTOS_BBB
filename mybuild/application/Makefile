@@ -23,9 +23,6 @@ SUFFIXES =
 .SUFFIXES: .hpux_make_needs_suffix_list
 
 
-# Produce verbose output by default.
-VERBOSE = 1
-
 # Suppress display of executed commands.
 $(VERBOSE).SILENT:
 
@@ -54,7 +51,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/frank/eclipse-workspace/FreeRTOS_BBB/source
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/frank/eclipse-workspace/FreeRTOS_BBB/build
+CMAKE_BINARY_DIR = /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -83,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/frank/eclipse-workspace/FreeRTOS_BBB/build/CMakeFiles /home/frank/eclipse-workspace/FreeRTOS_BBB/build/application/CMakeFiles/progress.marks
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f CMakeFiles/Makefile2 application/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frank/eclipse-workspace/FreeRTOS_BBB/build/CMakeFiles 0
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(CMAKE_COMMAND) -E cmake_progress_start /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/CMakeFiles /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/application/CMakeFiles/progress.marks
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f CMakeFiles/Makefile2 application/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f CMakeFiles/Makefile2 application/clean
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f CMakeFiles/Makefile2 application/clean
 .PHONY : clean
 
 # The main clean target
@@ -100,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f CMakeFiles/Makefile2 application/preinstall
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f CMakeFiles/Makefile2 application/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f CMakeFiles/Makefile2 application/preinstall
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f CMakeFiles/Makefile2 application/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 application/CMakeFiles/src_application.dir/rule:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f CMakeFiles/Makefile2 application/CMakeFiles/src_application.dir/rule
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f CMakeFiles/Makefile2 application/CMakeFiles/src_application.dir/rule
 .PHONY : application/CMakeFiles/src_application.dir/rule
 
 # Convenience name for target.
@@ -125,7 +122,7 @@ src_application: application/CMakeFiles/src_application.dir/rule
 
 # fast build rule for target.
 src_application/fast:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f application/CMakeFiles/src_application.dir/build.make application/CMakeFiles/src_application.dir/build
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f application/CMakeFiles/src_application.dir/build.make application/CMakeFiles/src_application.dir/build
 .PHONY : src_application/fast
 
 TaskLED2.o: TaskLED2.c.o
@@ -134,7 +131,7 @@ TaskLED2.o: TaskLED2.c.o
 
 # target to build an object file
 TaskLED2.c.o:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f application/CMakeFiles/src_application.dir/build.make application/CMakeFiles/src_application.dir/TaskLED2.c.o
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f application/CMakeFiles/src_application.dir/build.make application/CMakeFiles/src_application.dir/TaskLED2.c.o
 .PHONY : TaskLED2.c.o
 
 TaskLED2.i: TaskLED2.c.i
@@ -143,7 +140,7 @@ TaskLED2.i: TaskLED2.c.i
 
 # target to preprocess a source file
 TaskLED2.c.i:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f application/CMakeFiles/src_application.dir/build.make application/CMakeFiles/src_application.dir/TaskLED2.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f application/CMakeFiles/src_application.dir/build.make application/CMakeFiles/src_application.dir/TaskLED2.c.i
 .PHONY : TaskLED2.c.i
 
 TaskLED2.s: TaskLED2.c.s
@@ -152,7 +149,7 @@ TaskLED2.s: TaskLED2.c.s
 
 # target to generate assembly for a file
 TaskLED2.c.s:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f application/CMakeFiles/src_application.dir/build.make application/CMakeFiles/src_application.dir/TaskLED2.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f application/CMakeFiles/src_application.dir/build.make application/CMakeFiles/src_application.dir/TaskLED2.c.s
 .PHONY : TaskLED2.c.s
 
 app_InitOSEvents.o: app_InitOSEvents.c.o
@@ -161,7 +158,7 @@ app_InitOSEvents.o: app_InitOSEvents.c.o
 
 # target to build an object file
 app_InitOSEvents.c.o:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f application/CMakeFiles/src_application.dir/build.make application/CMakeFiles/src_application.dir/app_InitOSEvents.c.o
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f application/CMakeFiles/src_application.dir/build.make application/CMakeFiles/src_application.dir/app_InitOSEvents.c.o
 .PHONY : app_InitOSEvents.c.o
 
 app_InitOSEvents.i: app_InitOSEvents.c.i
@@ -170,7 +167,7 @@ app_InitOSEvents.i: app_InitOSEvents.c.i
 
 # target to preprocess a source file
 app_InitOSEvents.c.i:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f application/CMakeFiles/src_application.dir/build.make application/CMakeFiles/src_application.dir/app_InitOSEvents.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f application/CMakeFiles/src_application.dir/build.make application/CMakeFiles/src_application.dir/app_InitOSEvents.c.i
 .PHONY : app_InitOSEvents.c.i
 
 app_InitOSEvents.s: app_InitOSEvents.c.s
@@ -179,7 +176,7 @@ app_InitOSEvents.s: app_InitOSEvents.c.s
 
 # target to generate assembly for a file
 app_InitOSEvents.c.s:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f application/CMakeFiles/src_application.dir/build.make application/CMakeFiles/src_application.dir/app_InitOSEvents.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f application/CMakeFiles/src_application.dir/build.make application/CMakeFiles/src_application.dir/app_InitOSEvents.c.s
 .PHONY : app_InitOSEvents.c.s
 
 app_MultiSinkLogger.o: app_MultiSinkLogger.c.o
@@ -188,7 +185,7 @@ app_MultiSinkLogger.o: app_MultiSinkLogger.c.o
 
 # target to build an object file
 app_MultiSinkLogger.c.o:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f application/CMakeFiles/src_application.dir/build.make application/CMakeFiles/src_application.dir/app_MultiSinkLogger.c.o
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f application/CMakeFiles/src_application.dir/build.make application/CMakeFiles/src_application.dir/app_MultiSinkLogger.c.o
 .PHONY : app_MultiSinkLogger.c.o
 
 app_MultiSinkLogger.i: app_MultiSinkLogger.c.i
@@ -197,7 +194,7 @@ app_MultiSinkLogger.i: app_MultiSinkLogger.c.i
 
 # target to preprocess a source file
 app_MultiSinkLogger.c.i:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f application/CMakeFiles/src_application.dir/build.make application/CMakeFiles/src_application.dir/app_MultiSinkLogger.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f application/CMakeFiles/src_application.dir/build.make application/CMakeFiles/src_application.dir/app_MultiSinkLogger.c.i
 .PHONY : app_MultiSinkLogger.c.i
 
 app_MultiSinkLogger.s: app_MultiSinkLogger.c.s
@@ -206,7 +203,7 @@ app_MultiSinkLogger.s: app_MultiSinkLogger.c.s
 
 # target to generate assembly for a file
 app_MultiSinkLogger.c.s:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f application/CMakeFiles/src_application.dir/build.make application/CMakeFiles/src_application.dir/app_MultiSinkLogger.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f application/CMakeFiles/src_application.dir/build.make application/CMakeFiles/src_application.dir/app_MultiSinkLogger.c.s
 .PHONY : app_MultiSinkLogger.c.s
 
 app_utils.o: app_utils.c.o
@@ -215,7 +212,7 @@ app_utils.o: app_utils.c.o
 
 # target to build an object file
 app_utils.c.o:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f application/CMakeFiles/src_application.dir/build.make application/CMakeFiles/src_application.dir/app_utils.c.o
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f application/CMakeFiles/src_application.dir/build.make application/CMakeFiles/src_application.dir/app_utils.c.o
 .PHONY : app_utils.c.o
 
 app_utils.i: app_utils.c.i
@@ -224,7 +221,7 @@ app_utils.i: app_utils.c.i
 
 # target to preprocess a source file
 app_utils.c.i:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f application/CMakeFiles/src_application.dir/build.make application/CMakeFiles/src_application.dir/app_utils.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f application/CMakeFiles/src_application.dir/build.make application/CMakeFiles/src_application.dir/app_utils.c.i
 .PHONY : app_utils.c.i
 
 app_utils.s: app_utils.c.s
@@ -233,7 +230,7 @@ app_utils.s: app_utils.c.s
 
 # target to generate assembly for a file
 app_utils.c.s:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f application/CMakeFiles/src_application.dir/build.make application/CMakeFiles/src_application.dir/app_utils.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f application/CMakeFiles/src_application.dir/build.make application/CMakeFiles/src_application.dir/app_utils.c.s
 .PHONY : app_utils.c.s
 
 enet_wrapper.o: enet_wrapper.c.o
@@ -242,7 +239,7 @@ enet_wrapper.o: enet_wrapper.c.o
 
 # target to build an object file
 enet_wrapper.c.o:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f application/CMakeFiles/src_application.dir/build.make application/CMakeFiles/src_application.dir/enet_wrapper.c.o
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f application/CMakeFiles/src_application.dir/build.make application/CMakeFiles/src_application.dir/enet_wrapper.c.o
 .PHONY : enet_wrapper.c.o
 
 enet_wrapper.i: enet_wrapper.c.i
@@ -251,7 +248,7 @@ enet_wrapper.i: enet_wrapper.c.i
 
 # target to preprocess a source file
 enet_wrapper.c.i:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f application/CMakeFiles/src_application.dir/build.make application/CMakeFiles/src_application.dir/enet_wrapper.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f application/CMakeFiles/src_application.dir/build.make application/CMakeFiles/src_application.dir/enet_wrapper.c.i
 .PHONY : enet_wrapper.c.i
 
 enet_wrapper.s: enet_wrapper.c.s
@@ -260,7 +257,7 @@ enet_wrapper.s: enet_wrapper.c.s
 
 # target to generate assembly for a file
 enet_wrapper.c.s:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f application/CMakeFiles/src_application.dir/build.make application/CMakeFiles/src_application.dir/enet_wrapper.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f application/CMakeFiles/src_application.dir/build.make application/CMakeFiles/src_application.dir/enet_wrapper.c.s
 .PHONY : enet_wrapper.c.s
 
 imageLoad.o: imageLoad.S.o
@@ -269,7 +266,7 @@ imageLoad.o: imageLoad.S.o
 
 # target to build an object file
 imageLoad.S.o:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f application/CMakeFiles/src_application.dir/build.make application/CMakeFiles/src_application.dir/imageLoad.S.o
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f application/CMakeFiles/src_application.dir/build.make application/CMakeFiles/src_application.dir/imageLoad.S.o
 .PHONY : imageLoad.S.o
 
 main.o: main.c.o
@@ -278,7 +275,7 @@ main.o: main.c.o
 
 # target to build an object file
 main.c.o:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f application/CMakeFiles/src_application.dir/build.make application/CMakeFiles/src_application.dir/main.c.o
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f application/CMakeFiles/src_application.dir/build.make application/CMakeFiles/src_application.dir/main.c.o
 .PHONY : main.c.o
 
 main.i: main.c.i
@@ -287,7 +284,7 @@ main.i: main.c.i
 
 # target to preprocess a source file
 main.c.i:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f application/CMakeFiles/src_application.dir/build.make application/CMakeFiles/src_application.dir/main.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f application/CMakeFiles/src_application.dir/build.make application/CMakeFiles/src_application.dir/main.c.i
 .PHONY : main.c.i
 
 main.s: main.c.s
@@ -296,7 +293,7 @@ main.s: main.c.s
 
 # target to generate assembly for a file
 main.c.s:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f application/CMakeFiles/src_application.dir/build.make application/CMakeFiles/src_application.dir/main.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f application/CMakeFiles/src_application.dir/build.make application/CMakeFiles/src_application.dir/main.c.s
 .PHONY : main.c.s
 
 # Help Target
@@ -338,6 +335,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

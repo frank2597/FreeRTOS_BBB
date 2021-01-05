@@ -5,7 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_ASM
-  "/home/frank/eclipse-workspace/FreeRTOS_BBB/source/src/portable/AM335X/ported_amm335x_init.S" "/home/frank/eclipse-workspace/FreeRTOS_BBB/build/AM335X/CMakeFiles/src_portable_AM335X.dir/ported_amm335x_init.S.o"
+  "/home/frank/eclipse-workspace/FreeRTOS_BBB/source/src/portable/AM335X/ported_amm335x_init.S" "/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/AM335X/CMakeFiles/src_portable_AM335X.dir/ported_amm335x_init.S.o"
   )
 set(CMAKE_ASM_COMPILER_ID "GNU")
 
@@ -34,12 +34,12 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "/home/frank/eclipse-workspace/FreeRTOS_BBB/source/src/portable/AM335X"
   )
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/frank/eclipse-workspace/FreeRTOS_BBB/source/src/portable/AM335X/bsp_platform.c" "/home/frank/eclipse-workspace/FreeRTOS_BBB/build/AM335X/CMakeFiles/src_portable_AM335X.dir/bsp_platform.c.o"
-  "/home/frank/eclipse-workspace/FreeRTOS_BBB/source/src/portable/AM335X/hal_bspInit.c" "/home/frank/eclipse-workspace/FreeRTOS_BBB/build/AM335X/CMakeFiles/src_portable_AM335X.dir/hal_bspInit.c.o"
-  "/home/frank/eclipse-workspace/FreeRTOS_BBB/source/src/portable/AM335X/hal_mmu.c" "/home/frank/eclipse-workspace/FreeRTOS_BBB/build/AM335X/CMakeFiles/src_portable_AM335X.dir/hal_mmu.c.o"
-  "/home/frank/eclipse-workspace/FreeRTOS_BBB/source/src/portable/AM335X/ported_am335x_clock_data.c" "/home/frank/eclipse-workspace/FreeRTOS_BBB/build/AM335X/CMakeFiles/src_portable_AM335X.dir/ported_am335x_clock_data.c.o"
-  "/home/frank/eclipse-workspace/FreeRTOS_BBB/source/src/portable/AM335X/ported_am335x_interrupt.c" "/home/frank/eclipse-workspace/FreeRTOS_BBB/build/AM335X/CMakeFiles/src_portable_AM335X.dir/ported_am335x_interrupt.c.o"
-  "/home/frank/eclipse-workspace/FreeRTOS_BBB/source/src/portable/AM335X/ported_am335x_startup.c" "/home/frank/eclipse-workspace/FreeRTOS_BBB/build/AM335X/CMakeFiles/src_portable_AM335X.dir/ported_am335x_startup.c.o"
+  "/home/frank/eclipse-workspace/FreeRTOS_BBB/source/src/portable/AM335X/bsp_platform.c" "/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/AM335X/CMakeFiles/src_portable_AM335X.dir/bsp_platform.c.o"
+  "/home/frank/eclipse-workspace/FreeRTOS_BBB/source/src/portable/AM335X/hal_bspInit.c" "/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/AM335X/CMakeFiles/src_portable_AM335X.dir/hal_bspInit.c.o"
+  "/home/frank/eclipse-workspace/FreeRTOS_BBB/source/src/portable/AM335X/hal_mmu.c" "/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/AM335X/CMakeFiles/src_portable_AM335X.dir/hal_mmu.c.o"
+  "/home/frank/eclipse-workspace/FreeRTOS_BBB/source/src/portable/AM335X/ported_am335x_clock_data.c" "/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/AM335X/CMakeFiles/src_portable_AM335X.dir/ported_am335x_clock_data.c.o"
+  "/home/frank/eclipse-workspace/FreeRTOS_BBB/source/src/portable/AM335X/ported_am335x_interrupt.c" "/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/AM335X/CMakeFiles/src_portable_AM335X.dir/ported_am335x_interrupt.c.o"
+  "/home/frank/eclipse-workspace/FreeRTOS_BBB/source/src/portable/AM335X/ported_am335x_startup.c" "/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/AM335X/CMakeFiles/src_portable_AM335X.dir/ported_am335x_startup.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

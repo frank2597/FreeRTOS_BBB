@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/frank/eclipse-workspace/FreeRTOS_BBB/source/testing.c" "/home/frank/eclipse-workspace/FreeRTOS_BBB/build/CMakeFiles/freeRTOSBBB.dir/testing.c.o"
+  "/home/frank/eclipse-workspace/FreeRTOS_BBB/source/testing.c" "/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/CMakeFiles/freeRTOSBBB.dir/testing.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
@@ -60,20 +60,20 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/frank/eclipse-workspace/FreeRTOS_BBB/build/drivers/CMakeFiles/lib_third_party_ti_drivers.dir/DependInfo.cmake"
-  "/home/frank/eclipse-workspace/FreeRTOS_BBB/build/utils/CMakeFiles/lib_third_party_ti_utils.dir/DependInfo.cmake"
-  "/home/frank/eclipse-workspace/FreeRTOS_BBB/build/mmcsdlib/CMakeFiles/lib_third_party_ti_mmcsdlib.dir/DependInfo.cmake"
-  "/home/frank/eclipse-workspace/FreeRTOS_BBB/build/beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/DependInfo.cmake"
-  "/home/frank/eclipse-workspace/FreeRTOS_BBB/build/nandlib/CMakeFiles/lib_third_party_ti_nandlib.dir/DependInfo.cmake"
-  "/home/frank/eclipse-workspace/FreeRTOS_BBB/build/armv7a/CMakeFiles/lib_third_party_ti_system_config_armv7a.dir/DependInfo.cmake"
-  "/home/frank/eclipse-workspace/FreeRTOS_BBB/build/src/CMakeFiles/lib_third_party_amazon_libraries_3rdparty_lwip_src.dir/DependInfo.cmake"
-  "/home/frank/eclipse-workspace/FreeRTOS_BBB/build/netif/CMakeFiles/src_portable_lwip_ports_cpsw_netif.dir/DependInfo.cmake"
-  "/home/frank/eclipse-workspace/FreeRTOS_BBB/build/freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/DependInfo.cmake"
-  "/home/frank/eclipse-workspace/FreeRTOS_BBB/build/ARM_CA8_amm335x/CMakeFiles/src_portable_FreeRTOS_portable_GCC_ARM_CA8_amm335x.dir/DependInfo.cmake"
-  "/home/frank/eclipse-workspace/FreeRTOS_BBB/build/MemMang/CMakeFiles/lib_third_party_amazon_freertos_kernel_portable_MemMang.dir/DependInfo.cmake"
-  "/home/frank/eclipse-workspace/FreeRTOS_BBB/build/AM335X/CMakeFiles/src_portable_AM335X.dir/DependInfo.cmake"
-  "/home/frank/eclipse-workspace/FreeRTOS_BBB/build/ported_aws_bufpool/CMakeFiles/src_portable_ported_aws_bufpool.dir/DependInfo.cmake"
-  "/home/frank/eclipse-workspace/FreeRTOS_BBB/build/application/CMakeFiles/src_application.dir/DependInfo.cmake"
+  "/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/drivers/CMakeFiles/lib_third_party_ti_drivers.dir/DependInfo.cmake"
+  "/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/utils/CMakeFiles/lib_third_party_ti_utils.dir/DependInfo.cmake"
+  "/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/mmcsdlib/CMakeFiles/lib_third_party_ti_mmcsdlib.dir/DependInfo.cmake"
+  "/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/DependInfo.cmake"
+  "/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/nandlib/CMakeFiles/lib_third_party_ti_nandlib.dir/DependInfo.cmake"
+  "/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/armv7a/CMakeFiles/lib_third_party_ti_system_config_armv7a.dir/DependInfo.cmake"
+  "/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/src/CMakeFiles/lib_third_party_amazon_libraries_3rdparty_lwip_src.dir/DependInfo.cmake"
+  "/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/netif/CMakeFiles/src_portable_lwip_ports_cpsw_netif.dir/DependInfo.cmake"
+  "/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/DependInfo.cmake"
+  "/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/ARM_CA8_amm335x/CMakeFiles/src_portable_FreeRTOS_portable_GCC_ARM_CA8_amm335x.dir/DependInfo.cmake"
+  "/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/MemMang/CMakeFiles/lib_third_party_amazon_freertos_kernel_portable_MemMang.dir/DependInfo.cmake"
+  "/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/AM335X/CMakeFiles/src_portable_AM335X.dir/DependInfo.cmake"
+  "/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/ported_aws_bufpool/CMakeFiles/src_portable_ported_aws_bufpool.dir/DependInfo.cmake"
+  "/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/application/CMakeFiles/src_application.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

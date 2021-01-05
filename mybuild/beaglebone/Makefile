@@ -23,9 +23,6 @@ SUFFIXES =
 .SUFFIXES: .hpux_make_needs_suffix_list
 
 
-# Produce verbose output by default.
-VERBOSE = 1
-
 # Suppress display of executed commands.
 $(VERBOSE).SILENT:
 
@@ -54,7 +51,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/frank/eclipse-workspace/FreeRTOS_BBB/source
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/frank/eclipse-workspace/FreeRTOS_BBB/build
+CMAKE_BINARY_DIR = /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -83,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/frank/eclipse-workspace/FreeRTOS_BBB/build/CMakeFiles /home/frank/eclipse-workspace/FreeRTOS_BBB/build/beaglebone/CMakeFiles/progress.marks
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f CMakeFiles/Makefile2 beaglebone/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frank/eclipse-workspace/FreeRTOS_BBB/build/CMakeFiles 0
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(CMAKE_COMMAND) -E cmake_progress_start /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/CMakeFiles /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/beaglebone/CMakeFiles/progress.marks
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f CMakeFiles/Makefile2 beaglebone/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f CMakeFiles/Makefile2 beaglebone/clean
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f CMakeFiles/Makefile2 beaglebone/clean
 .PHONY : clean
 
 # The main clean target
@@ -100,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f CMakeFiles/Makefile2 beaglebone/preinstall
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f CMakeFiles/Makefile2 beaglebone/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f CMakeFiles/Makefile2 beaglebone/preinstall
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f CMakeFiles/Makefile2 beaglebone/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/rule:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f CMakeFiles/Makefile2 beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/rule
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f CMakeFiles/Makefile2 beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/rule
 .PHONY : beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/rule
 
 # Convenience name for target.
@@ -125,7 +122,7 @@ lib_third_party_ti_platform_beaglebone: beaglebone/CMakeFiles/lib_third_party_ti
 
 # fast build rule for target.
 lib_third_party_ti_platform_beaglebone/fast:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build
 .PHONY : lib_third_party_ti_platform_beaglebone/fast
 
 board.o: board.c.o
@@ -134,7 +131,7 @@ board.o: board.c.o
 
 # target to build an object file
 board.c.o:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/board.c.o
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/board.c.o
 .PHONY : board.c.o
 
 board.i: board.c.i
@@ -143,7 +140,7 @@ board.i: board.c.i
 
 # target to preprocess a source file
 board.c.i:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/board.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/board.c.i
 .PHONY : board.c.i
 
 board.s: board.c.s
@@ -152,7 +149,7 @@ board.s: board.c.s
 
 # target to generate assembly for a file
 board.c.s:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/board.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/board.c.s
 .PHONY : board.c.s
 
 cpsw.o: cpsw.c.o
@@ -161,7 +158,7 @@ cpsw.o: cpsw.c.o
 
 # target to build an object file
 cpsw.c.o:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/cpsw.c.o
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/cpsw.c.o
 .PHONY : cpsw.c.o
 
 cpsw.i: cpsw.c.i
@@ -170,7 +167,7 @@ cpsw.i: cpsw.c.i
 
 # target to preprocess a source file
 cpsw.c.i:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/cpsw.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/cpsw.c.i
 .PHONY : cpsw.c.i
 
 cpsw.s: cpsw.c.s
@@ -179,7 +176,7 @@ cpsw.s: cpsw.c.s
 
 # target to generate assembly for a file
 cpsw.c.s:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/cpsw.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/cpsw.c.s
 .PHONY : cpsw.c.s
 
 ctlregcontext.o: ctlregcontext.c.o
@@ -188,7 +185,7 @@ ctlregcontext.o: ctlregcontext.c.o
 
 # target to build an object file
 ctlregcontext.c.o:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/ctlregcontext.c.o
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/ctlregcontext.c.o
 .PHONY : ctlregcontext.c.o
 
 ctlregcontext.i: ctlregcontext.c.i
@@ -197,7 +194,7 @@ ctlregcontext.i: ctlregcontext.c.i
 
 # target to preprocess a source file
 ctlregcontext.c.i:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/ctlregcontext.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/ctlregcontext.c.i
 .PHONY : ctlregcontext.c.i
 
 ctlregcontext.s: ctlregcontext.c.s
@@ -206,7 +203,7 @@ ctlregcontext.s: ctlregcontext.c.s
 
 # target to generate assembly for a file
 ctlregcontext.c.s:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/ctlregcontext.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/ctlregcontext.c.s
 .PHONY : ctlregcontext.c.s
 
 dmtimer.o: dmtimer.c.o
@@ -215,7 +212,7 @@ dmtimer.o: dmtimer.c.o
 
 # target to build an object file
 dmtimer.c.o:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/dmtimer.c.o
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/dmtimer.c.o
 .PHONY : dmtimer.c.o
 
 dmtimer.i: dmtimer.c.i
@@ -224,7 +221,7 @@ dmtimer.i: dmtimer.c.i
 
 # target to preprocess a source file
 dmtimer.c.i:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/dmtimer.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/dmtimer.c.i
 .PHONY : dmtimer.c.i
 
 dmtimer.s: dmtimer.c.s
@@ -233,7 +230,7 @@ dmtimer.s: dmtimer.c.s
 
 # target to generate assembly for a file
 dmtimer.c.s:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/dmtimer.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/dmtimer.c.s
 .PHONY : dmtimer.c.s
 
 edma.o: edma.c.o
@@ -242,7 +239,7 @@ edma.o: edma.c.o
 
 # target to build an object file
 edma.c.o:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/edma.c.o
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/edma.c.o
 .PHONY : edma.c.o
 
 edma.i: edma.c.i
@@ -251,7 +248,7 @@ edma.i: edma.c.i
 
 # target to preprocess a source file
 edma.c.i:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/edma.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/edma.c.i
 .PHONY : edma.c.i
 
 edma.s: edma.c.s
@@ -260,7 +257,7 @@ edma.s: edma.c.s
 
 # target to generate assembly for a file
 edma.c.s:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/edma.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/edma.c.s
 .PHONY : edma.c.s
 
 eeprom.o: eeprom.c.o
@@ -269,7 +266,7 @@ eeprom.o: eeprom.c.o
 
 # target to build an object file
 eeprom.c.o:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/eeprom.c.o
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/eeprom.c.o
 .PHONY : eeprom.c.o
 
 eeprom.i: eeprom.c.i
@@ -278,7 +275,7 @@ eeprom.i: eeprom.c.i
 
 # target to preprocess a source file
 eeprom.c.i:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/eeprom.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/eeprom.c.i
 .PHONY : eeprom.c.i
 
 eeprom.s: eeprom.c.s
@@ -287,7 +284,7 @@ eeprom.s: eeprom.c.s
 
 # target to generate assembly for a file
 eeprom.c.s:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/eeprom.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/eeprom.c.s
 .PHONY : eeprom.c.s
 
 gpio.o: gpio.c.o
@@ -296,7 +293,7 @@ gpio.o: gpio.c.o
 
 # target to build an object file
 gpio.c.o:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/gpio.c.o
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/gpio.c.o
 .PHONY : gpio.c.o
 
 gpio.i: gpio.c.i
@@ -305,7 +302,7 @@ gpio.i: gpio.c.i
 
 # target to preprocess a source file
 gpio.c.i:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/gpio.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/gpio.c.i
 .PHONY : gpio.c.i
 
 gpio.s: gpio.c.s
@@ -314,7 +311,7 @@ gpio.s: gpio.c.s
 
 # target to generate assembly for a file
 gpio.c.s:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/gpio.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/gpio.c.s
 .PHONY : gpio.c.s
 
 hs_mmcsd.o: hs_mmcsd.c.o
@@ -323,7 +320,7 @@ hs_mmcsd.o: hs_mmcsd.c.o
 
 # target to build an object file
 hs_mmcsd.c.o:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/hs_mmcsd.c.o
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/hs_mmcsd.c.o
 .PHONY : hs_mmcsd.c.o
 
 hs_mmcsd.i: hs_mmcsd.c.i
@@ -332,7 +329,7 @@ hs_mmcsd.i: hs_mmcsd.c.i
 
 # target to preprocess a source file
 hs_mmcsd.c.i:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/hs_mmcsd.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/hs_mmcsd.c.i
 .PHONY : hs_mmcsd.c.i
 
 hs_mmcsd.s: hs_mmcsd.c.s
@@ -341,7 +338,7 @@ hs_mmcsd.s: hs_mmcsd.c.s
 
 # target to generate assembly for a file
 hs_mmcsd.c.s:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/hs_mmcsd.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/hs_mmcsd.c.s
 .PHONY : hs_mmcsd.c.s
 
 hsi2c.o: hsi2c.c.o
@@ -350,7 +347,7 @@ hsi2c.o: hsi2c.c.o
 
 # target to build an object file
 hsi2c.c.o:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/hsi2c.c.o
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/hsi2c.c.o
 .PHONY : hsi2c.c.o
 
 hsi2c.i: hsi2c.c.i
@@ -359,7 +356,7 @@ hsi2c.i: hsi2c.c.i
 
 # target to preprocess a source file
 hsi2c.c.i:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/hsi2c.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/hsi2c.c.i
 .PHONY : hsi2c.c.i
 
 hsi2c.s: hsi2c.c.s
@@ -368,7 +365,7 @@ hsi2c.s: hsi2c.c.s
 
 # target to generate assembly for a file
 hsi2c.c.s:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/hsi2c.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/hsi2c.c.s
 .PHONY : hsi2c.c.s
 
 rtc.o: rtc.c.o
@@ -377,7 +374,7 @@ rtc.o: rtc.c.o
 
 # target to build an object file
 rtc.c.o:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/rtc.c.o
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/rtc.c.o
 .PHONY : rtc.c.o
 
 rtc.i: rtc.c.i
@@ -386,7 +383,7 @@ rtc.i: rtc.c.i
 
 # target to preprocess a source file
 rtc.c.i:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/rtc.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/rtc.c.i
 .PHONY : rtc.c.i
 
 rtc.s: rtc.c.s
@@ -395,7 +392,7 @@ rtc.s: rtc.c.s
 
 # target to generate assembly for a file
 rtc.c.s:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/rtc.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/rtc.c.s
 .PHONY : rtc.c.s
 
 sysdelay.o: sysdelay.c.o
@@ -404,7 +401,7 @@ sysdelay.o: sysdelay.c.o
 
 # target to build an object file
 sysdelay.c.o:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/sysdelay.c.o
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/sysdelay.c.o
 .PHONY : sysdelay.c.o
 
 sysdelay.i: sysdelay.c.i
@@ -413,7 +410,7 @@ sysdelay.i: sysdelay.c.i
 
 # target to preprocess a source file
 sysdelay.c.i:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/sysdelay.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/sysdelay.c.i
 .PHONY : sysdelay.c.i
 
 sysdelay.s: sysdelay.c.s
@@ -422,7 +419,7 @@ sysdelay.s: sysdelay.c.s
 
 # target to generate assembly for a file
 sysdelay.c.s:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/sysdelay.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/sysdelay.c.s
 .PHONY : sysdelay.c.s
 
 sysperf.o: sysperf.c.o
@@ -431,7 +428,7 @@ sysperf.o: sysperf.c.o
 
 # target to build an object file
 sysperf.c.o:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/sysperf.c.o
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/sysperf.c.o
 .PHONY : sysperf.c.o
 
 sysperf.i: sysperf.c.i
@@ -440,7 +437,7 @@ sysperf.i: sysperf.c.i
 
 # target to preprocess a source file
 sysperf.c.i:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/sysperf.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/sysperf.c.i
 .PHONY : sysperf.c.i
 
 sysperf.s: sysperf.c.s
@@ -449,7 +446,7 @@ sysperf.s: sysperf.c.s
 
 # target to generate assembly for a file
 sysperf.c.s:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/sysperf.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/sysperf.c.s
 .PHONY : sysperf.c.s
 
 timertick.o: timertick.c.o
@@ -458,7 +455,7 @@ timertick.o: timertick.c.o
 
 # target to build an object file
 timertick.c.o:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/timertick.c.o
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/timertick.c.o
 .PHONY : timertick.c.o
 
 timertick.i: timertick.c.i
@@ -467,7 +464,7 @@ timertick.i: timertick.c.i
 
 # target to preprocess a source file
 timertick.c.i:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/timertick.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/timertick.c.i
 .PHONY : timertick.c.i
 
 timertick.s: timertick.c.s
@@ -476,7 +473,7 @@ timertick.s: timertick.c.s
 
 # target to generate assembly for a file
 timertick.c.s:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/timertick.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/timertick.c.s
 .PHONY : timertick.c.s
 
 uart.o: uart.c.o
@@ -485,7 +482,7 @@ uart.o: uart.c.o
 
 # target to build an object file
 uart.c.o:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/uart.c.o
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/uart.c.o
 .PHONY : uart.c.o
 
 uart.i: uart.c.i
@@ -494,7 +491,7 @@ uart.i: uart.c.i
 
 # target to preprocess a source file
 uart.c.i:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/uart.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/uart.c.i
 .PHONY : uart.c.i
 
 uart.s: uart.c.s
@@ -503,7 +500,7 @@ uart.s: uart.c.s
 
 # target to generate assembly for a file
 uart.c.s:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/uart.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/uart.c.s
 .PHONY : uart.c.s
 
 uartConsole.o: uartConsole.c.o
@@ -512,7 +509,7 @@ uartConsole.o: uartConsole.c.o
 
 # target to build an object file
 uartConsole.c.o:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/uartConsole.c.o
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/uartConsole.c.o
 .PHONY : uartConsole.c.o
 
 uartConsole.i: uartConsole.c.i
@@ -521,7 +518,7 @@ uartConsole.i: uartConsole.c.i
 
 # target to preprocess a source file
 uartConsole.c.i:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/uartConsole.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/uartConsole.c.i
 .PHONY : uartConsole.c.i
 
 uartConsole.s: uartConsole.c.s
@@ -530,7 +527,7 @@ uartConsole.s: uartConsole.c.s
 
 # target to generate assembly for a file
 uartConsole.c.s:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/uartConsole.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/uartConsole.c.s
 .PHONY : uartConsole.c.s
 
 usb.o: usb.c.o
@@ -539,7 +536,7 @@ usb.o: usb.c.o
 
 # target to build an object file
 usb.c.o:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/usb.c.o
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/usb.c.o
 .PHONY : usb.c.o
 
 usb.i: usb.c.i
@@ -548,7 +545,7 @@ usb.i: usb.c.i
 
 # target to preprocess a source file
 usb.c.i:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/usb.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/usb.c.i
 .PHONY : usb.c.i
 
 usb.s: usb.c.s
@@ -557,7 +554,7 @@ usb.s: usb.c.s
 
 # target to generate assembly for a file
 usb.c.s:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/usb.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/usb.c.s
 .PHONY : usb.c.s
 
 watchdog.o: watchdog.c.o
@@ -566,7 +563,7 @@ watchdog.o: watchdog.c.o
 
 # target to build an object file
 watchdog.c.o:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/watchdog.c.o
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/watchdog.c.o
 .PHONY : watchdog.c.o
 
 watchdog.i: watchdog.c.i
@@ -575,7 +572,7 @@ watchdog.i: watchdog.c.i
 
 # target to preprocess a source file
 watchdog.c.i:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/watchdog.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/watchdog.c.i
 .PHONY : watchdog.c.i
 
 watchdog.s: watchdog.c.s
@@ -584,7 +581,7 @@ watchdog.s: watchdog.c.s
 
 # target to generate assembly for a file
 watchdog.c.s:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/watchdog.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/build.make beaglebone/CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/watchdog.c.s
 .PHONY : watchdog.c.s
 
 # Help Target
@@ -658,6 +655,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

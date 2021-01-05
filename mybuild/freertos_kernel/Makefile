@@ -23,9 +23,6 @@ SUFFIXES =
 .SUFFIXES: .hpux_make_needs_suffix_list
 
 
-# Produce verbose output by default.
-VERBOSE = 1
-
 # Suppress display of executed commands.
 $(VERBOSE).SILENT:
 
@@ -54,7 +51,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/frank/eclipse-workspace/FreeRTOS_BBB/source
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/frank/eclipse-workspace/FreeRTOS_BBB/build
+CMAKE_BINARY_DIR = /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -83,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/frank/eclipse-workspace/FreeRTOS_BBB/build/CMakeFiles /home/frank/eclipse-workspace/FreeRTOS_BBB/build/freertos_kernel/CMakeFiles/progress.marks
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f CMakeFiles/Makefile2 freertos_kernel/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frank/eclipse-workspace/FreeRTOS_BBB/build/CMakeFiles 0
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(CMAKE_COMMAND) -E cmake_progress_start /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/CMakeFiles /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/freertos_kernel/CMakeFiles/progress.marks
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f CMakeFiles/Makefile2 freertos_kernel/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f CMakeFiles/Makefile2 freertos_kernel/clean
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f CMakeFiles/Makefile2 freertos_kernel/clean
 .PHONY : clean
 
 # The main clean target
@@ -100,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f CMakeFiles/Makefile2 freertos_kernel/preinstall
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f CMakeFiles/Makefile2 freertos_kernel/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f CMakeFiles/Makefile2 freertos_kernel/preinstall
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f CMakeFiles/Makefile2 freertos_kernel/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/rule:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f CMakeFiles/Makefile2 freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/rule
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f CMakeFiles/Makefile2 freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/rule
 .PHONY : freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/rule
 
 # Convenience name for target.
@@ -125,7 +122,7 @@ lib_third_party_amazon_freertos_kernel: freertos_kernel/CMakeFiles/lib_third_par
 
 # fast build rule for target.
 lib_third_party_amazon_freertos_kernel/fast:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/build.make freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/build
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/build.make freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/build
 .PHONY : lib_third_party_amazon_freertos_kernel/fast
 
 event_groups.o: event_groups.c.o
@@ -134,7 +131,7 @@ event_groups.o: event_groups.c.o
 
 # target to build an object file
 event_groups.c.o:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/build.make freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/event_groups.c.o
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/build.make freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/event_groups.c.o
 .PHONY : event_groups.c.o
 
 event_groups.i: event_groups.c.i
@@ -143,7 +140,7 @@ event_groups.i: event_groups.c.i
 
 # target to preprocess a source file
 event_groups.c.i:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/build.make freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/event_groups.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/build.make freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/event_groups.c.i
 .PHONY : event_groups.c.i
 
 event_groups.s: event_groups.c.s
@@ -152,7 +149,7 @@ event_groups.s: event_groups.c.s
 
 # target to generate assembly for a file
 event_groups.c.s:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/build.make freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/event_groups.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/build.make freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/event_groups.c.s
 .PHONY : event_groups.c.s
 
 list.o: list.c.o
@@ -161,7 +158,7 @@ list.o: list.c.o
 
 # target to build an object file
 list.c.o:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/build.make freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/list.c.o
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/build.make freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/list.c.o
 .PHONY : list.c.o
 
 list.i: list.c.i
@@ -170,7 +167,7 @@ list.i: list.c.i
 
 # target to preprocess a source file
 list.c.i:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/build.make freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/list.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/build.make freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/list.c.i
 .PHONY : list.c.i
 
 list.s: list.c.s
@@ -179,7 +176,7 @@ list.s: list.c.s
 
 # target to generate assembly for a file
 list.c.s:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/build.make freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/list.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/build.make freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/list.c.s
 .PHONY : list.c.s
 
 queue.o: queue.c.o
@@ -188,7 +185,7 @@ queue.o: queue.c.o
 
 # target to build an object file
 queue.c.o:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/build.make freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/queue.c.o
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/build.make freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/queue.c.o
 .PHONY : queue.c.o
 
 queue.i: queue.c.i
@@ -197,7 +194,7 @@ queue.i: queue.c.i
 
 # target to preprocess a source file
 queue.c.i:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/build.make freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/queue.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/build.make freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/queue.c.i
 .PHONY : queue.c.i
 
 queue.s: queue.c.s
@@ -206,7 +203,7 @@ queue.s: queue.c.s
 
 # target to generate assembly for a file
 queue.c.s:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/build.make freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/queue.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/build.make freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/queue.c.s
 .PHONY : queue.c.s
 
 stream_buffer.o: stream_buffer.c.o
@@ -215,7 +212,7 @@ stream_buffer.o: stream_buffer.c.o
 
 # target to build an object file
 stream_buffer.c.o:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/build.make freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/stream_buffer.c.o
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/build.make freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/stream_buffer.c.o
 .PHONY : stream_buffer.c.o
 
 stream_buffer.i: stream_buffer.c.i
@@ -224,7 +221,7 @@ stream_buffer.i: stream_buffer.c.i
 
 # target to preprocess a source file
 stream_buffer.c.i:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/build.make freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/stream_buffer.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/build.make freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/stream_buffer.c.i
 .PHONY : stream_buffer.c.i
 
 stream_buffer.s: stream_buffer.c.s
@@ -233,7 +230,7 @@ stream_buffer.s: stream_buffer.c.s
 
 # target to generate assembly for a file
 stream_buffer.c.s:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/build.make freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/stream_buffer.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/build.make freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/stream_buffer.c.s
 .PHONY : stream_buffer.c.s
 
 tasks.o: tasks.c.o
@@ -242,7 +239,7 @@ tasks.o: tasks.c.o
 
 # target to build an object file
 tasks.c.o:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/build.make freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/tasks.c.o
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/build.make freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/tasks.c.o
 .PHONY : tasks.c.o
 
 tasks.i: tasks.c.i
@@ -251,7 +248,7 @@ tasks.i: tasks.c.i
 
 # target to preprocess a source file
 tasks.c.i:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/build.make freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/tasks.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/build.make freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/tasks.c.i
 .PHONY : tasks.c.i
 
 tasks.s: tasks.c.s
@@ -260,7 +257,7 @@ tasks.s: tasks.c.s
 
 # target to generate assembly for a file
 tasks.c.s:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/build.make freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/tasks.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/build.make freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/tasks.c.s
 .PHONY : tasks.c.s
 
 timers.o: timers.c.o
@@ -269,7 +266,7 @@ timers.o: timers.c.o
 
 # target to build an object file
 timers.c.o:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/build.make freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/timers.c.o
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/build.make freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/timers.c.o
 .PHONY : timers.c.o
 
 timers.i: timers.c.i
@@ -278,7 +275,7 @@ timers.i: timers.c.i
 
 # target to preprocess a source file
 timers.c.i:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/build.make freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/timers.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/build.make freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/timers.c.i
 .PHONY : timers.c.i
 
 timers.s: timers.c.s
@@ -287,7 +284,7 @@ timers.s: timers.c.s
 
 # target to generate assembly for a file
 timers.c.s:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/build.make freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/timers.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/build.make freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/timers.c.s
 .PHONY : timers.c.s
 
 # Help Target
@@ -328,6 +325,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

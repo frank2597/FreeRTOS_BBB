@@ -18,9 +18,6 @@ SUFFIXES =
 .SUFFIXES: .hpux_make_needs_suffix_list
 
 
-# Produce verbose output by default.
-VERBOSE = 1
-
 # Suppress display of executed commands.
 $(VERBOSE).SILENT:
 
@@ -49,7 +46,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/frank/eclipse-workspace/FreeRTOS_BBB/source
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/frank/eclipse-workspace/FreeRTOS_BBB/build
+CMAKE_BINARY_DIR = /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild
 
 # Include any dependencies generated for this target.
 include ARM_CA8_amm335x/CMakeFiles/src_portable_FreeRTOS_portable_GCC_ARM_CA8_amm335x.dir/depend.make
@@ -62,21 +59,21 @@ include ARM_CA8_amm335x/CMakeFiles/src_portable_FreeRTOS_portable_GCC_ARM_CA8_am
 
 ARM_CA8_amm335x/CMakeFiles/src_portable_FreeRTOS_portable_GCC_ARM_CA8_amm335x.dir/port.c.o: ARM_CA8_amm335x/CMakeFiles/src_portable_FreeRTOS_portable_GCC_ARM_CA8_amm335x.dir/flags.make
 ARM_CA8_amm335x/CMakeFiles/src_portable_FreeRTOS_portable_GCC_ARM_CA8_amm335x.dir/port.c.o: /home/frank/eclipse-workspace/FreeRTOS_BBB/source/src/portable/FreeRTOS/portable/GCC/ARM_CA8_amm335x/port.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frank/eclipse-workspace/FreeRTOS_BBB/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object ARM_CA8_amm335x/CMakeFiles/src_portable_FreeRTOS_portable_GCC_ARM_CA8_amm335x.dir/port.c.o"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/ARM_CA8_amm335x && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/src_portable_FreeRTOS_portable_GCC_ARM_CA8_amm335x.dir/port.c.o   -c /home/frank/eclipse-workspace/FreeRTOS_BBB/source/src/portable/FreeRTOS/portable/GCC/ARM_CA8_amm335x/port.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object ARM_CA8_amm335x/CMakeFiles/src_portable_FreeRTOS_portable_GCC_ARM_CA8_amm335x.dir/port.c.o"
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/ARM_CA8_amm335x && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/src_portable_FreeRTOS_portable_GCC_ARM_CA8_amm335x.dir/port.c.o   -c /home/frank/eclipse-workspace/FreeRTOS_BBB/source/src/portable/FreeRTOS/portable/GCC/ARM_CA8_amm335x/port.c
 
 ARM_CA8_amm335x/CMakeFiles/src_portable_FreeRTOS_portable_GCC_ARM_CA8_amm335x.dir/port.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/src_portable_FreeRTOS_portable_GCC_ARM_CA8_amm335x.dir/port.c.i"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/ARM_CA8_amm335x && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/frank/eclipse-workspace/FreeRTOS_BBB/source/src/portable/FreeRTOS/portable/GCC/ARM_CA8_amm335x/port.c > CMakeFiles/src_portable_FreeRTOS_portable_GCC_ARM_CA8_amm335x.dir/port.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/ARM_CA8_amm335x && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/frank/eclipse-workspace/FreeRTOS_BBB/source/src/portable/FreeRTOS/portable/GCC/ARM_CA8_amm335x/port.c > CMakeFiles/src_portable_FreeRTOS_portable_GCC_ARM_CA8_amm335x.dir/port.c.i
 
 ARM_CA8_amm335x/CMakeFiles/src_portable_FreeRTOS_portable_GCC_ARM_CA8_amm335x.dir/port.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/src_portable_FreeRTOS_portable_GCC_ARM_CA8_amm335x.dir/port.c.s"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/ARM_CA8_amm335x && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/frank/eclipse-workspace/FreeRTOS_BBB/source/src/portable/FreeRTOS/portable/GCC/ARM_CA8_amm335x/port.c -o CMakeFiles/src_portable_FreeRTOS_portable_GCC_ARM_CA8_amm335x.dir/port.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/ARM_CA8_amm335x && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/frank/eclipse-workspace/FreeRTOS_BBB/source/src/portable/FreeRTOS/portable/GCC/ARM_CA8_amm335x/port.c -o CMakeFiles/src_portable_FreeRTOS_portable_GCC_ARM_CA8_amm335x.dir/port.c.s
 
 ARM_CA8_amm335x/CMakeFiles/src_portable_FreeRTOS_portable_GCC_ARM_CA8_amm335x.dir/portASM_CA8_am335x.S.o: ARM_CA8_amm335x/CMakeFiles/src_portable_FreeRTOS_portable_GCC_ARM_CA8_amm335x.dir/flags.make
 ARM_CA8_amm335x/CMakeFiles/src_portable_FreeRTOS_portable_GCC_ARM_CA8_amm335x.dir/portASM_CA8_am335x.S.o: /home/frank/eclipse-workspace/FreeRTOS_BBB/source/src/portable/FreeRTOS/portable/GCC/ARM_CA8_amm335x/portASM_CA8_am335x.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frank/eclipse-workspace/FreeRTOS_BBB/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building ASM object ARM_CA8_amm335x/CMakeFiles/src_portable_FreeRTOS_portable_GCC_ARM_CA8_amm335x.dir/portASM_CA8_am335x.S.o"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/ARM_CA8_amm335x && /usr/bin//arm-linux-gnueabihf-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/src_portable_FreeRTOS_portable_GCC_ARM_CA8_amm335x.dir/portASM_CA8_am335x.S.o -c /home/frank/eclipse-workspace/FreeRTOS_BBB/source/src/portable/FreeRTOS/portable/GCC/ARM_CA8_amm335x/portASM_CA8_am335x.S
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building ASM object ARM_CA8_amm335x/CMakeFiles/src_portable_FreeRTOS_portable_GCC_ARM_CA8_amm335x.dir/portASM_CA8_am335x.S.o"
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/ARM_CA8_amm335x && /usr/bin//arm-linux-gnueabihf-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/src_portable_FreeRTOS_portable_GCC_ARM_CA8_amm335x.dir/portASM_CA8_am335x.S.o -c /home/frank/eclipse-workspace/FreeRTOS_BBB/source/src/portable/FreeRTOS/portable/GCC/ARM_CA8_amm335x/portASM_CA8_am335x.S
 
 # Object files for target src_portable_FreeRTOS_portable_GCC_ARM_CA8_amm335x
 src_portable_FreeRTOS_portable_GCC_ARM_CA8_amm335x_OBJECTS = \
@@ -90,9 +87,9 @@ ARM_CA8_amm335x/libsrc_portable_FreeRTOS_portable_GCC_ARM_CA8_amm335x.a: ARM_CA8
 ARM_CA8_amm335x/libsrc_portable_FreeRTOS_portable_GCC_ARM_CA8_amm335x.a: ARM_CA8_amm335x/CMakeFiles/src_portable_FreeRTOS_portable_GCC_ARM_CA8_amm335x.dir/portASM_CA8_am335x.S.o
 ARM_CA8_amm335x/libsrc_portable_FreeRTOS_portable_GCC_ARM_CA8_amm335x.a: ARM_CA8_amm335x/CMakeFiles/src_portable_FreeRTOS_portable_GCC_ARM_CA8_amm335x.dir/build.make
 ARM_CA8_amm335x/libsrc_portable_FreeRTOS_portable_GCC_ARM_CA8_amm335x.a: ARM_CA8_amm335x/CMakeFiles/src_portable_FreeRTOS_portable_GCC_ARM_CA8_amm335x.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/frank/eclipse-workspace/FreeRTOS_BBB/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C static library libsrc_portable_FreeRTOS_portable_GCC_ARM_CA8_amm335x.a"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/ARM_CA8_amm335x && $(CMAKE_COMMAND) -P CMakeFiles/src_portable_FreeRTOS_portable_GCC_ARM_CA8_amm335x.dir/cmake_clean_target.cmake
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/ARM_CA8_amm335x && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/src_portable_FreeRTOS_portable_GCC_ARM_CA8_amm335x.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C static library libsrc_portable_FreeRTOS_portable_GCC_ARM_CA8_amm335x.a"
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/ARM_CA8_amm335x && $(CMAKE_COMMAND) -P CMakeFiles/src_portable_FreeRTOS_portable_GCC_ARM_CA8_amm335x.dir/cmake_clean_target.cmake
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/ARM_CA8_amm335x && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/src_portable_FreeRTOS_portable_GCC_ARM_CA8_amm335x.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 ARM_CA8_amm335x/CMakeFiles/src_portable_FreeRTOS_portable_GCC_ARM_CA8_amm335x.dir/build: ARM_CA8_amm335x/libsrc_portable_FreeRTOS_portable_GCC_ARM_CA8_amm335x.a
@@ -100,10 +97,10 @@ ARM_CA8_amm335x/CMakeFiles/src_portable_FreeRTOS_portable_GCC_ARM_CA8_amm335x.di
 .PHONY : ARM_CA8_amm335x/CMakeFiles/src_portable_FreeRTOS_portable_GCC_ARM_CA8_amm335x.dir/build
 
 ARM_CA8_amm335x/CMakeFiles/src_portable_FreeRTOS_portable_GCC_ARM_CA8_amm335x.dir/clean:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/ARM_CA8_amm335x && $(CMAKE_COMMAND) -P CMakeFiles/src_portable_FreeRTOS_portable_GCC_ARM_CA8_amm335x.dir/cmake_clean.cmake
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/ARM_CA8_amm335x && $(CMAKE_COMMAND) -P CMakeFiles/src_portable_FreeRTOS_portable_GCC_ARM_CA8_amm335x.dir/cmake_clean.cmake
 .PHONY : ARM_CA8_amm335x/CMakeFiles/src_portable_FreeRTOS_portable_GCC_ARM_CA8_amm335x.dir/clean
 
 ARM_CA8_amm335x/CMakeFiles/src_portable_FreeRTOS_portable_GCC_ARM_CA8_amm335x.dir/depend:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/frank/eclipse-workspace/FreeRTOS_BBB/source /home/frank/eclipse-workspace/FreeRTOS_BBB/source/src/portable/FreeRTOS/portable/GCC/ARM_CA8_amm335x /home/frank/eclipse-workspace/FreeRTOS_BBB/build /home/frank/eclipse-workspace/FreeRTOS_BBB/build/ARM_CA8_amm335x /home/frank/eclipse-workspace/FreeRTOS_BBB/build/ARM_CA8_amm335x/CMakeFiles/src_portable_FreeRTOS_portable_GCC_ARM_CA8_amm335x.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/frank/eclipse-workspace/FreeRTOS_BBB/source /home/frank/eclipse-workspace/FreeRTOS_BBB/source/src/portable/FreeRTOS/portable/GCC/ARM_CA8_amm335x /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/ARM_CA8_amm335x /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/ARM_CA8_amm335x/CMakeFiles/src_portable_FreeRTOS_portable_GCC_ARM_CA8_amm335x.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : ARM_CA8_amm335x/CMakeFiles/src_portable_FreeRTOS_portable_GCC_ARM_CA8_amm335x.dir/depend
 

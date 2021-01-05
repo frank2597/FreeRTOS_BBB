@@ -18,9 +18,6 @@ SUFFIXES =
 .SUFFIXES: .hpux_make_needs_suffix_list
 
 
-# Produce verbose output by default.
-VERBOSE = 1
-
 # Suppress display of executed commands.
 $(VERBOSE).SILENT:
 
@@ -49,7 +46,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/frank/eclipse-workspace/FreeRTOS_BBB/source
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/frank/eclipse-workspace/FreeRTOS_BBB/build
+CMAKE_BINARY_DIR = /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild
 
 # Include any dependencies generated for this target.
 include mmcsdlib/CMakeFiles/lib_third_party_ti_mmcsdlib.dir/depend.make
@@ -62,29 +59,29 @@ include mmcsdlib/CMakeFiles/lib_third_party_ti_mmcsdlib.dir/flags.make
 
 mmcsdlib/CMakeFiles/lib_third_party_ti_mmcsdlib.dir/hs_mmcsdlib.c.o: mmcsdlib/CMakeFiles/lib_third_party_ti_mmcsdlib.dir/flags.make
 mmcsdlib/CMakeFiles/lib_third_party_ti_mmcsdlib.dir/hs_mmcsdlib.c.o: /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/mmcsdlib/hs_mmcsdlib.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frank/eclipse-workspace/FreeRTOS_BBB/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object mmcsdlib/CMakeFiles/lib_third_party_ti_mmcsdlib.dir/hs_mmcsdlib.c.o"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/mmcsdlib && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lib_third_party_ti_mmcsdlib.dir/hs_mmcsdlib.c.o   -c /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/mmcsdlib/hs_mmcsdlib.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object mmcsdlib/CMakeFiles/lib_third_party_ti_mmcsdlib.dir/hs_mmcsdlib.c.o"
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/mmcsdlib && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lib_third_party_ti_mmcsdlib.dir/hs_mmcsdlib.c.o   -c /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/mmcsdlib/hs_mmcsdlib.c
 
 mmcsdlib/CMakeFiles/lib_third_party_ti_mmcsdlib.dir/hs_mmcsdlib.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lib_third_party_ti_mmcsdlib.dir/hs_mmcsdlib.c.i"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/mmcsdlib && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/mmcsdlib/hs_mmcsdlib.c > CMakeFiles/lib_third_party_ti_mmcsdlib.dir/hs_mmcsdlib.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/mmcsdlib && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/mmcsdlib/hs_mmcsdlib.c > CMakeFiles/lib_third_party_ti_mmcsdlib.dir/hs_mmcsdlib.c.i
 
 mmcsdlib/CMakeFiles/lib_third_party_ti_mmcsdlib.dir/hs_mmcsdlib.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lib_third_party_ti_mmcsdlib.dir/hs_mmcsdlib.c.s"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/mmcsdlib && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/mmcsdlib/hs_mmcsdlib.c -o CMakeFiles/lib_third_party_ti_mmcsdlib.dir/hs_mmcsdlib.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/mmcsdlib && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/mmcsdlib/hs_mmcsdlib.c -o CMakeFiles/lib_third_party_ti_mmcsdlib.dir/hs_mmcsdlib.c.s
 
 mmcsdlib/CMakeFiles/lib_third_party_ti_mmcsdlib.dir/mmcsd_proto.c.o: mmcsdlib/CMakeFiles/lib_third_party_ti_mmcsdlib.dir/flags.make
 mmcsdlib/CMakeFiles/lib_third_party_ti_mmcsdlib.dir/mmcsd_proto.c.o: /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/mmcsdlib/mmcsd_proto.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frank/eclipse-workspace/FreeRTOS_BBB/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object mmcsdlib/CMakeFiles/lib_third_party_ti_mmcsdlib.dir/mmcsd_proto.c.o"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/mmcsdlib && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lib_third_party_ti_mmcsdlib.dir/mmcsd_proto.c.o   -c /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/mmcsdlib/mmcsd_proto.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object mmcsdlib/CMakeFiles/lib_third_party_ti_mmcsdlib.dir/mmcsd_proto.c.o"
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/mmcsdlib && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lib_third_party_ti_mmcsdlib.dir/mmcsd_proto.c.o   -c /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/mmcsdlib/mmcsd_proto.c
 
 mmcsdlib/CMakeFiles/lib_third_party_ti_mmcsdlib.dir/mmcsd_proto.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lib_third_party_ti_mmcsdlib.dir/mmcsd_proto.c.i"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/mmcsdlib && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/mmcsdlib/mmcsd_proto.c > CMakeFiles/lib_third_party_ti_mmcsdlib.dir/mmcsd_proto.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/mmcsdlib && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/mmcsdlib/mmcsd_proto.c > CMakeFiles/lib_third_party_ti_mmcsdlib.dir/mmcsd_proto.c.i
 
 mmcsdlib/CMakeFiles/lib_third_party_ti_mmcsdlib.dir/mmcsd_proto.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lib_third_party_ti_mmcsdlib.dir/mmcsd_proto.c.s"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/mmcsdlib && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/mmcsdlib/mmcsd_proto.c -o CMakeFiles/lib_third_party_ti_mmcsdlib.dir/mmcsd_proto.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/mmcsdlib && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/mmcsdlib/mmcsd_proto.c -o CMakeFiles/lib_third_party_ti_mmcsdlib.dir/mmcsd_proto.c.s
 
 # Object files for target lib_third_party_ti_mmcsdlib
 lib_third_party_ti_mmcsdlib_OBJECTS = \
@@ -98,9 +95,9 @@ mmcsdlib/liblib_third_party_ti_mmcsdlib.a: mmcsdlib/CMakeFiles/lib_third_party_t
 mmcsdlib/liblib_third_party_ti_mmcsdlib.a: mmcsdlib/CMakeFiles/lib_third_party_ti_mmcsdlib.dir/mmcsd_proto.c.o
 mmcsdlib/liblib_third_party_ti_mmcsdlib.a: mmcsdlib/CMakeFiles/lib_third_party_ti_mmcsdlib.dir/build.make
 mmcsdlib/liblib_third_party_ti_mmcsdlib.a: mmcsdlib/CMakeFiles/lib_third_party_ti_mmcsdlib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/frank/eclipse-workspace/FreeRTOS_BBB/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C static library liblib_third_party_ti_mmcsdlib.a"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/mmcsdlib && $(CMAKE_COMMAND) -P CMakeFiles/lib_third_party_ti_mmcsdlib.dir/cmake_clean_target.cmake
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/mmcsdlib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lib_third_party_ti_mmcsdlib.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C static library liblib_third_party_ti_mmcsdlib.a"
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/mmcsdlib && $(CMAKE_COMMAND) -P CMakeFiles/lib_third_party_ti_mmcsdlib.dir/cmake_clean_target.cmake
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/mmcsdlib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lib_third_party_ti_mmcsdlib.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 mmcsdlib/CMakeFiles/lib_third_party_ti_mmcsdlib.dir/build: mmcsdlib/liblib_third_party_ti_mmcsdlib.a
@@ -108,10 +105,10 @@ mmcsdlib/CMakeFiles/lib_third_party_ti_mmcsdlib.dir/build: mmcsdlib/liblib_third
 .PHONY : mmcsdlib/CMakeFiles/lib_third_party_ti_mmcsdlib.dir/build
 
 mmcsdlib/CMakeFiles/lib_third_party_ti_mmcsdlib.dir/clean:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/mmcsdlib && $(CMAKE_COMMAND) -P CMakeFiles/lib_third_party_ti_mmcsdlib.dir/cmake_clean.cmake
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/mmcsdlib && $(CMAKE_COMMAND) -P CMakeFiles/lib_third_party_ti_mmcsdlib.dir/cmake_clean.cmake
 .PHONY : mmcsdlib/CMakeFiles/lib_third_party_ti_mmcsdlib.dir/clean
 
 mmcsdlib/CMakeFiles/lib_third_party_ti_mmcsdlib.dir/depend:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/frank/eclipse-workspace/FreeRTOS_BBB/source /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/mmcsdlib /home/frank/eclipse-workspace/FreeRTOS_BBB/build /home/frank/eclipse-workspace/FreeRTOS_BBB/build/mmcsdlib /home/frank/eclipse-workspace/FreeRTOS_BBB/build/mmcsdlib/CMakeFiles/lib_third_party_ti_mmcsdlib.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/frank/eclipse-workspace/FreeRTOS_BBB/source /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/mmcsdlib /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/mmcsdlib /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/mmcsdlib/CMakeFiles/lib_third_party_ti_mmcsdlib.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : mmcsdlib/CMakeFiles/lib_third_party_ti_mmcsdlib.dir/depend
 

@@ -39,20 +39,20 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/frank/eclipse-workspace/FreeRTOS_BBB/build/drivers/cmake_install.cmake")
-  include("/home/frank/eclipse-workspace/FreeRTOS_BBB/build/utils/cmake_install.cmake")
-  include("/home/frank/eclipse-workspace/FreeRTOS_BBB/build/mmcsdlib/cmake_install.cmake")
-  include("/home/frank/eclipse-workspace/FreeRTOS_BBB/build/beaglebone/cmake_install.cmake")
-  include("/home/frank/eclipse-workspace/FreeRTOS_BBB/build/nandlib/cmake_install.cmake")
-  include("/home/frank/eclipse-workspace/FreeRTOS_BBB/build/armv7a/cmake_install.cmake")
-  include("/home/frank/eclipse-workspace/FreeRTOS_BBB/build/src/cmake_install.cmake")
-  include("/home/frank/eclipse-workspace/FreeRTOS_BBB/build/netif/cmake_install.cmake")
-  include("/home/frank/eclipse-workspace/FreeRTOS_BBB/build/freertos_kernel/cmake_install.cmake")
-  include("/home/frank/eclipse-workspace/FreeRTOS_BBB/build/ARM_CA8_amm335x/cmake_install.cmake")
-  include("/home/frank/eclipse-workspace/FreeRTOS_BBB/build/MemMang/cmake_install.cmake")
-  include("/home/frank/eclipse-workspace/FreeRTOS_BBB/build/AM335X/cmake_install.cmake")
-  include("/home/frank/eclipse-workspace/FreeRTOS_BBB/build/ported_aws_bufpool/cmake_install.cmake")
-  include("/home/frank/eclipse-workspace/FreeRTOS_BBB/build/application/cmake_install.cmake")
+  include("/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/drivers/cmake_install.cmake")
+  include("/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/utils/cmake_install.cmake")
+  include("/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/mmcsdlib/cmake_install.cmake")
+  include("/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/beaglebone/cmake_install.cmake")
+  include("/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/nandlib/cmake_install.cmake")
+  include("/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/armv7a/cmake_install.cmake")
+  include("/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/src/cmake_install.cmake")
+  include("/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/netif/cmake_install.cmake")
+  include("/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/freertos_kernel/cmake_install.cmake")
+  include("/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/ARM_CA8_amm335x/cmake_install.cmake")
+  include("/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/MemMang/cmake_install.cmake")
+  include("/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/AM335X/cmake_install.cmake")
+  include("/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/ported_aws_bufpool/cmake_install.cmake")
+  include("/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/application/cmake_install.cmake")
 
 endif()
 
@@ -64,5 +64,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/frank/eclipse-workspace/FreeRTOS_BBB/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

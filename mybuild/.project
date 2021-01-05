@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>freeRTOSBBB@build</name>
+	<name>freeRTOSBBB@mybuild</name>
 	<comment></comment>
 	<projects></projects>
 	<buildSpec>
@@ -46,7 +46,7 @@
 				</dictionary>
 				<dictionary>
 					<key>org.eclipse.cdt.make.core.buildLocation</key>
-					<value>/home/frank/eclipse-workspace/FreeRTOS_BBB/build</value>
+					<value>/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild</value>
 				</dictionary>
 				<dictionary>
 					<key>org.eclipse.cdt.make.core.useDefaultBuildCmd</key>
@@ -82,7 +82,7 @@
 				</dictionary>
 				<dictionary>
 					<key>org.eclipse.cdt.make.core.build.location</key>
-					<value>/home/frank/eclipse-workspace/FreeRTOS_BBB/build</value>
+					<value>/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild</value>
 				</dictionary>
 				<dictionary>
 					<key>org.eclipse.cdt.make.core.autoBuildTarget</key>

@@ -23,9 +23,6 @@ SUFFIXES =
 .SUFFIXES: .hpux_make_needs_suffix_list
 
 
-# Produce verbose output by default.
-VERBOSE = 1
-
 # Suppress display of executed commands.
 $(VERBOSE).SILENT:
 
@@ -54,7 +51,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/frank/eclipse-workspace/FreeRTOS_BBB/source
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/frank/eclipse-workspace/FreeRTOS_BBB/build
+CMAKE_BINARY_DIR = /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -83,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/frank/eclipse-workspace/FreeRTOS_BBB/build/CMakeFiles /home/frank/eclipse-workspace/FreeRTOS_BBB/build/ported_aws_bufpool/CMakeFiles/progress.marks
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f CMakeFiles/Makefile2 ported_aws_bufpool/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frank/eclipse-workspace/FreeRTOS_BBB/build/CMakeFiles 0
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(CMAKE_COMMAND) -E cmake_progress_start /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/CMakeFiles /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/ported_aws_bufpool/CMakeFiles/progress.marks
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f CMakeFiles/Makefile2 ported_aws_bufpool/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f CMakeFiles/Makefile2 ported_aws_bufpool/clean
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f CMakeFiles/Makefile2 ported_aws_bufpool/clean
 .PHONY : clean
 
 # The main clean target
@@ -100,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f CMakeFiles/Makefile2 ported_aws_bufpool/preinstall
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f CMakeFiles/Makefile2 ported_aws_bufpool/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f CMakeFiles/Makefile2 ported_aws_bufpool/preinstall
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f CMakeFiles/Makefile2 ported_aws_bufpool/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 ported_aws_bufpool/CMakeFiles/src_portable_ported_aws_bufpool.dir/rule:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f CMakeFiles/Makefile2 ported_aws_bufpool/CMakeFiles/src_portable_ported_aws_bufpool.dir/rule
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f CMakeFiles/Makefile2 ported_aws_bufpool/CMakeFiles/src_portable_ported_aws_bufpool.dir/rule
 .PHONY : ported_aws_bufpool/CMakeFiles/src_portable_ported_aws_bufpool.dir/rule
 
 # Convenience name for target.
@@ -125,7 +122,7 @@ src_portable_ported_aws_bufpool: ported_aws_bufpool/CMakeFiles/src_portable_port
 
 # fast build rule for target.
 src_portable_ported_aws_bufpool/fast:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f ported_aws_bufpool/CMakeFiles/src_portable_ported_aws_bufpool.dir/build.make ported_aws_bufpool/CMakeFiles/src_portable_ported_aws_bufpool.dir/build
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f ported_aws_bufpool/CMakeFiles/src_portable_ported_aws_bufpool.dir/build.make ported_aws_bufpool/CMakeFiles/src_portable_ported_aws_bufpool.dir/build
 .PHONY : src_portable_ported_aws_bufpool/fast
 
 aws_bufferpool_static_thread_safe.o: aws_bufferpool_static_thread_safe.c.o
@@ -134,7 +131,7 @@ aws_bufferpool_static_thread_safe.o: aws_bufferpool_static_thread_safe.c.o
 
 # target to build an object file
 aws_bufferpool_static_thread_safe.c.o:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f ported_aws_bufpool/CMakeFiles/src_portable_ported_aws_bufpool.dir/build.make ported_aws_bufpool/CMakeFiles/src_portable_ported_aws_bufpool.dir/aws_bufferpool_static_thread_safe.c.o
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f ported_aws_bufpool/CMakeFiles/src_portable_ported_aws_bufpool.dir/build.make ported_aws_bufpool/CMakeFiles/src_portable_ported_aws_bufpool.dir/aws_bufferpool_static_thread_safe.c.o
 .PHONY : aws_bufferpool_static_thread_safe.c.o
 
 aws_bufferpool_static_thread_safe.i: aws_bufferpool_static_thread_safe.c.i
@@ -143,7 +140,7 @@ aws_bufferpool_static_thread_safe.i: aws_bufferpool_static_thread_safe.c.i
 
 # target to preprocess a source file
 aws_bufferpool_static_thread_safe.c.i:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f ported_aws_bufpool/CMakeFiles/src_portable_ported_aws_bufpool.dir/build.make ported_aws_bufpool/CMakeFiles/src_portable_ported_aws_bufpool.dir/aws_bufferpool_static_thread_safe.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f ported_aws_bufpool/CMakeFiles/src_portable_ported_aws_bufpool.dir/build.make ported_aws_bufpool/CMakeFiles/src_portable_ported_aws_bufpool.dir/aws_bufferpool_static_thread_safe.c.i
 .PHONY : aws_bufferpool_static_thread_safe.c.i
 
 aws_bufferpool_static_thread_safe.s: aws_bufferpool_static_thread_safe.c.s
@@ -152,7 +149,7 @@ aws_bufferpool_static_thread_safe.s: aws_bufferpool_static_thread_safe.c.s
 
 # target to generate assembly for a file
 aws_bufferpool_static_thread_safe.c.s:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f ported_aws_bufpool/CMakeFiles/src_portable_ported_aws_bufpool.dir/build.make ported_aws_bufpool/CMakeFiles/src_portable_ported_aws_bufpool.dir/aws_bufferpool_static_thread_safe.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f ported_aws_bufpool/CMakeFiles/src_portable_ported_aws_bufpool.dir/build.make ported_aws_bufpool/CMakeFiles/src_portable_ported_aws_bufpool.dir/aws_bufferpool_static_thread_safe.c.s
 .PHONY : aws_bufferpool_static_thread_safe.c.s
 
 # Help Target
@@ -178,6 +175,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

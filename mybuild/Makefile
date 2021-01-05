@@ -23,9 +23,6 @@ SUFFIXES =
 .SUFFIXES: .hpux_make_needs_suffix_list
 
 
-# Produce verbose output by default.
-VERBOSE = 1
-
 # Suppress display of executed commands.
 $(VERBOSE).SILENT:
 
@@ -54,7 +51,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/frank/eclipse-workspace/FreeRTOS_BBB/source
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/frank/eclipse-workspace/FreeRTOS_BBB/build
+CMAKE_BINARY_DIR = /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -83,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frank/eclipse-workspace/FreeRTOS_BBB/build/CMakeFiles /home/frank/eclipse-workspace/FreeRTOS_BBB/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/CMakeFiles /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frank/eclipse-workspace/FreeRTOS_BBB/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

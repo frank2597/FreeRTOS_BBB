@@ -18,9 +18,6 @@ SUFFIXES =
 .SUFFIXES: .hpux_make_needs_suffix_list
 
 
-# Produce verbose output by default.
-VERBOSE = 1
-
 # Suppress display of executed commands.
 $(VERBOSE).SILENT:
 
@@ -49,7 +46,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/frank/eclipse-workspace/FreeRTOS_BBB/source
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/frank/eclipse-workspace/FreeRTOS_BBB/build
+CMAKE_BINARY_DIR = /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild
 
 # Include any dependencies generated for this target.
 include ported_aws_bufpool/CMakeFiles/src_portable_ported_aws_bufpool.dir/depend.make
@@ -62,16 +59,16 @@ include ported_aws_bufpool/CMakeFiles/src_portable_ported_aws_bufpool.dir/flags.
 
 ported_aws_bufpool/CMakeFiles/src_portable_ported_aws_bufpool.dir/aws_bufferpool_static_thread_safe.c.o: ported_aws_bufpool/CMakeFiles/src_portable_ported_aws_bufpool.dir/flags.make
 ported_aws_bufpool/CMakeFiles/src_portable_ported_aws_bufpool.dir/aws_bufferpool_static_thread_safe.c.o: /home/frank/eclipse-workspace/FreeRTOS_BBB/source/src/portable/ported_aws_bufpool/aws_bufferpool_static_thread_safe.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frank/eclipse-workspace/FreeRTOS_BBB/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object ported_aws_bufpool/CMakeFiles/src_portable_ported_aws_bufpool.dir/aws_bufferpool_static_thread_safe.c.o"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/ported_aws_bufpool && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/src_portable_ported_aws_bufpool.dir/aws_bufferpool_static_thread_safe.c.o   -c /home/frank/eclipse-workspace/FreeRTOS_BBB/source/src/portable/ported_aws_bufpool/aws_bufferpool_static_thread_safe.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object ported_aws_bufpool/CMakeFiles/src_portable_ported_aws_bufpool.dir/aws_bufferpool_static_thread_safe.c.o"
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/ported_aws_bufpool && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/src_portable_ported_aws_bufpool.dir/aws_bufferpool_static_thread_safe.c.o   -c /home/frank/eclipse-workspace/FreeRTOS_BBB/source/src/portable/ported_aws_bufpool/aws_bufferpool_static_thread_safe.c
 
 ported_aws_bufpool/CMakeFiles/src_portable_ported_aws_bufpool.dir/aws_bufferpool_static_thread_safe.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/src_portable_ported_aws_bufpool.dir/aws_bufferpool_static_thread_safe.c.i"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/ported_aws_bufpool && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/frank/eclipse-workspace/FreeRTOS_BBB/source/src/portable/ported_aws_bufpool/aws_bufferpool_static_thread_safe.c > CMakeFiles/src_portable_ported_aws_bufpool.dir/aws_bufferpool_static_thread_safe.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/ported_aws_bufpool && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/frank/eclipse-workspace/FreeRTOS_BBB/source/src/portable/ported_aws_bufpool/aws_bufferpool_static_thread_safe.c > CMakeFiles/src_portable_ported_aws_bufpool.dir/aws_bufferpool_static_thread_safe.c.i
 
 ported_aws_bufpool/CMakeFiles/src_portable_ported_aws_bufpool.dir/aws_bufferpool_static_thread_safe.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/src_portable_ported_aws_bufpool.dir/aws_bufferpool_static_thread_safe.c.s"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/ported_aws_bufpool && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/frank/eclipse-workspace/FreeRTOS_BBB/source/src/portable/ported_aws_bufpool/aws_bufferpool_static_thread_safe.c -o CMakeFiles/src_portable_ported_aws_bufpool.dir/aws_bufferpool_static_thread_safe.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/ported_aws_bufpool && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/frank/eclipse-workspace/FreeRTOS_BBB/source/src/portable/ported_aws_bufpool/aws_bufferpool_static_thread_safe.c -o CMakeFiles/src_portable_ported_aws_bufpool.dir/aws_bufferpool_static_thread_safe.c.s
 
 # Object files for target src_portable_ported_aws_bufpool
 src_portable_ported_aws_bufpool_OBJECTS = \
@@ -83,9 +80,9 @@ src_portable_ported_aws_bufpool_EXTERNAL_OBJECTS =
 ported_aws_bufpool/libsrc_portable_ported_aws_bufpool.a: ported_aws_bufpool/CMakeFiles/src_portable_ported_aws_bufpool.dir/aws_bufferpool_static_thread_safe.c.o
 ported_aws_bufpool/libsrc_portable_ported_aws_bufpool.a: ported_aws_bufpool/CMakeFiles/src_portable_ported_aws_bufpool.dir/build.make
 ported_aws_bufpool/libsrc_portable_ported_aws_bufpool.a: ported_aws_bufpool/CMakeFiles/src_portable_ported_aws_bufpool.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/frank/eclipse-workspace/FreeRTOS_BBB/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libsrc_portable_ported_aws_bufpool.a"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/ported_aws_bufpool && $(CMAKE_COMMAND) -P CMakeFiles/src_portable_ported_aws_bufpool.dir/cmake_clean_target.cmake
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/ported_aws_bufpool && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/src_portable_ported_aws_bufpool.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libsrc_portable_ported_aws_bufpool.a"
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/ported_aws_bufpool && $(CMAKE_COMMAND) -P CMakeFiles/src_portable_ported_aws_bufpool.dir/cmake_clean_target.cmake
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/ported_aws_bufpool && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/src_portable_ported_aws_bufpool.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 ported_aws_bufpool/CMakeFiles/src_portable_ported_aws_bufpool.dir/build: ported_aws_bufpool/libsrc_portable_ported_aws_bufpool.a
@@ -93,10 +90,10 @@ ported_aws_bufpool/CMakeFiles/src_portable_ported_aws_bufpool.dir/build: ported_
 .PHONY : ported_aws_bufpool/CMakeFiles/src_portable_ported_aws_bufpool.dir/build
 
 ported_aws_bufpool/CMakeFiles/src_portable_ported_aws_bufpool.dir/clean:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/ported_aws_bufpool && $(CMAKE_COMMAND) -P CMakeFiles/src_portable_ported_aws_bufpool.dir/cmake_clean.cmake
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/ported_aws_bufpool && $(CMAKE_COMMAND) -P CMakeFiles/src_portable_ported_aws_bufpool.dir/cmake_clean.cmake
 .PHONY : ported_aws_bufpool/CMakeFiles/src_portable_ported_aws_bufpool.dir/clean
 
 ported_aws_bufpool/CMakeFiles/src_portable_ported_aws_bufpool.dir/depend:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/frank/eclipse-workspace/FreeRTOS_BBB/source /home/frank/eclipse-workspace/FreeRTOS_BBB/source/src/portable/ported_aws_bufpool /home/frank/eclipse-workspace/FreeRTOS_BBB/build /home/frank/eclipse-workspace/FreeRTOS_BBB/build/ported_aws_bufpool /home/frank/eclipse-workspace/FreeRTOS_BBB/build/ported_aws_bufpool/CMakeFiles/src_portable_ported_aws_bufpool.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/frank/eclipse-workspace/FreeRTOS_BBB/source /home/frank/eclipse-workspace/FreeRTOS_BBB/source/src/portable/ported_aws_bufpool /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/ported_aws_bufpool /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/ported_aws_bufpool/CMakeFiles/src_portable_ported_aws_bufpool.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : ported_aws_bufpool/CMakeFiles/src_portable_ported_aws_bufpool.dir/depend
 

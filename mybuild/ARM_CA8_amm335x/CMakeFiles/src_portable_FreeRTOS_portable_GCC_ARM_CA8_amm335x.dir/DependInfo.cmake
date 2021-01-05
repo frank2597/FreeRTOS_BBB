@@ -5,7 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_ASM
-  "/home/frank/eclipse-workspace/FreeRTOS_BBB/source/src/portable/FreeRTOS/portable/GCC/ARM_CA8_amm335x/portASM_CA8_am335x.S" "/home/frank/eclipse-workspace/FreeRTOS_BBB/build/ARM_CA8_amm335x/CMakeFiles/src_portable_FreeRTOS_portable_GCC_ARM_CA8_amm335x.dir/portASM_CA8_am335x.S.o"
+  "/home/frank/eclipse-workspace/FreeRTOS_BBB/source/src/portable/FreeRTOS/portable/GCC/ARM_CA8_amm335x/portASM_CA8_am335x.S" "/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/ARM_CA8_amm335x/CMakeFiles/src_portable_FreeRTOS_portable_GCC_ARM_CA8_amm335x.dir/portASM_CA8_am335x.S.o"
   )
 set(CMAKE_ASM_COMPILER_ID "GNU")
 
@@ -28,7 +28,7 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "/home/frank/eclipse-workspace/FreeRTOS_BBB/source/src/portable/lwip"
   )
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/frank/eclipse-workspace/FreeRTOS_BBB/source/src/portable/FreeRTOS/portable/GCC/ARM_CA8_amm335x/port.c" "/home/frank/eclipse-workspace/FreeRTOS_BBB/build/ARM_CA8_amm335x/CMakeFiles/src_portable_FreeRTOS_portable_GCC_ARM_CA8_amm335x.dir/port.c.o"
+  "/home/frank/eclipse-workspace/FreeRTOS_BBB/source/src/portable/FreeRTOS/portable/GCC/ARM_CA8_amm335x/port.c" "/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/ARM_CA8_amm335x/CMakeFiles/src_portable_FreeRTOS_portable_GCC_ARM_CA8_amm335x.dir/port.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

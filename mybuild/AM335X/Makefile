@@ -23,9 +23,6 @@ SUFFIXES =
 .SUFFIXES: .hpux_make_needs_suffix_list
 
 
-# Produce verbose output by default.
-VERBOSE = 1
-
 # Suppress display of executed commands.
 $(VERBOSE).SILENT:
 
@@ -54,7 +51,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/frank/eclipse-workspace/FreeRTOS_BBB/source
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/frank/eclipse-workspace/FreeRTOS_BBB/build
+CMAKE_BINARY_DIR = /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -83,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/frank/eclipse-workspace/FreeRTOS_BBB/build/CMakeFiles /home/frank/eclipse-workspace/FreeRTOS_BBB/build/AM335X/CMakeFiles/progress.marks
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f CMakeFiles/Makefile2 AM335X/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frank/eclipse-workspace/FreeRTOS_BBB/build/CMakeFiles 0
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(CMAKE_COMMAND) -E cmake_progress_start /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/CMakeFiles /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/AM335X/CMakeFiles/progress.marks
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f CMakeFiles/Makefile2 AM335X/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f CMakeFiles/Makefile2 AM335X/clean
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f CMakeFiles/Makefile2 AM335X/clean
 .PHONY : clean
 
 # The main clean target
@@ -100,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f CMakeFiles/Makefile2 AM335X/preinstall
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f CMakeFiles/Makefile2 AM335X/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f CMakeFiles/Makefile2 AM335X/preinstall
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f CMakeFiles/Makefile2 AM335X/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 AM335X/CMakeFiles/src_portable_AM335X.dir/rule:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f CMakeFiles/Makefile2 AM335X/CMakeFiles/src_portable_AM335X.dir/rule
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f CMakeFiles/Makefile2 AM335X/CMakeFiles/src_portable_AM335X.dir/rule
 .PHONY : AM335X/CMakeFiles/src_portable_AM335X.dir/rule
 
 # Convenience name for target.
@@ -125,7 +122,7 @@ src_portable_AM335X: AM335X/CMakeFiles/src_portable_AM335X.dir/rule
 
 # fast build rule for target.
 src_portable_AM335X/fast:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f AM335X/CMakeFiles/src_portable_AM335X.dir/build.make AM335X/CMakeFiles/src_portable_AM335X.dir/build
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f AM335X/CMakeFiles/src_portable_AM335X.dir/build.make AM335X/CMakeFiles/src_portable_AM335X.dir/build
 .PHONY : src_portable_AM335X/fast
 
 bsp_platform.o: bsp_platform.c.o
@@ -134,7 +131,7 @@ bsp_platform.o: bsp_platform.c.o
 
 # target to build an object file
 bsp_platform.c.o:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f AM335X/CMakeFiles/src_portable_AM335X.dir/build.make AM335X/CMakeFiles/src_portable_AM335X.dir/bsp_platform.c.o
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f AM335X/CMakeFiles/src_portable_AM335X.dir/build.make AM335X/CMakeFiles/src_portable_AM335X.dir/bsp_platform.c.o
 .PHONY : bsp_platform.c.o
 
 bsp_platform.i: bsp_platform.c.i
@@ -143,7 +140,7 @@ bsp_platform.i: bsp_platform.c.i
 
 # target to preprocess a source file
 bsp_platform.c.i:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f AM335X/CMakeFiles/src_portable_AM335X.dir/build.make AM335X/CMakeFiles/src_portable_AM335X.dir/bsp_platform.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f AM335X/CMakeFiles/src_portable_AM335X.dir/build.make AM335X/CMakeFiles/src_portable_AM335X.dir/bsp_platform.c.i
 .PHONY : bsp_platform.c.i
 
 bsp_platform.s: bsp_platform.c.s
@@ -152,7 +149,7 @@ bsp_platform.s: bsp_platform.c.s
 
 # target to generate assembly for a file
 bsp_platform.c.s:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f AM335X/CMakeFiles/src_portable_AM335X.dir/build.make AM335X/CMakeFiles/src_portable_AM335X.dir/bsp_platform.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f AM335X/CMakeFiles/src_portable_AM335X.dir/build.make AM335X/CMakeFiles/src_portable_AM335X.dir/bsp_platform.c.s
 .PHONY : bsp_platform.c.s
 
 hal_bspInit.o: hal_bspInit.c.o
@@ -161,7 +158,7 @@ hal_bspInit.o: hal_bspInit.c.o
 
 # target to build an object file
 hal_bspInit.c.o:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f AM335X/CMakeFiles/src_portable_AM335X.dir/build.make AM335X/CMakeFiles/src_portable_AM335X.dir/hal_bspInit.c.o
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f AM335X/CMakeFiles/src_portable_AM335X.dir/build.make AM335X/CMakeFiles/src_portable_AM335X.dir/hal_bspInit.c.o
 .PHONY : hal_bspInit.c.o
 
 hal_bspInit.i: hal_bspInit.c.i
@@ -170,7 +167,7 @@ hal_bspInit.i: hal_bspInit.c.i
 
 # target to preprocess a source file
 hal_bspInit.c.i:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f AM335X/CMakeFiles/src_portable_AM335X.dir/build.make AM335X/CMakeFiles/src_portable_AM335X.dir/hal_bspInit.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f AM335X/CMakeFiles/src_portable_AM335X.dir/build.make AM335X/CMakeFiles/src_portable_AM335X.dir/hal_bspInit.c.i
 .PHONY : hal_bspInit.c.i
 
 hal_bspInit.s: hal_bspInit.c.s
@@ -179,7 +176,7 @@ hal_bspInit.s: hal_bspInit.c.s
 
 # target to generate assembly for a file
 hal_bspInit.c.s:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f AM335X/CMakeFiles/src_portable_AM335X.dir/build.make AM335X/CMakeFiles/src_portable_AM335X.dir/hal_bspInit.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f AM335X/CMakeFiles/src_portable_AM335X.dir/build.make AM335X/CMakeFiles/src_portable_AM335X.dir/hal_bspInit.c.s
 .PHONY : hal_bspInit.c.s
 
 hal_mmu.o: hal_mmu.c.o
@@ -188,7 +185,7 @@ hal_mmu.o: hal_mmu.c.o
 
 # target to build an object file
 hal_mmu.c.o:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f AM335X/CMakeFiles/src_portable_AM335X.dir/build.make AM335X/CMakeFiles/src_portable_AM335X.dir/hal_mmu.c.o
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f AM335X/CMakeFiles/src_portable_AM335X.dir/build.make AM335X/CMakeFiles/src_portable_AM335X.dir/hal_mmu.c.o
 .PHONY : hal_mmu.c.o
 
 hal_mmu.i: hal_mmu.c.i
@@ -197,7 +194,7 @@ hal_mmu.i: hal_mmu.c.i
 
 # target to preprocess a source file
 hal_mmu.c.i:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f AM335X/CMakeFiles/src_portable_AM335X.dir/build.make AM335X/CMakeFiles/src_portable_AM335X.dir/hal_mmu.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f AM335X/CMakeFiles/src_portable_AM335X.dir/build.make AM335X/CMakeFiles/src_portable_AM335X.dir/hal_mmu.c.i
 .PHONY : hal_mmu.c.i
 
 hal_mmu.s: hal_mmu.c.s
@@ -206,7 +203,7 @@ hal_mmu.s: hal_mmu.c.s
 
 # target to generate assembly for a file
 hal_mmu.c.s:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f AM335X/CMakeFiles/src_portable_AM335X.dir/build.make AM335X/CMakeFiles/src_portable_AM335X.dir/hal_mmu.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f AM335X/CMakeFiles/src_portable_AM335X.dir/build.make AM335X/CMakeFiles/src_portable_AM335X.dir/hal_mmu.c.s
 .PHONY : hal_mmu.c.s
 
 ported_am335x_clock_data.o: ported_am335x_clock_data.c.o
@@ -215,7 +212,7 @@ ported_am335x_clock_data.o: ported_am335x_clock_data.c.o
 
 # target to build an object file
 ported_am335x_clock_data.c.o:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f AM335X/CMakeFiles/src_portable_AM335X.dir/build.make AM335X/CMakeFiles/src_portable_AM335X.dir/ported_am335x_clock_data.c.o
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f AM335X/CMakeFiles/src_portable_AM335X.dir/build.make AM335X/CMakeFiles/src_portable_AM335X.dir/ported_am335x_clock_data.c.o
 .PHONY : ported_am335x_clock_data.c.o
 
 ported_am335x_clock_data.i: ported_am335x_clock_data.c.i
@@ -224,7 +221,7 @@ ported_am335x_clock_data.i: ported_am335x_clock_data.c.i
 
 # target to preprocess a source file
 ported_am335x_clock_data.c.i:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f AM335X/CMakeFiles/src_portable_AM335X.dir/build.make AM335X/CMakeFiles/src_portable_AM335X.dir/ported_am335x_clock_data.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f AM335X/CMakeFiles/src_portable_AM335X.dir/build.make AM335X/CMakeFiles/src_portable_AM335X.dir/ported_am335x_clock_data.c.i
 .PHONY : ported_am335x_clock_data.c.i
 
 ported_am335x_clock_data.s: ported_am335x_clock_data.c.s
@@ -233,7 +230,7 @@ ported_am335x_clock_data.s: ported_am335x_clock_data.c.s
 
 # target to generate assembly for a file
 ported_am335x_clock_data.c.s:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f AM335X/CMakeFiles/src_portable_AM335X.dir/build.make AM335X/CMakeFiles/src_portable_AM335X.dir/ported_am335x_clock_data.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f AM335X/CMakeFiles/src_portable_AM335X.dir/build.make AM335X/CMakeFiles/src_portable_AM335X.dir/ported_am335x_clock_data.c.s
 .PHONY : ported_am335x_clock_data.c.s
 
 ported_am335x_interrupt.o: ported_am335x_interrupt.c.o
@@ -242,7 +239,7 @@ ported_am335x_interrupt.o: ported_am335x_interrupt.c.o
 
 # target to build an object file
 ported_am335x_interrupt.c.o:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f AM335X/CMakeFiles/src_portable_AM335X.dir/build.make AM335X/CMakeFiles/src_portable_AM335X.dir/ported_am335x_interrupt.c.o
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f AM335X/CMakeFiles/src_portable_AM335X.dir/build.make AM335X/CMakeFiles/src_portable_AM335X.dir/ported_am335x_interrupt.c.o
 .PHONY : ported_am335x_interrupt.c.o
 
 ported_am335x_interrupt.i: ported_am335x_interrupt.c.i
@@ -251,7 +248,7 @@ ported_am335x_interrupt.i: ported_am335x_interrupt.c.i
 
 # target to preprocess a source file
 ported_am335x_interrupt.c.i:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f AM335X/CMakeFiles/src_portable_AM335X.dir/build.make AM335X/CMakeFiles/src_portable_AM335X.dir/ported_am335x_interrupt.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f AM335X/CMakeFiles/src_portable_AM335X.dir/build.make AM335X/CMakeFiles/src_portable_AM335X.dir/ported_am335x_interrupt.c.i
 .PHONY : ported_am335x_interrupt.c.i
 
 ported_am335x_interrupt.s: ported_am335x_interrupt.c.s
@@ -260,7 +257,7 @@ ported_am335x_interrupt.s: ported_am335x_interrupt.c.s
 
 # target to generate assembly for a file
 ported_am335x_interrupt.c.s:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f AM335X/CMakeFiles/src_portable_AM335X.dir/build.make AM335X/CMakeFiles/src_portable_AM335X.dir/ported_am335x_interrupt.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f AM335X/CMakeFiles/src_portable_AM335X.dir/build.make AM335X/CMakeFiles/src_portable_AM335X.dir/ported_am335x_interrupt.c.s
 .PHONY : ported_am335x_interrupt.c.s
 
 ported_am335x_startup.o: ported_am335x_startup.c.o
@@ -269,7 +266,7 @@ ported_am335x_startup.o: ported_am335x_startup.c.o
 
 # target to build an object file
 ported_am335x_startup.c.o:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f AM335X/CMakeFiles/src_portable_AM335X.dir/build.make AM335X/CMakeFiles/src_portable_AM335X.dir/ported_am335x_startup.c.o
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f AM335X/CMakeFiles/src_portable_AM335X.dir/build.make AM335X/CMakeFiles/src_portable_AM335X.dir/ported_am335x_startup.c.o
 .PHONY : ported_am335x_startup.c.o
 
 ported_am335x_startup.i: ported_am335x_startup.c.i
@@ -278,7 +275,7 @@ ported_am335x_startup.i: ported_am335x_startup.c.i
 
 # target to preprocess a source file
 ported_am335x_startup.c.i:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f AM335X/CMakeFiles/src_portable_AM335X.dir/build.make AM335X/CMakeFiles/src_portable_AM335X.dir/ported_am335x_startup.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f AM335X/CMakeFiles/src_portable_AM335X.dir/build.make AM335X/CMakeFiles/src_portable_AM335X.dir/ported_am335x_startup.c.i
 .PHONY : ported_am335x_startup.c.i
 
 ported_am335x_startup.s: ported_am335x_startup.c.s
@@ -287,7 +284,7 @@ ported_am335x_startup.s: ported_am335x_startup.c.s
 
 # target to generate assembly for a file
 ported_am335x_startup.c.s:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f AM335X/CMakeFiles/src_portable_AM335X.dir/build.make AM335X/CMakeFiles/src_portable_AM335X.dir/ported_am335x_startup.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f AM335X/CMakeFiles/src_portable_AM335X.dir/build.make AM335X/CMakeFiles/src_portable_AM335X.dir/ported_am335x_startup.c.s
 .PHONY : ported_am335x_startup.c.s
 
 ported_amm335x_init.o: ported_amm335x_init.S.o
@@ -296,7 +293,7 @@ ported_amm335x_init.o: ported_amm335x_init.S.o
 
 # target to build an object file
 ported_amm335x_init.S.o:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f AM335X/CMakeFiles/src_portable_AM335X.dir/build.make AM335X/CMakeFiles/src_portable_AM335X.dir/ported_amm335x_init.S.o
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f AM335X/CMakeFiles/src_portable_AM335X.dir/build.make AM335X/CMakeFiles/src_portable_AM335X.dir/ported_amm335x_init.S.o
 .PHONY : ported_amm335x_init.S.o
 
 # Help Target
@@ -338,6 +335,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

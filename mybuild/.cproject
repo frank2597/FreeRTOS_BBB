@@ -535,14 +535,14 @@
 					</target>
 					<target name="Build" path="[Targets]/[exe] freeRTOSBBB" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 						<buildCommand>/usr/bin/make</buildCommand>
-						<buildArguments>-C "/home/frank/eclipse-workspace/FreeRTOS_BBB/build" </buildArguments>
+						<buildArguments>-C "/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild" </buildArguments>
 						<buildTarget>freeRTOSBBB</buildTarget>
 						<stopOnError>true</stopOnError>
 						<useDefaultCommand>false</useDefaultCommand>
 					</target>
 					<target name="Clean" path="[Targets]/[exe] freeRTOSBBB" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 						<buildCommand>/usr/bin/cmake</buildCommand>
-						<buildArguments>-E chdir "/home/frank/eclipse-workspace/FreeRTOS_BBB/build" "/usr/bin/cmake" -P "CMakeFiles/freeRTOSBBB.dir/cmake_clean.cmake"</buildArguments>
+						<buildArguments>-E chdir "/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild" "/usr/bin/cmake" -P "CMakeFiles/freeRTOSBBB.dir/cmake_clean.cmake"</buildArguments>
 						<buildTarget></buildTarget>
 						<stopOnError>true</stopOnError>
 						<useDefaultCommand>false</useDefaultCommand>
@@ -584,14 +584,14 @@
 					</target>
 					<target name="Build" path="[Targets]/[lib] lib_third_party_ti_drivers" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 						<buildCommand>/usr/bin/make</buildCommand>
-						<buildArguments>-C "/home/frank/eclipse-workspace/FreeRTOS_BBB/build" </buildArguments>
+						<buildArguments>-C "/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild" </buildArguments>
 						<buildTarget>lib_third_party_ti_drivers</buildTarget>
 						<stopOnError>true</stopOnError>
 						<useDefaultCommand>false</useDefaultCommand>
 					</target>
 					<target name="Clean" path="[Targets]/[lib] lib_third_party_ti_drivers" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 						<buildCommand>/usr/bin/cmake</buildCommand>
-						<buildArguments>-E chdir "/home/frank/eclipse-workspace/FreeRTOS_BBB/build/drivers" "/usr/bin/cmake" -P "CMakeFiles/lib_third_party_ti_drivers.dir/cmake_clean.cmake"</buildArguments>
+						<buildArguments>-E chdir "/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/drivers" "/usr/bin/cmake" -P "CMakeFiles/lib_third_party_ti_drivers.dir/cmake_clean.cmake"</buildArguments>
 						<buildTarget></buildTarget>
 						<stopOnError>true</stopOnError>
 						<useDefaultCommand>false</useDefaultCommand>
@@ -626,14 +626,14 @@
 					</target>
 					<target name="Build" path="[Targets]/[lib] lib_third_party_ti_utils" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 						<buildCommand>/usr/bin/make</buildCommand>
-						<buildArguments>-C "/home/frank/eclipse-workspace/FreeRTOS_BBB/build" </buildArguments>
+						<buildArguments>-C "/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild" </buildArguments>
 						<buildTarget>lib_third_party_ti_utils</buildTarget>
 						<stopOnError>true</stopOnError>
 						<useDefaultCommand>false</useDefaultCommand>
 					</target>
 					<target name="Clean" path="[Targets]/[lib] lib_third_party_ti_utils" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 						<buildCommand>/usr/bin/cmake</buildCommand>
-						<buildArguments>-E chdir "/home/frank/eclipse-workspace/FreeRTOS_BBB/build/utils" "/usr/bin/cmake" -P "CMakeFiles/lib_third_party_ti_utils.dir/cmake_clean.cmake"</buildArguments>
+						<buildArguments>-E chdir "/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/utils" "/usr/bin/cmake" -P "CMakeFiles/lib_third_party_ti_utils.dir/cmake_clean.cmake"</buildArguments>
 						<buildTarget></buildTarget>
 						<stopOnError>true</stopOnError>
 						<useDefaultCommand>false</useDefaultCommand>
@@ -668,14 +668,14 @@
 					</target>
 					<target name="Build" path="[Targets]/[lib] lib_third_party_ti_mmcsdlib" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 						<buildCommand>/usr/bin/make</buildCommand>
-						<buildArguments>-C "/home/frank/eclipse-workspace/FreeRTOS_BBB/build" </buildArguments>
+						<buildArguments>-C "/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild" </buildArguments>
 						<buildTarget>lib_third_party_ti_mmcsdlib</buildTarget>
 						<stopOnError>true</stopOnError>
 						<useDefaultCommand>false</useDefaultCommand>
 					</target>
 					<target name="Clean" path="[Targets]/[lib] lib_third_party_ti_mmcsdlib" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 						<buildCommand>/usr/bin/cmake</buildCommand>
-						<buildArguments>-E chdir "/home/frank/eclipse-workspace/FreeRTOS_BBB/build/mmcsdlib" "/usr/bin/cmake" -P "CMakeFiles/lib_third_party_ti_mmcsdlib.dir/cmake_clean.cmake"</buildArguments>
+						<buildArguments>-E chdir "/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/mmcsdlib" "/usr/bin/cmake" -P "CMakeFiles/lib_third_party_ti_mmcsdlib.dir/cmake_clean.cmake"</buildArguments>
 						<buildTarget></buildTarget>
 						<stopOnError>true</stopOnError>
 						<useDefaultCommand>false</useDefaultCommand>
@@ -710,14 +710,14 @@
 					</target>
 					<target name="Build" path="[Targets]/[lib] lib_third_party_ti_platform_beaglebone" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 						<buildCommand>/usr/bin/make</buildCommand>
-						<buildArguments>-C "/home/frank/eclipse-workspace/FreeRTOS_BBB/build" </buildArguments>
+						<buildArguments>-C "/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild" </buildArguments>
 						<buildTarget>lib_third_party_ti_platform_beaglebone</buildTarget>
 						<stopOnError>true</stopOnError>
 						<useDefaultCommand>false</useDefaultCommand>
 					</target>
 					<target name="Clean" path="[Targets]/[lib] lib_third_party_ti_platform_beaglebone" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 						<buildCommand>/usr/bin/cmake</buildCommand>
-						<buildArguments>-E chdir "/home/frank/eclipse-workspace/FreeRTOS_BBB/build/beaglebone" "/usr/bin/cmake" -P "CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/cmake_clean.cmake"</buildArguments>
+						<buildArguments>-E chdir "/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/beaglebone" "/usr/bin/cmake" -P "CMakeFiles/lib_third_party_ti_platform_beaglebone.dir/cmake_clean.cmake"</buildArguments>
 						<buildTarget></buildTarget>
 						<stopOnError>true</stopOnError>
 						<useDefaultCommand>false</useDefaultCommand>
@@ -752,14 +752,14 @@
 					</target>
 					<target name="Build" path="[Targets]/[lib] lib_third_party_ti_nandlib" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 						<buildCommand>/usr/bin/make</buildCommand>
-						<buildArguments>-C "/home/frank/eclipse-workspace/FreeRTOS_BBB/build" </buildArguments>
+						<buildArguments>-C "/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild" </buildArguments>
 						<buildTarget>lib_third_party_ti_nandlib</buildTarget>
 						<stopOnError>true</stopOnError>
 						<useDefaultCommand>false</useDefaultCommand>
 					</target>
 					<target name="Clean" path="[Targets]/[lib] lib_third_party_ti_nandlib" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 						<buildCommand>/usr/bin/cmake</buildCommand>
-						<buildArguments>-E chdir "/home/frank/eclipse-workspace/FreeRTOS_BBB/build/nandlib" "/usr/bin/cmake" -P "CMakeFiles/lib_third_party_ti_nandlib.dir/cmake_clean.cmake"</buildArguments>
+						<buildArguments>-E chdir "/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/nandlib" "/usr/bin/cmake" -P "CMakeFiles/lib_third_party_ti_nandlib.dir/cmake_clean.cmake"</buildArguments>
 						<buildTarget></buildTarget>
 						<stopOnError>true</stopOnError>
 						<useDefaultCommand>false</useDefaultCommand>
@@ -794,14 +794,14 @@
 					</target>
 					<target name="Build" path="[Targets]/[lib] lib_third_party_ti_system_config_armv7a" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 						<buildCommand>/usr/bin/make</buildCommand>
-						<buildArguments>-C "/home/frank/eclipse-workspace/FreeRTOS_BBB/build" </buildArguments>
+						<buildArguments>-C "/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild" </buildArguments>
 						<buildTarget>lib_third_party_ti_system_config_armv7a</buildTarget>
 						<stopOnError>true</stopOnError>
 						<useDefaultCommand>false</useDefaultCommand>
 					</target>
 					<target name="Clean" path="[Targets]/[lib] lib_third_party_ti_system_config_armv7a" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 						<buildCommand>/usr/bin/cmake</buildCommand>
-						<buildArguments>-E chdir "/home/frank/eclipse-workspace/FreeRTOS_BBB/build/armv7a" "/usr/bin/cmake" -P "CMakeFiles/lib_third_party_ti_system_config_armv7a.dir/cmake_clean.cmake"</buildArguments>
+						<buildArguments>-E chdir "/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/armv7a" "/usr/bin/cmake" -P "CMakeFiles/lib_third_party_ti_system_config_armv7a.dir/cmake_clean.cmake"</buildArguments>
 						<buildTarget></buildTarget>
 						<stopOnError>true</stopOnError>
 						<useDefaultCommand>false</useDefaultCommand>
@@ -836,14 +836,14 @@
 					</target>
 					<target name="Build" path="[Targets]/[lib] lib_third_party_amazon_libraries_3rdparty_lwip_src" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 						<buildCommand>/usr/bin/make</buildCommand>
-						<buildArguments>-C "/home/frank/eclipse-workspace/FreeRTOS_BBB/build" </buildArguments>
+						<buildArguments>-C "/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild" </buildArguments>
 						<buildTarget>lib_third_party_amazon_libraries_3rdparty_lwip_src</buildTarget>
 						<stopOnError>true</stopOnError>
 						<useDefaultCommand>false</useDefaultCommand>
 					</target>
 					<target name="Clean" path="[Targets]/[lib] lib_third_party_amazon_libraries_3rdparty_lwip_src" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 						<buildCommand>/usr/bin/cmake</buildCommand>
-						<buildArguments>-E chdir "/home/frank/eclipse-workspace/FreeRTOS_BBB/build/src" "/usr/bin/cmake" -P "CMakeFiles/lib_third_party_amazon_libraries_3rdparty_lwip_src.dir/cmake_clean.cmake"</buildArguments>
+						<buildArguments>-E chdir "/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/src" "/usr/bin/cmake" -P "CMakeFiles/lib_third_party_amazon_libraries_3rdparty_lwip_src.dir/cmake_clean.cmake"</buildArguments>
 						<buildTarget></buildTarget>
 						<stopOnError>true</stopOnError>
 						<useDefaultCommand>false</useDefaultCommand>
@@ -878,14 +878,14 @@
 					</target>
 					<target name="Build" path="[Targets]/[lib] src_portable_lwip_ports_cpsw_netif" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 						<buildCommand>/usr/bin/make</buildCommand>
-						<buildArguments>-C "/home/frank/eclipse-workspace/FreeRTOS_BBB/build" </buildArguments>
+						<buildArguments>-C "/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild" </buildArguments>
 						<buildTarget>src_portable_lwip_ports_cpsw_netif</buildTarget>
 						<stopOnError>true</stopOnError>
 						<useDefaultCommand>false</useDefaultCommand>
 					</target>
 					<target name="Clean" path="[Targets]/[lib] src_portable_lwip_ports_cpsw_netif" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 						<buildCommand>/usr/bin/cmake</buildCommand>
-						<buildArguments>-E chdir "/home/frank/eclipse-workspace/FreeRTOS_BBB/build/netif" "/usr/bin/cmake" -P "CMakeFiles/src_portable_lwip_ports_cpsw_netif.dir/cmake_clean.cmake"</buildArguments>
+						<buildArguments>-E chdir "/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/netif" "/usr/bin/cmake" -P "CMakeFiles/src_portable_lwip_ports_cpsw_netif.dir/cmake_clean.cmake"</buildArguments>
 						<buildTarget></buildTarget>
 						<stopOnError>true</stopOnError>
 						<useDefaultCommand>false</useDefaultCommand>
@@ -920,14 +920,14 @@
 					</target>
 					<target name="Build" path="[Targets]/[lib] lib_third_party_amazon_freertos_kernel" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 						<buildCommand>/usr/bin/make</buildCommand>
-						<buildArguments>-C "/home/frank/eclipse-workspace/FreeRTOS_BBB/build" </buildArguments>
+						<buildArguments>-C "/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild" </buildArguments>
 						<buildTarget>lib_third_party_amazon_freertos_kernel</buildTarget>
 						<stopOnError>true</stopOnError>
 						<useDefaultCommand>false</useDefaultCommand>
 					</target>
 					<target name="Clean" path="[Targets]/[lib] lib_third_party_amazon_freertos_kernel" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 						<buildCommand>/usr/bin/cmake</buildCommand>
-						<buildArguments>-E chdir "/home/frank/eclipse-workspace/FreeRTOS_BBB/build/freertos_kernel" "/usr/bin/cmake" -P "CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/cmake_clean.cmake"</buildArguments>
+						<buildArguments>-E chdir "/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/freertos_kernel" "/usr/bin/cmake" -P "CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/cmake_clean.cmake"</buildArguments>
 						<buildTarget></buildTarget>
 						<stopOnError>true</stopOnError>
 						<useDefaultCommand>false</useDefaultCommand>
@@ -962,14 +962,14 @@
 					</target>
 					<target name="Build" path="[Targets]/[lib] src_portable_FreeRTOS_portable_GCC_ARM_CA8_amm335x" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 						<buildCommand>/usr/bin/make</buildCommand>
-						<buildArguments>-C "/home/frank/eclipse-workspace/FreeRTOS_BBB/build" </buildArguments>
+						<buildArguments>-C "/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild" </buildArguments>
 						<buildTarget>src_portable_FreeRTOS_portable_GCC_ARM_CA8_amm335x</buildTarget>
 						<stopOnError>true</stopOnError>
 						<useDefaultCommand>false</useDefaultCommand>
 					</target>
 					<target name="Clean" path="[Targets]/[lib] src_portable_FreeRTOS_portable_GCC_ARM_CA8_amm335x" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 						<buildCommand>/usr/bin/cmake</buildCommand>
-						<buildArguments>-E chdir "/home/frank/eclipse-workspace/FreeRTOS_BBB/build/ARM_CA8_amm335x" "/usr/bin/cmake" -P "CMakeFiles/src_portable_FreeRTOS_portable_GCC_ARM_CA8_amm335x.dir/cmake_clean.cmake"</buildArguments>
+						<buildArguments>-E chdir "/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/ARM_CA8_amm335x" "/usr/bin/cmake" -P "CMakeFiles/src_portable_FreeRTOS_portable_GCC_ARM_CA8_amm335x.dir/cmake_clean.cmake"</buildArguments>
 						<buildTarget></buildTarget>
 						<stopOnError>true</stopOnError>
 						<useDefaultCommand>false</useDefaultCommand>
@@ -1004,14 +1004,14 @@
 					</target>
 					<target name="Build" path="[Targets]/[lib] lib_third_party_amazon_freertos_kernel_portable_MemMang" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 						<buildCommand>/usr/bin/make</buildCommand>
-						<buildArguments>-C "/home/frank/eclipse-workspace/FreeRTOS_BBB/build" </buildArguments>
+						<buildArguments>-C "/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild" </buildArguments>
 						<buildTarget>lib_third_party_amazon_freertos_kernel_portable_MemMang</buildTarget>
 						<stopOnError>true</stopOnError>
 						<useDefaultCommand>false</useDefaultCommand>
 					</target>
 					<target name="Clean" path="[Targets]/[lib] lib_third_party_amazon_freertos_kernel_portable_MemMang" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 						<buildCommand>/usr/bin/cmake</buildCommand>
-						<buildArguments>-E chdir "/home/frank/eclipse-workspace/FreeRTOS_BBB/build/MemMang" "/usr/bin/cmake" -P "CMakeFiles/lib_third_party_amazon_freertos_kernel_portable_MemMang.dir/cmake_clean.cmake"</buildArguments>
+						<buildArguments>-E chdir "/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/MemMang" "/usr/bin/cmake" -P "CMakeFiles/lib_third_party_amazon_freertos_kernel_portable_MemMang.dir/cmake_clean.cmake"</buildArguments>
 						<buildTarget></buildTarget>
 						<stopOnError>true</stopOnError>
 						<useDefaultCommand>false</useDefaultCommand>
@@ -1046,14 +1046,14 @@
 					</target>
 					<target name="Build" path="[Targets]/[lib] src_portable_AM335X" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 						<buildCommand>/usr/bin/make</buildCommand>
-						<buildArguments>-C "/home/frank/eclipse-workspace/FreeRTOS_BBB/build" </buildArguments>
+						<buildArguments>-C "/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild" </buildArguments>
 						<buildTarget>src_portable_AM335X</buildTarget>
 						<stopOnError>true</stopOnError>
 						<useDefaultCommand>false</useDefaultCommand>
 					</target>
 					<target name="Clean" path="[Targets]/[lib] src_portable_AM335X" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 						<buildCommand>/usr/bin/cmake</buildCommand>
-						<buildArguments>-E chdir "/home/frank/eclipse-workspace/FreeRTOS_BBB/build/AM335X" "/usr/bin/cmake" -P "CMakeFiles/src_portable_AM335X.dir/cmake_clean.cmake"</buildArguments>
+						<buildArguments>-E chdir "/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/AM335X" "/usr/bin/cmake" -P "CMakeFiles/src_portable_AM335X.dir/cmake_clean.cmake"</buildArguments>
 						<buildTarget></buildTarget>
 						<stopOnError>true</stopOnError>
 						<useDefaultCommand>false</useDefaultCommand>
@@ -1088,14 +1088,14 @@
 					</target>
 					<target name="Build" path="[Targets]/[lib] src_portable_ported_aws_bufpool" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 						<buildCommand>/usr/bin/make</buildCommand>
-						<buildArguments>-C "/home/frank/eclipse-workspace/FreeRTOS_BBB/build" </buildArguments>
+						<buildArguments>-C "/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild" </buildArguments>
 						<buildTarget>src_portable_ported_aws_bufpool</buildTarget>
 						<stopOnError>true</stopOnError>
 						<useDefaultCommand>false</useDefaultCommand>
 					</target>
 					<target name="Clean" path="[Targets]/[lib] src_portable_ported_aws_bufpool" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 						<buildCommand>/usr/bin/cmake</buildCommand>
-						<buildArguments>-E chdir "/home/frank/eclipse-workspace/FreeRTOS_BBB/build/ported_aws_bufpool" "/usr/bin/cmake" -P "CMakeFiles/src_portable_ported_aws_bufpool.dir/cmake_clean.cmake"</buildArguments>
+						<buildArguments>-E chdir "/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/ported_aws_bufpool" "/usr/bin/cmake" -P "CMakeFiles/src_portable_ported_aws_bufpool.dir/cmake_clean.cmake"</buildArguments>
 						<buildTarget></buildTarget>
 						<stopOnError>true</stopOnError>
 						<useDefaultCommand>false</useDefaultCommand>
@@ -1130,14 +1130,14 @@
 					</target>
 					<target name="Build" path="[Targets]/[lib] src_application" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 						<buildCommand>/usr/bin/make</buildCommand>
-						<buildArguments>-C "/home/frank/eclipse-workspace/FreeRTOS_BBB/build" </buildArguments>
+						<buildArguments>-C "/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild" </buildArguments>
 						<buildTarget>src_application</buildTarget>
 						<stopOnError>true</stopOnError>
 						<useDefaultCommand>false</useDefaultCommand>
 					</target>
 					<target name="Clean" path="[Targets]/[lib] src_application" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 						<buildCommand>/usr/bin/cmake</buildCommand>
-						<buildArguments>-E chdir "/home/frank/eclipse-workspace/FreeRTOS_BBB/build/application" "/usr/bin/cmake" -P "CMakeFiles/src_application.dir/cmake_clean.cmake"</buildArguments>
+						<buildArguments>-E chdir "/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/application" "/usr/bin/cmake" -P "CMakeFiles/src_application.dir/cmake_clean.cmake"</buildArguments>
 						<buildTarget></buildTarget>
 						<stopOnError>true</stopOnError>
 						<useDefaultCommand>false</useDefaultCommand>

@@ -18,9 +18,6 @@ SUFFIXES =
 .SUFFIXES: .hpux_make_needs_suffix_list
 
 
-# Produce verbose output by default.
-VERBOSE = 1
-
 # Suppress display of executed commands.
 $(VERBOSE).SILENT:
 
@@ -49,7 +46,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/frank/eclipse-workspace/FreeRTOS_BBB/source
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/frank/eclipse-workspace/FreeRTOS_BBB/build
+CMAKE_BINARY_DIR = /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild
 
 # Include any dependencies generated for this target.
 include utils/CMakeFiles/lib_third_party_ti_utils.dir/depend.make
@@ -62,107 +59,107 @@ include utils/CMakeFiles/lib_third_party_ti_utils.dir/flags.make
 
 utils/CMakeFiles/lib_third_party_ti_utils.dir/ascii.c.o: utils/CMakeFiles/lib_third_party_ti_utils.dir/flags.make
 utils/CMakeFiles/lib_third_party_ti_utils.dir/ascii.c.o: /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/utils/ascii.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frank/eclipse-workspace/FreeRTOS_BBB/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object utils/CMakeFiles/lib_third_party_ti_utils.dir/ascii.c.o"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/utils && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lib_third_party_ti_utils.dir/ascii.c.o   -c /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/utils/ascii.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object utils/CMakeFiles/lib_third_party_ti_utils.dir/ascii.c.o"
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/utils && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lib_third_party_ti_utils.dir/ascii.c.o   -c /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/utils/ascii.c
 
 utils/CMakeFiles/lib_third_party_ti_utils.dir/ascii.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lib_third_party_ti_utils.dir/ascii.c.i"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/utils && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/utils/ascii.c > CMakeFiles/lib_third_party_ti_utils.dir/ascii.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/utils && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/utils/ascii.c > CMakeFiles/lib_third_party_ti_utils.dir/ascii.c.i
 
 utils/CMakeFiles/lib_third_party_ti_utils.dir/ascii.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lib_third_party_ti_utils.dir/ascii.c.s"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/utils && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/utils/ascii.c -o CMakeFiles/lib_third_party_ti_utils.dir/ascii.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/utils && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/utils/ascii.c -o CMakeFiles/lib_third_party_ti_utils.dir/ascii.c.s
 
 utils/CMakeFiles/lib_third_party_ti_utils.dir/board.c.o: utils/CMakeFiles/lib_third_party_ti_utils.dir/flags.make
 utils/CMakeFiles/lib_third_party_ti_utils.dir/board.c.o: /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/utils/board.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frank/eclipse-workspace/FreeRTOS_BBB/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object utils/CMakeFiles/lib_third_party_ti_utils.dir/board.c.o"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/utils && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lib_third_party_ti_utils.dir/board.c.o   -c /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/utils/board.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object utils/CMakeFiles/lib_third_party_ti_utils.dir/board.c.o"
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/utils && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lib_third_party_ti_utils.dir/board.c.o   -c /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/utils/board.c
 
 utils/CMakeFiles/lib_third_party_ti_utils.dir/board.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lib_third_party_ti_utils.dir/board.c.i"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/utils && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/utils/board.c > CMakeFiles/lib_third_party_ti_utils.dir/board.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/utils && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/utils/board.c > CMakeFiles/lib_third_party_ti_utils.dir/board.c.i
 
 utils/CMakeFiles/lib_third_party_ti_utils.dir/board.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lib_third_party_ti_utils.dir/board.c.s"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/utils && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/utils/board.c -o CMakeFiles/lib_third_party_ti_utils.dir/board.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/utils && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/utils/board.c -o CMakeFiles/lib_third_party_ti_utils.dir/board.c.s
 
 utils/CMakeFiles/lib_third_party_ti_utils.dir/consoleUtils.c.o: utils/CMakeFiles/lib_third_party_ti_utils.dir/flags.make
 utils/CMakeFiles/lib_third_party_ti_utils.dir/consoleUtils.c.o: /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/utils/consoleUtils.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frank/eclipse-workspace/FreeRTOS_BBB/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object utils/CMakeFiles/lib_third_party_ti_utils.dir/consoleUtils.c.o"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/utils && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lib_third_party_ti_utils.dir/consoleUtils.c.o   -c /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/utils/consoleUtils.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object utils/CMakeFiles/lib_third_party_ti_utils.dir/consoleUtils.c.o"
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/utils && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lib_third_party_ti_utils.dir/consoleUtils.c.o   -c /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/utils/consoleUtils.c
 
 utils/CMakeFiles/lib_third_party_ti_utils.dir/consoleUtils.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lib_third_party_ti_utils.dir/consoleUtils.c.i"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/utils && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/utils/consoleUtils.c > CMakeFiles/lib_third_party_ti_utils.dir/consoleUtils.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/utils && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/utils/consoleUtils.c > CMakeFiles/lib_third_party_ti_utils.dir/consoleUtils.c.i
 
 utils/CMakeFiles/lib_third_party_ti_utils.dir/consoleUtils.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lib_third_party_ti_utils.dir/consoleUtils.c.s"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/utils && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/utils/consoleUtils.c -o CMakeFiles/lib_third_party_ti_utils.dir/consoleUtils.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/utils && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/utils/consoleUtils.c -o CMakeFiles/lib_third_party_ti_utils.dir/consoleUtils.c.s
 
 utils/CMakeFiles/lib_third_party_ti_utils.dir/delay.c.o: utils/CMakeFiles/lib_third_party_ti_utils.dir/flags.make
 utils/CMakeFiles/lib_third_party_ti_utils.dir/delay.c.o: /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/utils/delay.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frank/eclipse-workspace/FreeRTOS_BBB/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object utils/CMakeFiles/lib_third_party_ti_utils.dir/delay.c.o"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/utils && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lib_third_party_ti_utils.dir/delay.c.o   -c /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/utils/delay.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object utils/CMakeFiles/lib_third_party_ti_utils.dir/delay.c.o"
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/utils && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lib_third_party_ti_utils.dir/delay.c.o   -c /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/utils/delay.c
 
 utils/CMakeFiles/lib_third_party_ti_utils.dir/delay.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lib_third_party_ti_utils.dir/delay.c.i"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/utils && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/utils/delay.c > CMakeFiles/lib_third_party_ti_utils.dir/delay.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/utils && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/utils/delay.c > CMakeFiles/lib_third_party_ti_utils.dir/delay.c.i
 
 utils/CMakeFiles/lib_third_party_ti_utils.dir/delay.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lib_third_party_ti_utils.dir/delay.c.s"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/utils && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/utils/delay.c -o CMakeFiles/lib_third_party_ti_utils.dir/delay.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/utils && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/utils/delay.c -o CMakeFiles/lib_third_party_ti_utils.dir/delay.c.s
 
 utils/CMakeFiles/lib_third_party_ti_utils.dir/misc.c.o: utils/CMakeFiles/lib_third_party_ti_utils.dir/flags.make
 utils/CMakeFiles/lib_third_party_ti_utils.dir/misc.c.o: /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/utils/misc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frank/eclipse-workspace/FreeRTOS_BBB/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object utils/CMakeFiles/lib_third_party_ti_utils.dir/misc.c.o"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/utils && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lib_third_party_ti_utils.dir/misc.c.o   -c /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/utils/misc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object utils/CMakeFiles/lib_third_party_ti_utils.dir/misc.c.o"
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/utils && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lib_third_party_ti_utils.dir/misc.c.o   -c /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/utils/misc.c
 
 utils/CMakeFiles/lib_third_party_ti_utils.dir/misc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lib_third_party_ti_utils.dir/misc.c.i"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/utils && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/utils/misc.c > CMakeFiles/lib_third_party_ti_utils.dir/misc.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/utils && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/utils/misc.c > CMakeFiles/lib_third_party_ti_utils.dir/misc.c.i
 
 utils/CMakeFiles/lib_third_party_ti_utils.dir/misc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lib_third_party_ti_utils.dir/misc.c.s"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/utils && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/utils/misc.c -o CMakeFiles/lib_third_party_ti_utils.dir/misc.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/utils && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/utils/misc.c -o CMakeFiles/lib_third_party_ti_utils.dir/misc.c.s
 
 utils/CMakeFiles/lib_third_party_ti_utils.dir/perf.c.o: utils/CMakeFiles/lib_third_party_ti_utils.dir/flags.make
 utils/CMakeFiles/lib_third_party_ti_utils.dir/perf.c.o: /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/utils/perf.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frank/eclipse-workspace/FreeRTOS_BBB/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object utils/CMakeFiles/lib_third_party_ti_utils.dir/perf.c.o"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/utils && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lib_third_party_ti_utils.dir/perf.c.o   -c /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/utils/perf.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object utils/CMakeFiles/lib_third_party_ti_utils.dir/perf.c.o"
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/utils && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lib_third_party_ti_utils.dir/perf.c.o   -c /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/utils/perf.c
 
 utils/CMakeFiles/lib_third_party_ti_utils.dir/perf.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lib_third_party_ti_utils.dir/perf.c.i"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/utils && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/utils/perf.c > CMakeFiles/lib_third_party_ti_utils.dir/perf.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/utils && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/utils/perf.c > CMakeFiles/lib_third_party_ti_utils.dir/perf.c.i
 
 utils/CMakeFiles/lib_third_party_ti_utils.dir/perf.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lib_third_party_ti_utils.dir/perf.c.s"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/utils && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/utils/perf.c -o CMakeFiles/lib_third_party_ti_utils.dir/perf.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/utils && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/utils/perf.c -o CMakeFiles/lib_third_party_ti_utils.dir/perf.c.s
 
 utils/CMakeFiles/lib_third_party_ti_utils.dir/systick.c.o: utils/CMakeFiles/lib_third_party_ti_utils.dir/flags.make
 utils/CMakeFiles/lib_third_party_ti_utils.dir/systick.c.o: /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/utils/systick.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frank/eclipse-workspace/FreeRTOS_BBB/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object utils/CMakeFiles/lib_third_party_ti_utils.dir/systick.c.o"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/utils && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lib_third_party_ti_utils.dir/systick.c.o   -c /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/utils/systick.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object utils/CMakeFiles/lib_third_party_ti_utils.dir/systick.c.o"
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/utils && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lib_third_party_ti_utils.dir/systick.c.o   -c /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/utils/systick.c
 
 utils/CMakeFiles/lib_third_party_ti_utils.dir/systick.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lib_third_party_ti_utils.dir/systick.c.i"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/utils && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/utils/systick.c > CMakeFiles/lib_third_party_ti_utils.dir/systick.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/utils && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/utils/systick.c > CMakeFiles/lib_third_party_ti_utils.dir/systick.c.i
 
 utils/CMakeFiles/lib_third_party_ti_utils.dir/systick.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lib_third_party_ti_utils.dir/systick.c.s"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/utils && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/utils/systick.c -o CMakeFiles/lib_third_party_ti_utils.dir/systick.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/utils && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/utils/systick.c -o CMakeFiles/lib_third_party_ti_utils.dir/systick.c.s
 
 utils/CMakeFiles/lib_third_party_ti_utils.dir/uartStdio.c.o: utils/CMakeFiles/lib_third_party_ti_utils.dir/flags.make
 utils/CMakeFiles/lib_third_party_ti_utils.dir/uartStdio.c.o: /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/utils/uartStdio.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frank/eclipse-workspace/FreeRTOS_BBB/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object utils/CMakeFiles/lib_third_party_ti_utils.dir/uartStdio.c.o"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/utils && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lib_third_party_ti_utils.dir/uartStdio.c.o   -c /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/utils/uartStdio.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object utils/CMakeFiles/lib_third_party_ti_utils.dir/uartStdio.c.o"
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/utils && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lib_third_party_ti_utils.dir/uartStdio.c.o   -c /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/utils/uartStdio.c
 
 utils/CMakeFiles/lib_third_party_ti_utils.dir/uartStdio.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lib_third_party_ti_utils.dir/uartStdio.c.i"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/utils && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/utils/uartStdio.c > CMakeFiles/lib_third_party_ti_utils.dir/uartStdio.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/utils && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/utils/uartStdio.c > CMakeFiles/lib_third_party_ti_utils.dir/uartStdio.c.i
 
 utils/CMakeFiles/lib_third_party_ti_utils.dir/uartStdio.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lib_third_party_ti_utils.dir/uartStdio.c.s"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/utils && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/utils/uartStdio.c -o CMakeFiles/lib_third_party_ti_utils.dir/uartStdio.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/utils && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/utils/uartStdio.c -o CMakeFiles/lib_third_party_ti_utils.dir/uartStdio.c.s
 
 # Object files for target lib_third_party_ti_utils
 lib_third_party_ti_utils_OBJECTS = \
@@ -188,9 +185,9 @@ utils/liblib_third_party_ti_utils.a: utils/CMakeFiles/lib_third_party_ti_utils.d
 utils/liblib_third_party_ti_utils.a: utils/CMakeFiles/lib_third_party_ti_utils.dir/uartStdio.c.o
 utils/liblib_third_party_ti_utils.a: utils/CMakeFiles/lib_third_party_ti_utils.dir/build.make
 utils/liblib_third_party_ti_utils.a: utils/CMakeFiles/lib_third_party_ti_utils.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/frank/eclipse-workspace/FreeRTOS_BBB/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking C static library liblib_third_party_ti_utils.a"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/utils && $(CMAKE_COMMAND) -P CMakeFiles/lib_third_party_ti_utils.dir/cmake_clean_target.cmake
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/utils && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lib_third_party_ti_utils.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking C static library liblib_third_party_ti_utils.a"
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/utils && $(CMAKE_COMMAND) -P CMakeFiles/lib_third_party_ti_utils.dir/cmake_clean_target.cmake
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/utils && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lib_third_party_ti_utils.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 utils/CMakeFiles/lib_third_party_ti_utils.dir/build: utils/liblib_third_party_ti_utils.a
@@ -198,10 +195,10 @@ utils/CMakeFiles/lib_third_party_ti_utils.dir/build: utils/liblib_third_party_ti
 .PHONY : utils/CMakeFiles/lib_third_party_ti_utils.dir/build
 
 utils/CMakeFiles/lib_third_party_ti_utils.dir/clean:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/utils && $(CMAKE_COMMAND) -P CMakeFiles/lib_third_party_ti_utils.dir/cmake_clean.cmake
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/utils && $(CMAKE_COMMAND) -P CMakeFiles/lib_third_party_ti_utils.dir/cmake_clean.cmake
 .PHONY : utils/CMakeFiles/lib_third_party_ti_utils.dir/clean
 
 utils/CMakeFiles/lib_third_party_ti_utils.dir/depend:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/frank/eclipse-workspace/FreeRTOS_BBB/source /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/utils /home/frank/eclipse-workspace/FreeRTOS_BBB/build /home/frank/eclipse-workspace/FreeRTOS_BBB/build/utils /home/frank/eclipse-workspace/FreeRTOS_BBB/build/utils/CMakeFiles/lib_third_party_ti_utils.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/frank/eclipse-workspace/FreeRTOS_BBB/source /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/utils /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/utils /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/utils/CMakeFiles/lib_third_party_ti_utils.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : utils/CMakeFiles/lib_third_party_ti_utils.dir/depend
 

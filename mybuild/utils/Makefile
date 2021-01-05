@@ -23,9 +23,6 @@ SUFFIXES =
 .SUFFIXES: .hpux_make_needs_suffix_list
 
 
-# Produce verbose output by default.
-VERBOSE = 1
-
 # Suppress display of executed commands.
 $(VERBOSE).SILENT:
 
@@ -54,7 +51,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/frank/eclipse-workspace/FreeRTOS_BBB/source
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/frank/eclipse-workspace/FreeRTOS_BBB/build
+CMAKE_BINARY_DIR = /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -83,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/frank/eclipse-workspace/FreeRTOS_BBB/build/CMakeFiles /home/frank/eclipse-workspace/FreeRTOS_BBB/build/utils/CMakeFiles/progress.marks
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f CMakeFiles/Makefile2 utils/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frank/eclipse-workspace/FreeRTOS_BBB/build/CMakeFiles 0
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(CMAKE_COMMAND) -E cmake_progress_start /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/CMakeFiles /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/utils/CMakeFiles/progress.marks
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f CMakeFiles/Makefile2 utils/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f CMakeFiles/Makefile2 utils/clean
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f CMakeFiles/Makefile2 utils/clean
 .PHONY : clean
 
 # The main clean target
@@ -100,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f CMakeFiles/Makefile2 utils/preinstall
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f CMakeFiles/Makefile2 utils/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f CMakeFiles/Makefile2 utils/preinstall
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f CMakeFiles/Makefile2 utils/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 utils/CMakeFiles/lib_third_party_ti_utils.dir/rule:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f CMakeFiles/Makefile2 utils/CMakeFiles/lib_third_party_ti_utils.dir/rule
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f CMakeFiles/Makefile2 utils/CMakeFiles/lib_third_party_ti_utils.dir/rule
 .PHONY : utils/CMakeFiles/lib_third_party_ti_utils.dir/rule
 
 # Convenience name for target.
@@ -125,7 +122,7 @@ lib_third_party_ti_utils: utils/CMakeFiles/lib_third_party_ti_utils.dir/rule
 
 # fast build rule for target.
 lib_third_party_ti_utils/fast:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f utils/CMakeFiles/lib_third_party_ti_utils.dir/build.make utils/CMakeFiles/lib_third_party_ti_utils.dir/build
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f utils/CMakeFiles/lib_third_party_ti_utils.dir/build.make utils/CMakeFiles/lib_third_party_ti_utils.dir/build
 .PHONY : lib_third_party_ti_utils/fast
 
 ascii.o: ascii.c.o
@@ -134,7 +131,7 @@ ascii.o: ascii.c.o
 
 # target to build an object file
 ascii.c.o:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f utils/CMakeFiles/lib_third_party_ti_utils.dir/build.make utils/CMakeFiles/lib_third_party_ti_utils.dir/ascii.c.o
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f utils/CMakeFiles/lib_third_party_ti_utils.dir/build.make utils/CMakeFiles/lib_third_party_ti_utils.dir/ascii.c.o
 .PHONY : ascii.c.o
 
 ascii.i: ascii.c.i
@@ -143,7 +140,7 @@ ascii.i: ascii.c.i
 
 # target to preprocess a source file
 ascii.c.i:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f utils/CMakeFiles/lib_third_party_ti_utils.dir/build.make utils/CMakeFiles/lib_third_party_ti_utils.dir/ascii.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f utils/CMakeFiles/lib_third_party_ti_utils.dir/build.make utils/CMakeFiles/lib_third_party_ti_utils.dir/ascii.c.i
 .PHONY : ascii.c.i
 
 ascii.s: ascii.c.s
@@ -152,7 +149,7 @@ ascii.s: ascii.c.s
 
 # target to generate assembly for a file
 ascii.c.s:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f utils/CMakeFiles/lib_third_party_ti_utils.dir/build.make utils/CMakeFiles/lib_third_party_ti_utils.dir/ascii.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f utils/CMakeFiles/lib_third_party_ti_utils.dir/build.make utils/CMakeFiles/lib_third_party_ti_utils.dir/ascii.c.s
 .PHONY : ascii.c.s
 
 board.o: board.c.o
@@ -161,7 +158,7 @@ board.o: board.c.o
 
 # target to build an object file
 board.c.o:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f utils/CMakeFiles/lib_third_party_ti_utils.dir/build.make utils/CMakeFiles/lib_third_party_ti_utils.dir/board.c.o
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f utils/CMakeFiles/lib_third_party_ti_utils.dir/build.make utils/CMakeFiles/lib_third_party_ti_utils.dir/board.c.o
 .PHONY : board.c.o
 
 board.i: board.c.i
@@ -170,7 +167,7 @@ board.i: board.c.i
 
 # target to preprocess a source file
 board.c.i:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f utils/CMakeFiles/lib_third_party_ti_utils.dir/build.make utils/CMakeFiles/lib_third_party_ti_utils.dir/board.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f utils/CMakeFiles/lib_third_party_ti_utils.dir/build.make utils/CMakeFiles/lib_third_party_ti_utils.dir/board.c.i
 .PHONY : board.c.i
 
 board.s: board.c.s
@@ -179,7 +176,7 @@ board.s: board.c.s
 
 # target to generate assembly for a file
 board.c.s:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f utils/CMakeFiles/lib_third_party_ti_utils.dir/build.make utils/CMakeFiles/lib_third_party_ti_utils.dir/board.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f utils/CMakeFiles/lib_third_party_ti_utils.dir/build.make utils/CMakeFiles/lib_third_party_ti_utils.dir/board.c.s
 .PHONY : board.c.s
 
 consoleUtils.o: consoleUtils.c.o
@@ -188,7 +185,7 @@ consoleUtils.o: consoleUtils.c.o
 
 # target to build an object file
 consoleUtils.c.o:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f utils/CMakeFiles/lib_third_party_ti_utils.dir/build.make utils/CMakeFiles/lib_third_party_ti_utils.dir/consoleUtils.c.o
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f utils/CMakeFiles/lib_third_party_ti_utils.dir/build.make utils/CMakeFiles/lib_third_party_ti_utils.dir/consoleUtils.c.o
 .PHONY : consoleUtils.c.o
 
 consoleUtils.i: consoleUtils.c.i
@@ -197,7 +194,7 @@ consoleUtils.i: consoleUtils.c.i
 
 # target to preprocess a source file
 consoleUtils.c.i:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f utils/CMakeFiles/lib_third_party_ti_utils.dir/build.make utils/CMakeFiles/lib_third_party_ti_utils.dir/consoleUtils.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f utils/CMakeFiles/lib_third_party_ti_utils.dir/build.make utils/CMakeFiles/lib_third_party_ti_utils.dir/consoleUtils.c.i
 .PHONY : consoleUtils.c.i
 
 consoleUtils.s: consoleUtils.c.s
@@ -206,7 +203,7 @@ consoleUtils.s: consoleUtils.c.s
 
 # target to generate assembly for a file
 consoleUtils.c.s:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f utils/CMakeFiles/lib_third_party_ti_utils.dir/build.make utils/CMakeFiles/lib_third_party_ti_utils.dir/consoleUtils.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f utils/CMakeFiles/lib_third_party_ti_utils.dir/build.make utils/CMakeFiles/lib_third_party_ti_utils.dir/consoleUtils.c.s
 .PHONY : consoleUtils.c.s
 
 delay.o: delay.c.o
@@ -215,7 +212,7 @@ delay.o: delay.c.o
 
 # target to build an object file
 delay.c.o:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f utils/CMakeFiles/lib_third_party_ti_utils.dir/build.make utils/CMakeFiles/lib_third_party_ti_utils.dir/delay.c.o
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f utils/CMakeFiles/lib_third_party_ti_utils.dir/build.make utils/CMakeFiles/lib_third_party_ti_utils.dir/delay.c.o
 .PHONY : delay.c.o
 
 delay.i: delay.c.i
@@ -224,7 +221,7 @@ delay.i: delay.c.i
 
 # target to preprocess a source file
 delay.c.i:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f utils/CMakeFiles/lib_third_party_ti_utils.dir/build.make utils/CMakeFiles/lib_third_party_ti_utils.dir/delay.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f utils/CMakeFiles/lib_third_party_ti_utils.dir/build.make utils/CMakeFiles/lib_third_party_ti_utils.dir/delay.c.i
 .PHONY : delay.c.i
 
 delay.s: delay.c.s
@@ -233,7 +230,7 @@ delay.s: delay.c.s
 
 # target to generate assembly for a file
 delay.c.s:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f utils/CMakeFiles/lib_third_party_ti_utils.dir/build.make utils/CMakeFiles/lib_third_party_ti_utils.dir/delay.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f utils/CMakeFiles/lib_third_party_ti_utils.dir/build.make utils/CMakeFiles/lib_third_party_ti_utils.dir/delay.c.s
 .PHONY : delay.c.s
 
 misc.o: misc.c.o
@@ -242,7 +239,7 @@ misc.o: misc.c.o
 
 # target to build an object file
 misc.c.o:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f utils/CMakeFiles/lib_third_party_ti_utils.dir/build.make utils/CMakeFiles/lib_third_party_ti_utils.dir/misc.c.o
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f utils/CMakeFiles/lib_third_party_ti_utils.dir/build.make utils/CMakeFiles/lib_third_party_ti_utils.dir/misc.c.o
 .PHONY : misc.c.o
 
 misc.i: misc.c.i
@@ -251,7 +248,7 @@ misc.i: misc.c.i
 
 # target to preprocess a source file
 misc.c.i:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f utils/CMakeFiles/lib_third_party_ti_utils.dir/build.make utils/CMakeFiles/lib_third_party_ti_utils.dir/misc.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f utils/CMakeFiles/lib_third_party_ti_utils.dir/build.make utils/CMakeFiles/lib_third_party_ti_utils.dir/misc.c.i
 .PHONY : misc.c.i
 
 misc.s: misc.c.s
@@ -260,7 +257,7 @@ misc.s: misc.c.s
 
 # target to generate assembly for a file
 misc.c.s:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f utils/CMakeFiles/lib_third_party_ti_utils.dir/build.make utils/CMakeFiles/lib_third_party_ti_utils.dir/misc.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f utils/CMakeFiles/lib_third_party_ti_utils.dir/build.make utils/CMakeFiles/lib_third_party_ti_utils.dir/misc.c.s
 .PHONY : misc.c.s
 
 perf.o: perf.c.o
@@ -269,7 +266,7 @@ perf.o: perf.c.o
 
 # target to build an object file
 perf.c.o:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f utils/CMakeFiles/lib_third_party_ti_utils.dir/build.make utils/CMakeFiles/lib_third_party_ti_utils.dir/perf.c.o
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f utils/CMakeFiles/lib_third_party_ti_utils.dir/build.make utils/CMakeFiles/lib_third_party_ti_utils.dir/perf.c.o
 .PHONY : perf.c.o
 
 perf.i: perf.c.i
@@ -278,7 +275,7 @@ perf.i: perf.c.i
 
 # target to preprocess a source file
 perf.c.i:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f utils/CMakeFiles/lib_third_party_ti_utils.dir/build.make utils/CMakeFiles/lib_third_party_ti_utils.dir/perf.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f utils/CMakeFiles/lib_third_party_ti_utils.dir/build.make utils/CMakeFiles/lib_third_party_ti_utils.dir/perf.c.i
 .PHONY : perf.c.i
 
 perf.s: perf.c.s
@@ -287,7 +284,7 @@ perf.s: perf.c.s
 
 # target to generate assembly for a file
 perf.c.s:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f utils/CMakeFiles/lib_third_party_ti_utils.dir/build.make utils/CMakeFiles/lib_third_party_ti_utils.dir/perf.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f utils/CMakeFiles/lib_third_party_ti_utils.dir/build.make utils/CMakeFiles/lib_third_party_ti_utils.dir/perf.c.s
 .PHONY : perf.c.s
 
 systick.o: systick.c.o
@@ -296,7 +293,7 @@ systick.o: systick.c.o
 
 # target to build an object file
 systick.c.o:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f utils/CMakeFiles/lib_third_party_ti_utils.dir/build.make utils/CMakeFiles/lib_third_party_ti_utils.dir/systick.c.o
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f utils/CMakeFiles/lib_third_party_ti_utils.dir/build.make utils/CMakeFiles/lib_third_party_ti_utils.dir/systick.c.o
 .PHONY : systick.c.o
 
 systick.i: systick.c.i
@@ -305,7 +302,7 @@ systick.i: systick.c.i
 
 # target to preprocess a source file
 systick.c.i:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f utils/CMakeFiles/lib_third_party_ti_utils.dir/build.make utils/CMakeFiles/lib_third_party_ti_utils.dir/systick.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f utils/CMakeFiles/lib_third_party_ti_utils.dir/build.make utils/CMakeFiles/lib_third_party_ti_utils.dir/systick.c.i
 .PHONY : systick.c.i
 
 systick.s: systick.c.s
@@ -314,7 +311,7 @@ systick.s: systick.c.s
 
 # target to generate assembly for a file
 systick.c.s:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f utils/CMakeFiles/lib_third_party_ti_utils.dir/build.make utils/CMakeFiles/lib_third_party_ti_utils.dir/systick.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f utils/CMakeFiles/lib_third_party_ti_utils.dir/build.make utils/CMakeFiles/lib_third_party_ti_utils.dir/systick.c.s
 .PHONY : systick.c.s
 
 uartStdio.o: uartStdio.c.o
@@ -323,7 +320,7 @@ uartStdio.o: uartStdio.c.o
 
 # target to build an object file
 uartStdio.c.o:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f utils/CMakeFiles/lib_third_party_ti_utils.dir/build.make utils/CMakeFiles/lib_third_party_ti_utils.dir/uartStdio.c.o
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f utils/CMakeFiles/lib_third_party_ti_utils.dir/build.make utils/CMakeFiles/lib_third_party_ti_utils.dir/uartStdio.c.o
 .PHONY : uartStdio.c.o
 
 uartStdio.i: uartStdio.c.i
@@ -332,7 +329,7 @@ uartStdio.i: uartStdio.c.i
 
 # target to preprocess a source file
 uartStdio.c.i:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f utils/CMakeFiles/lib_third_party_ti_utils.dir/build.make utils/CMakeFiles/lib_third_party_ti_utils.dir/uartStdio.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f utils/CMakeFiles/lib_third_party_ti_utils.dir/build.make utils/CMakeFiles/lib_third_party_ti_utils.dir/uartStdio.c.i
 .PHONY : uartStdio.c.i
 
 uartStdio.s: uartStdio.c.s
@@ -341,7 +338,7 @@ uartStdio.s: uartStdio.c.s
 
 # target to generate assembly for a file
 uartStdio.c.s:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f utils/CMakeFiles/lib_third_party_ti_utils.dir/build.make utils/CMakeFiles/lib_third_party_ti_utils.dir/uartStdio.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f utils/CMakeFiles/lib_third_party_ti_utils.dir/build.make utils/CMakeFiles/lib_third_party_ti_utils.dir/uartStdio.c.s
 .PHONY : uartStdio.c.s
 
 # Help Target
@@ -388,6 +385,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

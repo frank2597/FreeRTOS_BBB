@@ -5,7 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_ASM
-  "/home/frank/eclipse-workspace/FreeRTOS_BBB/source/src/application/imageLoad.S" "/home/frank/eclipse-workspace/FreeRTOS_BBB/build/application/CMakeFiles/src_application.dir/imageLoad.S.o"
+  "/home/frank/eclipse-workspace/FreeRTOS_BBB/source/src/application/imageLoad.S" "/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/application/CMakeFiles/src_application.dir/imageLoad.S.o"
   )
 set(CMAKE_ASM_COMPILER_ID "GNU")
 
@@ -49,12 +49,12 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "/home/frank/eclipse-workspace/FreeRTOS_BBB/source/src/portable/ported_aws_bufpool/inc"
   )
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/frank/eclipse-workspace/FreeRTOS_BBB/source/src/application/TaskLED2.c" "/home/frank/eclipse-workspace/FreeRTOS_BBB/build/application/CMakeFiles/src_application.dir/TaskLED2.c.o"
-  "/home/frank/eclipse-workspace/FreeRTOS_BBB/source/src/application/app_InitOSEvents.c" "/home/frank/eclipse-workspace/FreeRTOS_BBB/build/application/CMakeFiles/src_application.dir/app_InitOSEvents.c.o"
-  "/home/frank/eclipse-workspace/FreeRTOS_BBB/source/src/application/app_MultiSinkLogger.c" "/home/frank/eclipse-workspace/FreeRTOS_BBB/build/application/CMakeFiles/src_application.dir/app_MultiSinkLogger.c.o"
-  "/home/frank/eclipse-workspace/FreeRTOS_BBB/source/src/application/app_utils.c" "/home/frank/eclipse-workspace/FreeRTOS_BBB/build/application/CMakeFiles/src_application.dir/app_utils.c.o"
-  "/home/frank/eclipse-workspace/FreeRTOS_BBB/source/src/application/enet_wrapper.c" "/home/frank/eclipse-workspace/FreeRTOS_BBB/build/application/CMakeFiles/src_application.dir/enet_wrapper.c.o"
-  "/home/frank/eclipse-workspace/FreeRTOS_BBB/source/src/application/main.c" "/home/frank/eclipse-workspace/FreeRTOS_BBB/build/application/CMakeFiles/src_application.dir/main.c.o"
+  "/home/frank/eclipse-workspace/FreeRTOS_BBB/source/src/application/TaskLED2.c" "/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/application/CMakeFiles/src_application.dir/TaskLED2.c.o"
+  "/home/frank/eclipse-workspace/FreeRTOS_BBB/source/src/application/app_InitOSEvents.c" "/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/application/CMakeFiles/src_application.dir/app_InitOSEvents.c.o"
+  "/home/frank/eclipse-workspace/FreeRTOS_BBB/source/src/application/app_MultiSinkLogger.c" "/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/application/CMakeFiles/src_application.dir/app_MultiSinkLogger.c.o"
+  "/home/frank/eclipse-workspace/FreeRTOS_BBB/source/src/application/app_utils.c" "/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/application/CMakeFiles/src_application.dir/app_utils.c.o"
+  "/home/frank/eclipse-workspace/FreeRTOS_BBB/source/src/application/enet_wrapper.c" "/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/application/CMakeFiles/src_application.dir/enet_wrapper.c.o"
+  "/home/frank/eclipse-workspace/FreeRTOS_BBB/source/src/application/main.c" "/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/application/CMakeFiles/src_application.dir/main.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

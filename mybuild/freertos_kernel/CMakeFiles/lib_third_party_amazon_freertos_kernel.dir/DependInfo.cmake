@@ -4,12 +4,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/amazon/freertos_kernel/event_groups.c" "/home/frank/eclipse-workspace/FreeRTOS_BBB/build/freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/event_groups.c.o"
-  "/home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/amazon/freertos_kernel/list.c" "/home/frank/eclipse-workspace/FreeRTOS_BBB/build/freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/list.c.o"
-  "/home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/amazon/freertos_kernel/queue.c" "/home/frank/eclipse-workspace/FreeRTOS_BBB/build/freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/queue.c.o"
-  "/home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/amazon/freertos_kernel/stream_buffer.c" "/home/frank/eclipse-workspace/FreeRTOS_BBB/build/freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/stream_buffer.c.o"
-  "/home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/amazon/freertos_kernel/tasks.c" "/home/frank/eclipse-workspace/FreeRTOS_BBB/build/freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/tasks.c.o"
-  "/home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/amazon/freertos_kernel/timers.c" "/home/frank/eclipse-workspace/FreeRTOS_BBB/build/freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/timers.c.o"
+  "/home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/amazon/freertos_kernel/event_groups.c" "/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/event_groups.c.o"
+  "/home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/amazon/freertos_kernel/list.c" "/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/list.c.o"
+  "/home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/amazon/freertos_kernel/queue.c" "/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/queue.c.o"
+  "/home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/amazon/freertos_kernel/stream_buffer.c" "/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/stream_buffer.c.o"
+  "/home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/amazon/freertos_kernel/tasks.c" "/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/tasks.c.o"
+  "/home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/amazon/freertos_kernel/timers.c" "/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/freertos_kernel/CMakeFiles/lib_third_party_amazon_freertos_kernel.dir/timers.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

@@ -18,9 +18,6 @@ SUFFIXES =
 .SUFFIXES: .hpux_make_needs_suffix_list
 
 
-# Produce verbose output by default.
-VERBOSE = 1
-
 # Suppress display of executed commands.
 $(VERBOSE).SILENT:
 
@@ -49,7 +46,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/frank/eclipse-workspace/FreeRTOS_BBB/source
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/frank/eclipse-workspace/FreeRTOS_BBB/build
+CMAKE_BINARY_DIR = /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild
 
 # Include any dependencies generated for this target.
 include netif/CMakeFiles/src_portable_lwip_ports_cpsw_netif.dir/depend.make
@@ -62,16 +59,16 @@ include netif/CMakeFiles/src_portable_lwip_ports_cpsw_netif.dir/flags.make
 
 netif/CMakeFiles/src_portable_lwip_ports_cpsw_netif.dir/cpswif.c.o: netif/CMakeFiles/src_portable_lwip_ports_cpsw_netif.dir/flags.make
 netif/CMakeFiles/src_portable_lwip_ports_cpsw_netif.dir/cpswif.c.o: /home/frank/eclipse-workspace/FreeRTOS_BBB/source/src/portable/lwip/ports/cpsw/netif/cpswif.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frank/eclipse-workspace/FreeRTOS_BBB/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object netif/CMakeFiles/src_portable_lwip_ports_cpsw_netif.dir/cpswif.c.o"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/netif && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/src_portable_lwip_ports_cpsw_netif.dir/cpswif.c.o   -c /home/frank/eclipse-workspace/FreeRTOS_BBB/source/src/portable/lwip/ports/cpsw/netif/cpswif.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object netif/CMakeFiles/src_portable_lwip_ports_cpsw_netif.dir/cpswif.c.o"
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/netif && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/src_portable_lwip_ports_cpsw_netif.dir/cpswif.c.o   -c /home/frank/eclipse-workspace/FreeRTOS_BBB/source/src/portable/lwip/ports/cpsw/netif/cpswif.c
 
 netif/CMakeFiles/src_portable_lwip_ports_cpsw_netif.dir/cpswif.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/src_portable_lwip_ports_cpsw_netif.dir/cpswif.c.i"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/netif && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/frank/eclipse-workspace/FreeRTOS_BBB/source/src/portable/lwip/ports/cpsw/netif/cpswif.c > CMakeFiles/src_portable_lwip_ports_cpsw_netif.dir/cpswif.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/netif && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/frank/eclipse-workspace/FreeRTOS_BBB/source/src/portable/lwip/ports/cpsw/netif/cpswif.c > CMakeFiles/src_portable_lwip_ports_cpsw_netif.dir/cpswif.c.i
 
 netif/CMakeFiles/src_portable_lwip_ports_cpsw_netif.dir/cpswif.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/src_portable_lwip_ports_cpsw_netif.dir/cpswif.c.s"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/netif && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/frank/eclipse-workspace/FreeRTOS_BBB/source/src/portable/lwip/ports/cpsw/netif/cpswif.c -o CMakeFiles/src_portable_lwip_ports_cpsw_netif.dir/cpswif.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/netif && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/frank/eclipse-workspace/FreeRTOS_BBB/source/src/portable/lwip/ports/cpsw/netif/cpswif.c -o CMakeFiles/src_portable_lwip_ports_cpsw_netif.dir/cpswif.c.s
 
 # Object files for target src_portable_lwip_ports_cpsw_netif
 src_portable_lwip_ports_cpsw_netif_OBJECTS = \
@@ -83,9 +80,9 @@ src_portable_lwip_ports_cpsw_netif_EXTERNAL_OBJECTS =
 netif/libsrc_portable_lwip_ports_cpsw_netif.a: netif/CMakeFiles/src_portable_lwip_ports_cpsw_netif.dir/cpswif.c.o
 netif/libsrc_portable_lwip_ports_cpsw_netif.a: netif/CMakeFiles/src_portable_lwip_ports_cpsw_netif.dir/build.make
 netif/libsrc_portable_lwip_ports_cpsw_netif.a: netif/CMakeFiles/src_portable_lwip_ports_cpsw_netif.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/frank/eclipse-workspace/FreeRTOS_BBB/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libsrc_portable_lwip_ports_cpsw_netif.a"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/netif && $(CMAKE_COMMAND) -P CMakeFiles/src_portable_lwip_ports_cpsw_netif.dir/cmake_clean_target.cmake
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/netif && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/src_portable_lwip_ports_cpsw_netif.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libsrc_portable_lwip_ports_cpsw_netif.a"
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/netif && $(CMAKE_COMMAND) -P CMakeFiles/src_portable_lwip_ports_cpsw_netif.dir/cmake_clean_target.cmake
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/netif && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/src_portable_lwip_ports_cpsw_netif.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 netif/CMakeFiles/src_portable_lwip_ports_cpsw_netif.dir/build: netif/libsrc_portable_lwip_ports_cpsw_netif.a
@@ -93,10 +90,10 @@ netif/CMakeFiles/src_portable_lwip_ports_cpsw_netif.dir/build: netif/libsrc_port
 .PHONY : netif/CMakeFiles/src_portable_lwip_ports_cpsw_netif.dir/build
 
 netif/CMakeFiles/src_portable_lwip_ports_cpsw_netif.dir/clean:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/netif && $(CMAKE_COMMAND) -P CMakeFiles/src_portable_lwip_ports_cpsw_netif.dir/cmake_clean.cmake
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/netif && $(CMAKE_COMMAND) -P CMakeFiles/src_portable_lwip_ports_cpsw_netif.dir/cmake_clean.cmake
 .PHONY : netif/CMakeFiles/src_portable_lwip_ports_cpsw_netif.dir/clean
 
 netif/CMakeFiles/src_portable_lwip_ports_cpsw_netif.dir/depend:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/frank/eclipse-workspace/FreeRTOS_BBB/source /home/frank/eclipse-workspace/FreeRTOS_BBB/source/src/portable/lwip/ports/cpsw/netif /home/frank/eclipse-workspace/FreeRTOS_BBB/build /home/frank/eclipse-workspace/FreeRTOS_BBB/build/netif /home/frank/eclipse-workspace/FreeRTOS_BBB/build/netif/CMakeFiles/src_portable_lwip_ports_cpsw_netif.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/frank/eclipse-workspace/FreeRTOS_BBB/source /home/frank/eclipse-workspace/FreeRTOS_BBB/source/src/portable/lwip/ports/cpsw/netif /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/netif /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/netif/CMakeFiles/src_portable_lwip_ports_cpsw_netif.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : netif/CMakeFiles/src_portable_lwip_ports_cpsw_netif.dir/depend
 

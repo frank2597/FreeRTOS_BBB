@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/frank/eclipse-workspace/FreeRTOS_BBB/source/src/portable/lwip/ports/cpsw/netif/cpswif.c" "/home/frank/eclipse-workspace/FreeRTOS_BBB/build/netif/CMakeFiles/src_portable_lwip_ports_cpsw_netif.dir/cpswif.c.o"
+  "/home/frank/eclipse-workspace/FreeRTOS_BBB/source/src/portable/lwip/ports/cpsw/netif/cpswif.c" "/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/netif/CMakeFiles/src_portable_lwip_ports_cpsw_netif.dir/cpswif.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

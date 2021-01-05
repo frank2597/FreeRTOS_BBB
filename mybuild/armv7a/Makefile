@@ -23,9 +23,6 @@ SUFFIXES =
 .SUFFIXES: .hpux_make_needs_suffix_list
 
 
-# Produce verbose output by default.
-VERBOSE = 1
-
 # Suppress display of executed commands.
 $(VERBOSE).SILENT:
 
@@ -54,7 +51,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/frank/eclipse-workspace/FreeRTOS_BBB/source
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/frank/eclipse-workspace/FreeRTOS_BBB/build
+CMAKE_BINARY_DIR = /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -83,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/frank/eclipse-workspace/FreeRTOS_BBB/build/CMakeFiles /home/frank/eclipse-workspace/FreeRTOS_BBB/build/armv7a/CMakeFiles/progress.marks
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f CMakeFiles/Makefile2 armv7a/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frank/eclipse-workspace/FreeRTOS_BBB/build/CMakeFiles 0
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(CMAKE_COMMAND) -E cmake_progress_start /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/CMakeFiles /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/armv7a/CMakeFiles/progress.marks
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f CMakeFiles/Makefile2 armv7a/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f CMakeFiles/Makefile2 armv7a/clean
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f CMakeFiles/Makefile2 armv7a/clean
 .PHONY : clean
 
 # The main clean target
@@ -100,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f CMakeFiles/Makefile2 armv7a/preinstall
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f CMakeFiles/Makefile2 armv7a/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f CMakeFiles/Makefile2 armv7a/preinstall
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f CMakeFiles/Makefile2 armv7a/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 armv7a/CMakeFiles/lib_third_party_ti_system_config_armv7a.dir/rule:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f CMakeFiles/Makefile2 armv7a/CMakeFiles/lib_third_party_ti_system_config_armv7a.dir/rule
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f CMakeFiles/Makefile2 armv7a/CMakeFiles/lib_third_party_ti_system_config_armv7a.dir/rule
 .PHONY : armv7a/CMakeFiles/lib_third_party_ti_system_config_armv7a.dir/rule
 
 # Convenience name for target.
@@ -125,7 +122,7 @@ lib_third_party_ti_system_config_armv7a: armv7a/CMakeFiles/lib_third_party_ti_sy
 
 # fast build rule for target.
 lib_third_party_ti_system_config_armv7a/fast:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f armv7a/CMakeFiles/lib_third_party_ti_system_config_armv7a.dir/build.make armv7a/CMakeFiles/lib_third_party_ti_system_config_armv7a.dir/build
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f armv7a/CMakeFiles/lib_third_party_ti_system_config_armv7a.dir/build.make armv7a/CMakeFiles/lib_third_party_ti_system_config_armv7a.dir/build
 .PHONY : lib_third_party_ti_system_config_armv7a/fast
 
 am335x/clock.o: am335x/clock.c.o
@@ -134,7 +131,7 @@ am335x/clock.o: am335x/clock.c.o
 
 # target to build an object file
 am335x/clock.c.o:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f armv7a/CMakeFiles/lib_third_party_ti_system_config_armv7a.dir/build.make armv7a/CMakeFiles/lib_third_party_ti_system_config_armv7a.dir/am335x/clock.c.o
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f armv7a/CMakeFiles/lib_third_party_ti_system_config_armv7a.dir/build.make armv7a/CMakeFiles/lib_third_party_ti_system_config_armv7a.dir/am335x/clock.c.o
 .PHONY : am335x/clock.c.o
 
 am335x/clock.i: am335x/clock.c.i
@@ -143,7 +140,7 @@ am335x/clock.i: am335x/clock.c.i
 
 # target to preprocess a source file
 am335x/clock.c.i:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f armv7a/CMakeFiles/lib_third_party_ti_system_config_armv7a.dir/build.make armv7a/CMakeFiles/lib_third_party_ti_system_config_armv7a.dir/am335x/clock.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f armv7a/CMakeFiles/lib_third_party_ti_system_config_armv7a.dir/build.make armv7a/CMakeFiles/lib_third_party_ti_system_config_armv7a.dir/am335x/clock.c.i
 .PHONY : am335x/clock.c.i
 
 am335x/clock.s: am335x/clock.c.s
@@ -152,7 +149,7 @@ am335x/clock.s: am335x/clock.c.s
 
 # target to generate assembly for a file
 am335x/clock.c.s:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f armv7a/CMakeFiles/lib_third_party_ti_system_config_armv7a.dir/build.make armv7a/CMakeFiles/lib_third_party_ti_system_config_armv7a.dir/am335x/clock.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f armv7a/CMakeFiles/lib_third_party_ti_system_config_armv7a.dir/build.make armv7a/CMakeFiles/lib_third_party_ti_system_config_armv7a.dir/am335x/clock.c.s
 .PHONY : am335x/clock.c.s
 
 am335x/device.o: am335x/device.c.o
@@ -161,7 +158,7 @@ am335x/device.o: am335x/device.c.o
 
 # target to build an object file
 am335x/device.c.o:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f armv7a/CMakeFiles/lib_third_party_ti_system_config_armv7a.dir/build.make armv7a/CMakeFiles/lib_third_party_ti_system_config_armv7a.dir/am335x/device.c.o
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f armv7a/CMakeFiles/lib_third_party_ti_system_config_armv7a.dir/build.make armv7a/CMakeFiles/lib_third_party_ti_system_config_armv7a.dir/am335x/device.c.o
 .PHONY : am335x/device.c.o
 
 am335x/device.i: am335x/device.c.i
@@ -170,7 +167,7 @@ am335x/device.i: am335x/device.c.i
 
 # target to preprocess a source file
 am335x/device.c.i:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f armv7a/CMakeFiles/lib_third_party_ti_system_config_armv7a.dir/build.make armv7a/CMakeFiles/lib_third_party_ti_system_config_armv7a.dir/am335x/device.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f armv7a/CMakeFiles/lib_third_party_ti_system_config_armv7a.dir/build.make armv7a/CMakeFiles/lib_third_party_ti_system_config_armv7a.dir/am335x/device.c.i
 .PHONY : am335x/device.c.i
 
 am335x/device.s: am335x/device.c.s
@@ -179,7 +176,7 @@ am335x/device.s: am335x/device.c.s
 
 # target to generate assembly for a file
 am335x/device.c.s:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f armv7a/CMakeFiles/lib_third_party_ti_system_config_armv7a.dir/build.make armv7a/CMakeFiles/lib_third_party_ti_system_config_armv7a.dir/am335x/device.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f armv7a/CMakeFiles/lib_third_party_ti_system_config_armv7a.dir/build.make armv7a/CMakeFiles/lib_third_party_ti_system_config_armv7a.dir/am335x/device.c.s
 .PHONY : am335x/device.c.s
 
 cache.o: cache.c.o
@@ -188,7 +185,7 @@ cache.o: cache.c.o
 
 # target to build an object file
 cache.c.o:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f armv7a/CMakeFiles/lib_third_party_ti_system_config_armv7a.dir/build.make armv7a/CMakeFiles/lib_third_party_ti_system_config_armv7a.dir/cache.c.o
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f armv7a/CMakeFiles/lib_third_party_ti_system_config_armv7a.dir/build.make armv7a/CMakeFiles/lib_third_party_ti_system_config_armv7a.dir/cache.c.o
 .PHONY : cache.c.o
 
 cache.i: cache.c.i
@@ -197,7 +194,7 @@ cache.i: cache.c.i
 
 # target to preprocess a source file
 cache.c.i:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f armv7a/CMakeFiles/lib_third_party_ti_system_config_armv7a.dir/build.make armv7a/CMakeFiles/lib_third_party_ti_system_config_armv7a.dir/cache.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f armv7a/CMakeFiles/lib_third_party_ti_system_config_armv7a.dir/build.make armv7a/CMakeFiles/lib_third_party_ti_system_config_armv7a.dir/cache.c.i
 .PHONY : cache.c.i
 
 cache.s: cache.c.s
@@ -206,7 +203,7 @@ cache.s: cache.c.s
 
 # target to generate assembly for a file
 cache.c.s:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f armv7a/CMakeFiles/lib_third_party_ti_system_config_armv7a.dir/build.make armv7a/CMakeFiles/lib_third_party_ti_system_config_armv7a.dir/cache.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f armv7a/CMakeFiles/lib_third_party_ti_system_config_armv7a.dir/build.make armv7a/CMakeFiles/lib_third_party_ti_system_config_armv7a.dir/cache.c.s
 .PHONY : cache.c.s
 
 gcc/cp15.o: gcc/cp15.S.o
@@ -215,7 +212,7 @@ gcc/cp15.o: gcc/cp15.S.o
 
 # target to build an object file
 gcc/cp15.S.o:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f armv7a/CMakeFiles/lib_third_party_ti_system_config_armv7a.dir/build.make armv7a/CMakeFiles/lib_third_party_ti_system_config_armv7a.dir/gcc/cp15.S.o
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f armv7a/CMakeFiles/lib_third_party_ti_system_config_armv7a.dir/build.make armv7a/CMakeFiles/lib_third_party_ti_system_config_armv7a.dir/gcc/cp15.S.o
 .PHONY : gcc/cp15.S.o
 
 gcc/cpu.o: gcc/cpu.c.o
@@ -224,7 +221,7 @@ gcc/cpu.o: gcc/cpu.c.o
 
 # target to build an object file
 gcc/cpu.c.o:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f armv7a/CMakeFiles/lib_third_party_ti_system_config_armv7a.dir/build.make armv7a/CMakeFiles/lib_third_party_ti_system_config_armv7a.dir/gcc/cpu.c.o
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f armv7a/CMakeFiles/lib_third_party_ti_system_config_armv7a.dir/build.make armv7a/CMakeFiles/lib_third_party_ti_system_config_armv7a.dir/gcc/cpu.c.o
 .PHONY : gcc/cpu.c.o
 
 gcc/cpu.i: gcc/cpu.c.i
@@ -233,7 +230,7 @@ gcc/cpu.i: gcc/cpu.c.i
 
 # target to preprocess a source file
 gcc/cpu.c.i:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f armv7a/CMakeFiles/lib_third_party_ti_system_config_armv7a.dir/build.make armv7a/CMakeFiles/lib_third_party_ti_system_config_armv7a.dir/gcc/cpu.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f armv7a/CMakeFiles/lib_third_party_ti_system_config_armv7a.dir/build.make armv7a/CMakeFiles/lib_third_party_ti_system_config_armv7a.dir/gcc/cpu.c.i
 .PHONY : gcc/cpu.c.i
 
 gcc/cpu.s: gcc/cpu.c.s
@@ -242,7 +239,7 @@ gcc/cpu.s: gcc/cpu.c.s
 
 # target to generate assembly for a file
 gcc/cpu.c.s:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f armv7a/CMakeFiles/lib_third_party_ti_system_config_armv7a.dir/build.make armv7a/CMakeFiles/lib_third_party_ti_system_config_armv7a.dir/gcc/cpu.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f armv7a/CMakeFiles/lib_third_party_ti_system_config_armv7a.dir/build.make armv7a/CMakeFiles/lib_third_party_ti_system_config_armv7a.dir/gcc/cpu.c.s
 .PHONY : gcc/cpu.c.s
 
 mmu.o: mmu.c.o
@@ -251,7 +248,7 @@ mmu.o: mmu.c.o
 
 # target to build an object file
 mmu.c.o:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f armv7a/CMakeFiles/lib_third_party_ti_system_config_armv7a.dir/build.make armv7a/CMakeFiles/lib_third_party_ti_system_config_armv7a.dir/mmu.c.o
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f armv7a/CMakeFiles/lib_third_party_ti_system_config_armv7a.dir/build.make armv7a/CMakeFiles/lib_third_party_ti_system_config_armv7a.dir/mmu.c.o
 .PHONY : mmu.c.o
 
 mmu.i: mmu.c.i
@@ -260,7 +257,7 @@ mmu.i: mmu.c.i
 
 # target to preprocess a source file
 mmu.c.i:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f armv7a/CMakeFiles/lib_third_party_ti_system_config_armv7a.dir/build.make armv7a/CMakeFiles/lib_third_party_ti_system_config_armv7a.dir/mmu.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f armv7a/CMakeFiles/lib_third_party_ti_system_config_armv7a.dir/build.make armv7a/CMakeFiles/lib_third_party_ti_system_config_armv7a.dir/mmu.c.i
 .PHONY : mmu.c.i
 
 mmu.s: mmu.c.s
@@ -269,7 +266,7 @@ mmu.s: mmu.c.s
 
 # target to generate assembly for a file
 mmu.c.s:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f armv7a/CMakeFiles/lib_third_party_ti_system_config_armv7a.dir/build.make armv7a/CMakeFiles/lib_third_party_ti_system_config_armv7a.dir/mmu.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f armv7a/CMakeFiles/lib_third_party_ti_system_config_armv7a.dir/build.make armv7a/CMakeFiles/lib_third_party_ti_system_config_armv7a.dir/mmu.c.s
 .PHONY : mmu.c.s
 
 # Help Target
@@ -308,6 +305,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

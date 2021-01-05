@@ -4,14 +4,14 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/utils/ascii.c" "/home/frank/eclipse-workspace/FreeRTOS_BBB/build/utils/CMakeFiles/lib_third_party_ti_utils.dir/ascii.c.o"
-  "/home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/utils/board.c" "/home/frank/eclipse-workspace/FreeRTOS_BBB/build/utils/CMakeFiles/lib_third_party_ti_utils.dir/board.c.o"
-  "/home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/utils/consoleUtils.c" "/home/frank/eclipse-workspace/FreeRTOS_BBB/build/utils/CMakeFiles/lib_third_party_ti_utils.dir/consoleUtils.c.o"
-  "/home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/utils/delay.c" "/home/frank/eclipse-workspace/FreeRTOS_BBB/build/utils/CMakeFiles/lib_third_party_ti_utils.dir/delay.c.o"
-  "/home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/utils/misc.c" "/home/frank/eclipse-workspace/FreeRTOS_BBB/build/utils/CMakeFiles/lib_third_party_ti_utils.dir/misc.c.o"
-  "/home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/utils/perf.c" "/home/frank/eclipse-workspace/FreeRTOS_BBB/build/utils/CMakeFiles/lib_third_party_ti_utils.dir/perf.c.o"
-  "/home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/utils/systick.c" "/home/frank/eclipse-workspace/FreeRTOS_BBB/build/utils/CMakeFiles/lib_third_party_ti_utils.dir/systick.c.o"
-  "/home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/utils/uartStdio.c" "/home/frank/eclipse-workspace/FreeRTOS_BBB/build/utils/CMakeFiles/lib_third_party_ti_utils.dir/uartStdio.c.o"
+  "/home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/utils/ascii.c" "/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/utils/CMakeFiles/lib_third_party_ti_utils.dir/ascii.c.o"
+  "/home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/utils/board.c" "/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/utils/CMakeFiles/lib_third_party_ti_utils.dir/board.c.o"
+  "/home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/utils/consoleUtils.c" "/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/utils/CMakeFiles/lib_third_party_ti_utils.dir/consoleUtils.c.o"
+  "/home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/utils/delay.c" "/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/utils/CMakeFiles/lib_third_party_ti_utils.dir/delay.c.o"
+  "/home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/utils/misc.c" "/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/utils/CMakeFiles/lib_third_party_ti_utils.dir/misc.c.o"
+  "/home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/utils/perf.c" "/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/utils/CMakeFiles/lib_third_party_ti_utils.dir/perf.c.o"
+  "/home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/utils/systick.c" "/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/utils/CMakeFiles/lib_third_party_ti_utils.dir/systick.c.o"
+  "/home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/utils/uartStdio.c" "/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/utils/CMakeFiles/lib_third_party_ti_utils.dir/uartStdio.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/amazon/freertos_kernel/portable/MemMang/heap_4.c" "/home/frank/eclipse-workspace/FreeRTOS_BBB/build/MemMang/CMakeFiles/lib_third_party_amazon_freertos_kernel_portable_MemMang.dir/heap_4.c.o"
+  "/home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/amazon/freertos_kernel/portable/MemMang/heap_4.c" "/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/MemMang/CMakeFiles/lib_third_party_amazon_freertos_kernel_portable_MemMang.dir/heap_4.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

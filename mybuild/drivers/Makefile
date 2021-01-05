@@ -23,9 +23,6 @@ SUFFIXES =
 .SUFFIXES: .hpux_make_needs_suffix_list
 
 
-# Produce verbose output by default.
-VERBOSE = 1
-
 # Suppress display of executed commands.
 $(VERBOSE).SILENT:
 
@@ -54,7 +51,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/frank/eclipse-workspace/FreeRTOS_BBB/source
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/frank/eclipse-workspace/FreeRTOS_BBB/build
+CMAKE_BINARY_DIR = /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -83,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/frank/eclipse-workspace/FreeRTOS_BBB/build/CMakeFiles /home/frank/eclipse-workspace/FreeRTOS_BBB/build/drivers/CMakeFiles/progress.marks
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f CMakeFiles/Makefile2 drivers/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frank/eclipse-workspace/FreeRTOS_BBB/build/CMakeFiles 0
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(CMAKE_COMMAND) -E cmake_progress_start /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/CMakeFiles /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/drivers/CMakeFiles/progress.marks
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f CMakeFiles/Makefile2 drivers/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f CMakeFiles/Makefile2 drivers/clean
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f CMakeFiles/Makefile2 drivers/clean
 .PHONY : clean
 
 # The main clean target
@@ -100,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f CMakeFiles/Makefile2 drivers/preinstall
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f CMakeFiles/Makefile2 drivers/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f CMakeFiles/Makefile2 drivers/preinstall
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f CMakeFiles/Makefile2 drivers/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/rule:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f CMakeFiles/Makefile2 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/rule
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f CMakeFiles/Makefile2 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/rule
 .PHONY : drivers/CMakeFiles/lib_third_party_ti_drivers.dir/rule
 
 # Convenience name for target.
@@ -125,7 +122,7 @@ lib_third_party_ti_drivers: drivers/CMakeFiles/lib_third_party_ti_drivers.dir/ru
 
 # fast build rule for target.
 lib_third_party_ti_drivers/fast:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build
 .PHONY : lib_third_party_ti_drivers/fast
 
 cppi41dma.o: cppi41dma.c.o
@@ -134,7 +131,7 @@ cppi41dma.o: cppi41dma.c.o
 
 # target to build an object file
 cppi41dma.c.o:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/cppi41dma.c.o
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/cppi41dma.c.o
 .PHONY : cppi41dma.c.o
 
 cppi41dma.i: cppi41dma.c.i
@@ -143,7 +140,7 @@ cppi41dma.i: cppi41dma.c.i
 
 # target to preprocess a source file
 cppi41dma.c.i:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/cppi41dma.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/cppi41dma.c.i
 .PHONY : cppi41dma.c.i
 
 cppi41dma.s: cppi41dma.c.s
@@ -152,7 +149,7 @@ cppi41dma.s: cppi41dma.c.s
 
 # target to generate assembly for a file
 cppi41dma.c.s:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/cppi41dma.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/cppi41dma.c.s
 .PHONY : cppi41dma.c.s
 
 cpsw.o: cpsw.c.o
@@ -161,7 +158,7 @@ cpsw.o: cpsw.c.o
 
 # target to build an object file
 cpsw.c.o:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/cpsw.c.o
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/cpsw.c.o
 .PHONY : cpsw.c.o
 
 cpsw.i: cpsw.c.i
@@ -170,7 +167,7 @@ cpsw.i: cpsw.c.i
 
 # target to preprocess a source file
 cpsw.c.i:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/cpsw.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/cpsw.c.i
 .PHONY : cpsw.c.i
 
 cpsw.s: cpsw.c.s
@@ -179,7 +176,7 @@ cpsw.s: cpsw.c.s
 
 # target to generate assembly for a file
 cpsw.c.s:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/cpsw.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/cpsw.c.s
 .PHONY : cpsw.c.s
 
 dcan.o: dcan.c.o
@@ -188,7 +185,7 @@ dcan.o: dcan.c.o
 
 # target to build an object file
 dcan.c.o:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/dcan.c.o
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/dcan.c.o
 .PHONY : dcan.c.o
 
 dcan.i: dcan.c.i
@@ -197,7 +194,7 @@ dcan.i: dcan.c.i
 
 # target to preprocess a source file
 dcan.c.i:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/dcan.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/dcan.c.i
 .PHONY : dcan.c.i
 
 dcan.s: dcan.c.s
@@ -206,7 +203,7 @@ dcan.s: dcan.c.s
 
 # target to generate assembly for a file
 dcan.c.s:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/dcan.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/dcan.c.s
 .PHONY : dcan.c.s
 
 dmtimer.o: dmtimer.c.o
@@ -215,7 +212,7 @@ dmtimer.o: dmtimer.c.o
 
 # target to build an object file
 dmtimer.c.o:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/dmtimer.c.o
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/dmtimer.c.o
 .PHONY : dmtimer.c.o
 
 dmtimer.i: dmtimer.c.i
@@ -224,7 +221,7 @@ dmtimer.i: dmtimer.c.i
 
 # target to preprocess a source file
 dmtimer.c.i:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/dmtimer.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/dmtimer.c.i
 .PHONY : dmtimer.c.i
 
 dmtimer.s: dmtimer.c.s
@@ -233,7 +230,7 @@ dmtimer.s: dmtimer.c.s
 
 # target to generate assembly for a file
 dmtimer.c.s:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/dmtimer.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/dmtimer.c.s
 .PHONY : dmtimer.c.s
 
 ecap.o: ecap.c.o
@@ -242,7 +239,7 @@ ecap.o: ecap.c.o
 
 # target to build an object file
 ecap.c.o:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/ecap.c.o
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/ecap.c.o
 .PHONY : ecap.c.o
 
 ecap.i: ecap.c.i
@@ -251,7 +248,7 @@ ecap.i: ecap.c.i
 
 # target to preprocess a source file
 ecap.c.i:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/ecap.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/ecap.c.i
 .PHONY : ecap.c.i
 
 ecap.s: ecap.c.s
@@ -260,7 +257,7 @@ ecap.s: ecap.c.s
 
 # target to generate assembly for a file
 ecap.c.s:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/ecap.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/ecap.c.s
 .PHONY : ecap.c.s
 
 edma.o: edma.c.o
@@ -269,7 +266,7 @@ edma.o: edma.c.o
 
 # target to build an object file
 edma.c.o:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/edma.c.o
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/edma.c.o
 .PHONY : edma.c.o
 
 edma.i: edma.c.i
@@ -278,7 +275,7 @@ edma.i: edma.c.i
 
 # target to preprocess a source file
 edma.c.i:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/edma.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/edma.c.i
 .PHONY : edma.c.i
 
 edma.s: edma.c.s
@@ -287,7 +284,7 @@ edma.s: edma.c.s
 
 # target to generate assembly for a file
 edma.c.s:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/edma.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/edma.c.s
 .PHONY : edma.c.s
 
 ehrpwm.o: ehrpwm.c.o
@@ -296,7 +293,7 @@ ehrpwm.o: ehrpwm.c.o
 
 # target to build an object file
 ehrpwm.c.o:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/ehrpwm.c.o
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/ehrpwm.c.o
 .PHONY : ehrpwm.c.o
 
 ehrpwm.i: ehrpwm.c.i
@@ -305,7 +302,7 @@ ehrpwm.i: ehrpwm.c.i
 
 # target to preprocess a source file
 ehrpwm.c.i:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/ehrpwm.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/ehrpwm.c.i
 .PHONY : ehrpwm.c.i
 
 ehrpwm.s: ehrpwm.c.s
@@ -314,7 +311,7 @@ ehrpwm.s: ehrpwm.c.s
 
 # target to generate assembly for a file
 ehrpwm.c.s:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/ehrpwm.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/ehrpwm.c.s
 .PHONY : ehrpwm.c.s
 
 elm.o: elm.c.o
@@ -323,7 +320,7 @@ elm.o: elm.c.o
 
 # target to build an object file
 elm.c.o:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/elm.c.o
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/elm.c.o
 .PHONY : elm.c.o
 
 elm.i: elm.c.i
@@ -332,7 +329,7 @@ elm.i: elm.c.i
 
 # target to preprocess a source file
 elm.c.i:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/elm.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/elm.c.i
 .PHONY : elm.c.i
 
 elm.s: elm.c.s
@@ -341,7 +338,7 @@ elm.s: elm.c.s
 
 # target to generate assembly for a file
 elm.c.s:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/elm.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/elm.c.s
 .PHONY : elm.c.s
 
 gpio_v2.o: gpio_v2.c.o
@@ -350,7 +347,7 @@ gpio_v2.o: gpio_v2.c.o
 
 # target to build an object file
 gpio_v2.c.o:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/gpio_v2.c.o
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/gpio_v2.c.o
 .PHONY : gpio_v2.c.o
 
 gpio_v2.i: gpio_v2.c.i
@@ -359,7 +356,7 @@ gpio_v2.i: gpio_v2.c.i
 
 # target to preprocess a source file
 gpio_v2.c.i:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/gpio_v2.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/gpio_v2.c.i
 .PHONY : gpio_v2.c.i
 
 gpio_v2.s: gpio_v2.c.s
@@ -368,7 +365,7 @@ gpio_v2.s: gpio_v2.c.s
 
 # target to generate assembly for a file
 gpio_v2.c.s:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/gpio_v2.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/gpio_v2.c.s
 .PHONY : gpio_v2.c.s
 
 gpmc.o: gpmc.c.o
@@ -377,7 +374,7 @@ gpmc.o: gpmc.c.o
 
 # target to build an object file
 gpmc.c.o:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/gpmc.c.o
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/gpmc.c.o
 .PHONY : gpmc.c.o
 
 gpmc.i: gpmc.c.i
@@ -386,7 +383,7 @@ gpmc.i: gpmc.c.i
 
 # target to preprocess a source file
 gpmc.c.i:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/gpmc.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/gpmc.c.i
 .PHONY : gpmc.c.i
 
 gpmc.s: gpmc.c.s
@@ -395,7 +392,7 @@ gpmc.s: gpmc.c.s
 
 # target to generate assembly for a file
 gpmc.c.s:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/gpmc.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/gpmc.c.s
 .PHONY : gpmc.c.s
 
 hs_mmcsd.o: hs_mmcsd.c.o
@@ -404,7 +401,7 @@ hs_mmcsd.o: hs_mmcsd.c.o
 
 # target to build an object file
 hs_mmcsd.c.o:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/hs_mmcsd.c.o
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/hs_mmcsd.c.o
 .PHONY : hs_mmcsd.c.o
 
 hs_mmcsd.i: hs_mmcsd.c.i
@@ -413,7 +410,7 @@ hs_mmcsd.i: hs_mmcsd.c.i
 
 # target to preprocess a source file
 hs_mmcsd.c.i:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/hs_mmcsd.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/hs_mmcsd.c.i
 .PHONY : hs_mmcsd.c.i
 
 hs_mmcsd.s: hs_mmcsd.c.s
@@ -422,7 +419,7 @@ hs_mmcsd.s: hs_mmcsd.c.s
 
 # target to generate assembly for a file
 hs_mmcsd.c.s:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/hs_mmcsd.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/hs_mmcsd.c.s
 .PHONY : hs_mmcsd.c.s
 
 hsi2c.o: hsi2c.c.o
@@ -431,7 +428,7 @@ hsi2c.o: hsi2c.c.o
 
 # target to build an object file
 hsi2c.c.o:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/hsi2c.c.o
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/hsi2c.c.o
 .PHONY : hsi2c.c.o
 
 hsi2c.i: hsi2c.c.i
@@ -440,7 +437,7 @@ hsi2c.i: hsi2c.c.i
 
 # target to preprocess a source file
 hsi2c.c.i:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/hsi2c.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/hsi2c.c.i
 .PHONY : hsi2c.c.i
 
 hsi2c.s: hsi2c.c.s
@@ -449,7 +446,7 @@ hsi2c.s: hsi2c.c.s
 
 # target to generate assembly for a file
 hsi2c.c.s:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/hsi2c.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/hsi2c.c.s
 .PHONY : hsi2c.c.s
 
 mailbox.o: mailbox.c.o
@@ -458,7 +455,7 @@ mailbox.o: mailbox.c.o
 
 # target to build an object file
 mailbox.c.o:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/mailbox.c.o
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/mailbox.c.o
 .PHONY : mailbox.c.o
 
 mailbox.i: mailbox.c.i
@@ -467,7 +464,7 @@ mailbox.i: mailbox.c.i
 
 # target to preprocess a source file
 mailbox.c.i:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/mailbox.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/mailbox.c.i
 .PHONY : mailbox.c.i
 
 mailbox.s: mailbox.c.s
@@ -476,7 +473,7 @@ mailbox.s: mailbox.c.s
 
 # target to generate assembly for a file
 mailbox.c.s:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/mailbox.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/mailbox.c.s
 .PHONY : mailbox.c.s
 
 mcasp.o: mcasp.c.o
@@ -485,7 +482,7 @@ mcasp.o: mcasp.c.o
 
 # target to build an object file
 mcasp.c.o:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/mcasp.c.o
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/mcasp.c.o
 .PHONY : mcasp.c.o
 
 mcasp.i: mcasp.c.i
@@ -494,7 +491,7 @@ mcasp.i: mcasp.c.i
 
 # target to preprocess a source file
 mcasp.c.i:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/mcasp.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/mcasp.c.i
 .PHONY : mcasp.c.i
 
 mcasp.s: mcasp.c.s
@@ -503,7 +500,7 @@ mcasp.s: mcasp.c.s
 
 # target to generate assembly for a file
 mcasp.c.s:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/mcasp.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/mcasp.c.s
 .PHONY : mcasp.c.s
 
 mcspi.o: mcspi.c.o
@@ -512,7 +509,7 @@ mcspi.o: mcspi.c.o
 
 # target to build an object file
 mcspi.c.o:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/mcspi.c.o
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/mcspi.c.o
 .PHONY : mcspi.c.o
 
 mcspi.i: mcspi.c.i
@@ -521,7 +518,7 @@ mcspi.i: mcspi.c.i
 
 # target to preprocess a source file
 mcspi.c.i:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/mcspi.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/mcspi.c.i
 .PHONY : mcspi.c.i
 
 mcspi.s: mcspi.c.s
@@ -530,7 +527,7 @@ mcspi.s: mcspi.c.s
 
 # target to generate assembly for a file
 mcspi.c.s:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/mcspi.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/mcspi.c.s
 .PHONY : mcspi.c.s
 
 mdio.o: mdio.c.o
@@ -539,7 +536,7 @@ mdio.o: mdio.c.o
 
 # target to build an object file
 mdio.c.o:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/mdio.c.o
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/mdio.c.o
 .PHONY : mdio.c.o
 
 mdio.i: mdio.c.i
@@ -548,7 +545,7 @@ mdio.i: mdio.c.i
 
 # target to preprocess a source file
 mdio.c.i:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/mdio.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/mdio.c.i
 .PHONY : mdio.c.i
 
 mdio.s: mdio.c.s
@@ -557,7 +554,7 @@ mdio.s: mdio.c.s
 
 # target to generate assembly for a file
 mdio.c.s:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/mdio.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/mdio.c.s
 .PHONY : mdio.c.s
 
 phy.o: phy.c.o
@@ -566,7 +563,7 @@ phy.o: phy.c.o
 
 # target to build an object file
 phy.c.o:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/phy.c.o
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/phy.c.o
 .PHONY : phy.c.o
 
 phy.i: phy.c.i
@@ -575,7 +572,7 @@ phy.i: phy.c.i
 
 # target to preprocess a source file
 phy.c.i:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/phy.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/phy.c.i
 .PHONY : phy.c.i
 
 phy.s: phy.c.s
@@ -584,7 +581,7 @@ phy.s: phy.c.s
 
 # target to generate assembly for a file
 phy.c.s:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/phy.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/phy.c.s
 .PHONY : phy.c.s
 
 raster.o: raster.c.o
@@ -593,7 +590,7 @@ raster.o: raster.c.o
 
 # target to build an object file
 raster.c.o:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/raster.c.o
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/raster.c.o
 .PHONY : raster.c.o
 
 raster.i: raster.c.i
@@ -602,7 +599,7 @@ raster.i: raster.c.i
 
 # target to preprocess a source file
 raster.c.i:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/raster.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/raster.c.i
 .PHONY : raster.c.i
 
 raster.s: raster.c.s
@@ -611,7 +608,7 @@ raster.s: raster.c.s
 
 # target to generate assembly for a file
 raster.c.s:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/raster.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/raster.c.s
 .PHONY : raster.c.s
 
 rtc.o: rtc.c.o
@@ -620,7 +617,7 @@ rtc.o: rtc.c.o
 
 # target to build an object file
 rtc.c.o:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/rtc.c.o
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/rtc.c.o
 .PHONY : rtc.c.o
 
 rtc.i: rtc.c.i
@@ -629,7 +626,7 @@ rtc.i: rtc.c.i
 
 # target to preprocess a source file
 rtc.c.i:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/rtc.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/rtc.c.i
 .PHONY : rtc.c.i
 
 rtc.s: rtc.c.s
@@ -638,7 +635,7 @@ rtc.s: rtc.c.s
 
 # target to generate assembly for a file
 rtc.c.s:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/rtc.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/rtc.c.s
 .PHONY : rtc.c.s
 
 tsc_adc.o: tsc_adc.c.o
@@ -647,7 +644,7 @@ tsc_adc.o: tsc_adc.c.o
 
 # target to build an object file
 tsc_adc.c.o:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/tsc_adc.c.o
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/tsc_adc.c.o
 .PHONY : tsc_adc.c.o
 
 tsc_adc.i: tsc_adc.c.i
@@ -656,7 +653,7 @@ tsc_adc.i: tsc_adc.c.i
 
 # target to preprocess a source file
 tsc_adc.c.i:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/tsc_adc.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/tsc_adc.c.i
 .PHONY : tsc_adc.c.i
 
 tsc_adc.s: tsc_adc.c.s
@@ -665,7 +662,7 @@ tsc_adc.s: tsc_adc.c.s
 
 # target to generate assembly for a file
 tsc_adc.c.s:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/tsc_adc.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/tsc_adc.c.s
 .PHONY : tsc_adc.c.s
 
 uart_irda_cir.o: uart_irda_cir.c.o
@@ -674,7 +671,7 @@ uart_irda_cir.o: uart_irda_cir.c.o
 
 # target to build an object file
 uart_irda_cir.c.o:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/uart_irda_cir.c.o
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/uart_irda_cir.c.o
 .PHONY : uart_irda_cir.c.o
 
 uart_irda_cir.i: uart_irda_cir.c.i
@@ -683,7 +680,7 @@ uart_irda_cir.i: uart_irda_cir.c.i
 
 # target to preprocess a source file
 uart_irda_cir.c.i:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/uart_irda_cir.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/uart_irda_cir.c.i
 .PHONY : uart_irda_cir.c.i
 
 uart_irda_cir.s: uart_irda_cir.c.s
@@ -692,7 +689,7 @@ uart_irda_cir.s: uart_irda_cir.c.s
 
 # target to generate assembly for a file
 uart_irda_cir.c.s:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/uart_irda_cir.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/uart_irda_cir.c.s
 .PHONY : uart_irda_cir.c.s
 
 usb.o: usb.c.o
@@ -701,7 +698,7 @@ usb.o: usb.c.o
 
 # target to build an object file
 usb.c.o:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/usb.c.o
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/usb.c.o
 .PHONY : usb.c.o
 
 usb.i: usb.c.i
@@ -710,7 +707,7 @@ usb.i: usb.c.i
 
 # target to preprocess a source file
 usb.c.i:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/usb.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/usb.c.i
 .PHONY : usb.c.i
 
 usb.s: usb.c.s
@@ -719,7 +716,7 @@ usb.s: usb.c.s
 
 # target to generate assembly for a file
 usb.c.s:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/usb.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/usb.c.s
 .PHONY : usb.c.s
 
 watchdog.o: watchdog.c.o
@@ -728,7 +725,7 @@ watchdog.o: watchdog.c.o
 
 # target to build an object file
 watchdog.c.o:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/watchdog.c.o
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/watchdog.c.o
 .PHONY : watchdog.c.o
 
 watchdog.i: watchdog.c.i
@@ -737,7 +734,7 @@ watchdog.i: watchdog.c.i
 
 # target to preprocess a source file
 watchdog.c.i:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/watchdog.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/watchdog.c.i
 .PHONY : watchdog.c.i
 
 watchdog.s: watchdog.c.s
@@ -746,7 +743,7 @@ watchdog.s: watchdog.c.s
 
 # target to generate assembly for a file
 watchdog.c.s:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/watchdog.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make drivers/CMakeFiles/lib_third_party_ti_drivers.dir/watchdog.c.s
 .PHONY : watchdog.c.s
 
 # Help Target
@@ -838,6 +835,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

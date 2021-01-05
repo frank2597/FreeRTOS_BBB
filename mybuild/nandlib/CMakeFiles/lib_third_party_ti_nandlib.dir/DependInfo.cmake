@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/nandlib/nand_gpmc.c" "/home/frank/eclipse-workspace/FreeRTOS_BBB/build/nandlib/CMakeFiles/lib_third_party_ti_nandlib.dir/nand_gpmc.c.o"
-  "/home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/nandlib/nandlib.c" "/home/frank/eclipse-workspace/FreeRTOS_BBB/build/nandlib/CMakeFiles/lib_third_party_ti_nandlib.dir/nandlib.c.o"
+  "/home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/nandlib/nand_gpmc.c" "/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/nandlib/CMakeFiles/lib_third_party_ti_nandlib.dir/nand_gpmc.c.o"
+  "/home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/nandlib/nandlib.c" "/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/nandlib/CMakeFiles/lib_third_party_ti_nandlib.dir/nandlib.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

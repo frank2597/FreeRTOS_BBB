@@ -23,9 +23,6 @@ SUFFIXES =
 .SUFFIXES: .hpux_make_needs_suffix_list
 
 
-# Produce verbose output by default.
-VERBOSE = 1
-
 # Suppress display of executed commands.
 $(VERBOSE).SILENT:
 
@@ -54,7 +51,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/frank/eclipse-workspace/FreeRTOS_BBB/source
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/frank/eclipse-workspace/FreeRTOS_BBB/build
+CMAKE_BINARY_DIR = /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -83,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/frank/eclipse-workspace/FreeRTOS_BBB/build/CMakeFiles /home/frank/eclipse-workspace/FreeRTOS_BBB/build/ARM_CA8_amm335x/CMakeFiles/progress.marks
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f CMakeFiles/Makefile2 ARM_CA8_amm335x/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frank/eclipse-workspace/FreeRTOS_BBB/build/CMakeFiles 0
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(CMAKE_COMMAND) -E cmake_progress_start /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/CMakeFiles /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/ARM_CA8_amm335x/CMakeFiles/progress.marks
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f CMakeFiles/Makefile2 ARM_CA8_amm335x/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f CMakeFiles/Makefile2 ARM_CA8_amm335x/clean
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f CMakeFiles/Makefile2 ARM_CA8_amm335x/clean
 .PHONY : clean
 
 # The main clean target
@@ -100,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f CMakeFiles/Makefile2 ARM_CA8_amm335x/preinstall
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f CMakeFiles/Makefile2 ARM_CA8_amm335x/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f CMakeFiles/Makefile2 ARM_CA8_amm335x/preinstall
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f CMakeFiles/Makefile2 ARM_CA8_amm335x/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 ARM_CA8_amm335x/CMakeFiles/src_portable_FreeRTOS_portable_GCC_ARM_CA8_amm335x.dir/rule:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f CMakeFiles/Makefile2 ARM_CA8_amm335x/CMakeFiles/src_portable_FreeRTOS_portable_GCC_ARM_CA8_amm335x.dir/rule
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f CMakeFiles/Makefile2 ARM_CA8_amm335x/CMakeFiles/src_portable_FreeRTOS_portable_GCC_ARM_CA8_amm335x.dir/rule
 .PHONY : ARM_CA8_amm335x/CMakeFiles/src_portable_FreeRTOS_portable_GCC_ARM_CA8_amm335x.dir/rule
 
 # Convenience name for target.
@@ -125,7 +122,7 @@ src_portable_FreeRTOS_portable_GCC_ARM_CA8_amm335x: ARM_CA8_amm335x/CMakeFiles/s
 
 # fast build rule for target.
 src_portable_FreeRTOS_portable_GCC_ARM_CA8_amm335x/fast:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f ARM_CA8_amm335x/CMakeFiles/src_portable_FreeRTOS_portable_GCC_ARM_CA8_amm335x.dir/build.make ARM_CA8_amm335x/CMakeFiles/src_portable_FreeRTOS_portable_GCC_ARM_CA8_amm335x.dir/build
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f ARM_CA8_amm335x/CMakeFiles/src_portable_FreeRTOS_portable_GCC_ARM_CA8_amm335x.dir/build.make ARM_CA8_amm335x/CMakeFiles/src_portable_FreeRTOS_portable_GCC_ARM_CA8_amm335x.dir/build
 .PHONY : src_portable_FreeRTOS_portable_GCC_ARM_CA8_amm335x/fast
 
 port.o: port.c.o
@@ -134,7 +131,7 @@ port.o: port.c.o
 
 # target to build an object file
 port.c.o:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f ARM_CA8_amm335x/CMakeFiles/src_portable_FreeRTOS_portable_GCC_ARM_CA8_amm335x.dir/build.make ARM_CA8_amm335x/CMakeFiles/src_portable_FreeRTOS_portable_GCC_ARM_CA8_amm335x.dir/port.c.o
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f ARM_CA8_amm335x/CMakeFiles/src_portable_FreeRTOS_portable_GCC_ARM_CA8_amm335x.dir/build.make ARM_CA8_amm335x/CMakeFiles/src_portable_FreeRTOS_portable_GCC_ARM_CA8_amm335x.dir/port.c.o
 .PHONY : port.c.o
 
 port.i: port.c.i
@@ -143,7 +140,7 @@ port.i: port.c.i
 
 # target to preprocess a source file
 port.c.i:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f ARM_CA8_amm335x/CMakeFiles/src_portable_FreeRTOS_portable_GCC_ARM_CA8_amm335x.dir/build.make ARM_CA8_amm335x/CMakeFiles/src_portable_FreeRTOS_portable_GCC_ARM_CA8_amm335x.dir/port.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f ARM_CA8_amm335x/CMakeFiles/src_portable_FreeRTOS_portable_GCC_ARM_CA8_amm335x.dir/build.make ARM_CA8_amm335x/CMakeFiles/src_portable_FreeRTOS_portable_GCC_ARM_CA8_amm335x.dir/port.c.i
 .PHONY : port.c.i
 
 port.s: port.c.s
@@ -152,7 +149,7 @@ port.s: port.c.s
 
 # target to generate assembly for a file
 port.c.s:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f ARM_CA8_amm335x/CMakeFiles/src_portable_FreeRTOS_portable_GCC_ARM_CA8_amm335x.dir/build.make ARM_CA8_amm335x/CMakeFiles/src_portable_FreeRTOS_portable_GCC_ARM_CA8_amm335x.dir/port.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f ARM_CA8_amm335x/CMakeFiles/src_portable_FreeRTOS_portable_GCC_ARM_CA8_amm335x.dir/build.make ARM_CA8_amm335x/CMakeFiles/src_portable_FreeRTOS_portable_GCC_ARM_CA8_amm335x.dir/port.c.s
 .PHONY : port.c.s
 
 portASM_CA8_am335x.o: portASM_CA8_am335x.S.o
@@ -161,7 +158,7 @@ portASM_CA8_am335x.o: portASM_CA8_am335x.S.o
 
 # target to build an object file
 portASM_CA8_am335x.S.o:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f ARM_CA8_amm335x/CMakeFiles/src_portable_FreeRTOS_portable_GCC_ARM_CA8_amm335x.dir/build.make ARM_CA8_amm335x/CMakeFiles/src_portable_FreeRTOS_portable_GCC_ARM_CA8_amm335x.dir/portASM_CA8_am335x.S.o
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f ARM_CA8_amm335x/CMakeFiles/src_portable_FreeRTOS_portable_GCC_ARM_CA8_amm335x.dir/build.make ARM_CA8_amm335x/CMakeFiles/src_portable_FreeRTOS_portable_GCC_ARM_CA8_amm335x.dir/portASM_CA8_am335x.S.o
 .PHONY : portASM_CA8_am335x.S.o
 
 # Help Target
@@ -188,6 +185,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/mmcsdlib/hs_mmcsdlib.c" "/home/frank/eclipse-workspace/FreeRTOS_BBB/build/mmcsdlib/CMakeFiles/lib_third_party_ti_mmcsdlib.dir/hs_mmcsdlib.c.o"
-  "/home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/mmcsdlib/mmcsd_proto.c" "/home/frank/eclipse-workspace/FreeRTOS_BBB/build/mmcsdlib/CMakeFiles/lib_third_party_ti_mmcsdlib.dir/mmcsd_proto.c.o"
+  "/home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/mmcsdlib/hs_mmcsdlib.c" "/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/mmcsdlib/CMakeFiles/lib_third_party_ti_mmcsdlib.dir/hs_mmcsdlib.c.o"
+  "/home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/mmcsdlib/mmcsd_proto.c" "/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/mmcsdlib/CMakeFiles/lib_third_party_ti_mmcsdlib.dir/mmcsd_proto.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

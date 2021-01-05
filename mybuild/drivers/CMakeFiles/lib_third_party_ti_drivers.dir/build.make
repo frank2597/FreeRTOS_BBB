@@ -18,9 +18,6 @@ SUFFIXES =
 .SUFFIXES: .hpux_make_needs_suffix_list
 
 
-# Produce verbose output by default.
-VERBOSE = 1
-
 # Suppress display of executed commands.
 $(VERBOSE).SILENT:
 
@@ -49,7 +46,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/frank/eclipse-workspace/FreeRTOS_BBB/source
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/frank/eclipse-workspace/FreeRTOS_BBB/build
+CMAKE_BINARY_DIR = /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild
 
 # Include any dependencies generated for this target.
 include drivers/CMakeFiles/lib_third_party_ti_drivers.dir/depend.make
@@ -62,302 +59,302 @@ include drivers/CMakeFiles/lib_third_party_ti_drivers.dir/flags.make
 
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/cppi41dma.c.o: drivers/CMakeFiles/lib_third_party_ti_drivers.dir/flags.make
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/cppi41dma.c.o: /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/cppi41dma.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frank/eclipse-workspace/FreeRTOS_BBB/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object drivers/CMakeFiles/lib_third_party_ti_drivers.dir/cppi41dma.c.o"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lib_third_party_ti_drivers.dir/cppi41dma.c.o   -c /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/cppi41dma.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object drivers/CMakeFiles/lib_third_party_ti_drivers.dir/cppi41dma.c.o"
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lib_third_party_ti_drivers.dir/cppi41dma.c.o   -c /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/cppi41dma.c
 
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/cppi41dma.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lib_third_party_ti_drivers.dir/cppi41dma.c.i"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/cppi41dma.c > CMakeFiles/lib_third_party_ti_drivers.dir/cppi41dma.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/cppi41dma.c > CMakeFiles/lib_third_party_ti_drivers.dir/cppi41dma.c.i
 
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/cppi41dma.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lib_third_party_ti_drivers.dir/cppi41dma.c.s"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/cppi41dma.c -o CMakeFiles/lib_third_party_ti_drivers.dir/cppi41dma.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/cppi41dma.c -o CMakeFiles/lib_third_party_ti_drivers.dir/cppi41dma.c.s
 
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/cpsw.c.o: drivers/CMakeFiles/lib_third_party_ti_drivers.dir/flags.make
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/cpsw.c.o: /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/cpsw.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frank/eclipse-workspace/FreeRTOS_BBB/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object drivers/CMakeFiles/lib_third_party_ti_drivers.dir/cpsw.c.o"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lib_third_party_ti_drivers.dir/cpsw.c.o   -c /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/cpsw.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object drivers/CMakeFiles/lib_third_party_ti_drivers.dir/cpsw.c.o"
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lib_third_party_ti_drivers.dir/cpsw.c.o   -c /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/cpsw.c
 
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/cpsw.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lib_third_party_ti_drivers.dir/cpsw.c.i"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/cpsw.c > CMakeFiles/lib_third_party_ti_drivers.dir/cpsw.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/cpsw.c > CMakeFiles/lib_third_party_ti_drivers.dir/cpsw.c.i
 
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/cpsw.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lib_third_party_ti_drivers.dir/cpsw.c.s"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/cpsw.c -o CMakeFiles/lib_third_party_ti_drivers.dir/cpsw.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/cpsw.c -o CMakeFiles/lib_third_party_ti_drivers.dir/cpsw.c.s
 
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/dcan.c.o: drivers/CMakeFiles/lib_third_party_ti_drivers.dir/flags.make
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/dcan.c.o: /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/dcan.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frank/eclipse-workspace/FreeRTOS_BBB/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object drivers/CMakeFiles/lib_third_party_ti_drivers.dir/dcan.c.o"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lib_third_party_ti_drivers.dir/dcan.c.o   -c /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/dcan.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object drivers/CMakeFiles/lib_third_party_ti_drivers.dir/dcan.c.o"
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lib_third_party_ti_drivers.dir/dcan.c.o   -c /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/dcan.c
 
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/dcan.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lib_third_party_ti_drivers.dir/dcan.c.i"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/dcan.c > CMakeFiles/lib_third_party_ti_drivers.dir/dcan.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/dcan.c > CMakeFiles/lib_third_party_ti_drivers.dir/dcan.c.i
 
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/dcan.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lib_third_party_ti_drivers.dir/dcan.c.s"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/dcan.c -o CMakeFiles/lib_third_party_ti_drivers.dir/dcan.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/dcan.c -o CMakeFiles/lib_third_party_ti_drivers.dir/dcan.c.s
 
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/dmtimer.c.o: drivers/CMakeFiles/lib_third_party_ti_drivers.dir/flags.make
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/dmtimer.c.o: /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/dmtimer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frank/eclipse-workspace/FreeRTOS_BBB/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object drivers/CMakeFiles/lib_third_party_ti_drivers.dir/dmtimer.c.o"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lib_third_party_ti_drivers.dir/dmtimer.c.o   -c /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/dmtimer.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object drivers/CMakeFiles/lib_third_party_ti_drivers.dir/dmtimer.c.o"
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lib_third_party_ti_drivers.dir/dmtimer.c.o   -c /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/dmtimer.c
 
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/dmtimer.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lib_third_party_ti_drivers.dir/dmtimer.c.i"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/dmtimer.c > CMakeFiles/lib_third_party_ti_drivers.dir/dmtimer.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/dmtimer.c > CMakeFiles/lib_third_party_ti_drivers.dir/dmtimer.c.i
 
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/dmtimer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lib_third_party_ti_drivers.dir/dmtimer.c.s"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/dmtimer.c -o CMakeFiles/lib_third_party_ti_drivers.dir/dmtimer.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/dmtimer.c -o CMakeFiles/lib_third_party_ti_drivers.dir/dmtimer.c.s
 
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/ecap.c.o: drivers/CMakeFiles/lib_third_party_ti_drivers.dir/flags.make
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/ecap.c.o: /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/ecap.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frank/eclipse-workspace/FreeRTOS_BBB/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object drivers/CMakeFiles/lib_third_party_ti_drivers.dir/ecap.c.o"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lib_third_party_ti_drivers.dir/ecap.c.o   -c /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/ecap.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object drivers/CMakeFiles/lib_third_party_ti_drivers.dir/ecap.c.o"
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lib_third_party_ti_drivers.dir/ecap.c.o   -c /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/ecap.c
 
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/ecap.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lib_third_party_ti_drivers.dir/ecap.c.i"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/ecap.c > CMakeFiles/lib_third_party_ti_drivers.dir/ecap.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/ecap.c > CMakeFiles/lib_third_party_ti_drivers.dir/ecap.c.i
 
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/ecap.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lib_third_party_ti_drivers.dir/ecap.c.s"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/ecap.c -o CMakeFiles/lib_third_party_ti_drivers.dir/ecap.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/ecap.c -o CMakeFiles/lib_third_party_ti_drivers.dir/ecap.c.s
 
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/edma.c.o: drivers/CMakeFiles/lib_third_party_ti_drivers.dir/flags.make
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/edma.c.o: /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/edma.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frank/eclipse-workspace/FreeRTOS_BBB/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object drivers/CMakeFiles/lib_third_party_ti_drivers.dir/edma.c.o"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lib_third_party_ti_drivers.dir/edma.c.o   -c /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/edma.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object drivers/CMakeFiles/lib_third_party_ti_drivers.dir/edma.c.o"
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lib_third_party_ti_drivers.dir/edma.c.o   -c /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/edma.c
 
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/edma.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lib_third_party_ti_drivers.dir/edma.c.i"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/edma.c > CMakeFiles/lib_third_party_ti_drivers.dir/edma.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/edma.c > CMakeFiles/lib_third_party_ti_drivers.dir/edma.c.i
 
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/edma.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lib_third_party_ti_drivers.dir/edma.c.s"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/edma.c -o CMakeFiles/lib_third_party_ti_drivers.dir/edma.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/edma.c -o CMakeFiles/lib_third_party_ti_drivers.dir/edma.c.s
 
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/ehrpwm.c.o: drivers/CMakeFiles/lib_third_party_ti_drivers.dir/flags.make
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/ehrpwm.c.o: /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/ehrpwm.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frank/eclipse-workspace/FreeRTOS_BBB/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object drivers/CMakeFiles/lib_third_party_ti_drivers.dir/ehrpwm.c.o"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lib_third_party_ti_drivers.dir/ehrpwm.c.o   -c /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/ehrpwm.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object drivers/CMakeFiles/lib_third_party_ti_drivers.dir/ehrpwm.c.o"
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lib_third_party_ti_drivers.dir/ehrpwm.c.o   -c /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/ehrpwm.c
 
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/ehrpwm.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lib_third_party_ti_drivers.dir/ehrpwm.c.i"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/ehrpwm.c > CMakeFiles/lib_third_party_ti_drivers.dir/ehrpwm.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/ehrpwm.c > CMakeFiles/lib_third_party_ti_drivers.dir/ehrpwm.c.i
 
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/ehrpwm.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lib_third_party_ti_drivers.dir/ehrpwm.c.s"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/ehrpwm.c -o CMakeFiles/lib_third_party_ti_drivers.dir/ehrpwm.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/ehrpwm.c -o CMakeFiles/lib_third_party_ti_drivers.dir/ehrpwm.c.s
 
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/elm.c.o: drivers/CMakeFiles/lib_third_party_ti_drivers.dir/flags.make
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/elm.c.o: /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/elm.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frank/eclipse-workspace/FreeRTOS_BBB/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object drivers/CMakeFiles/lib_third_party_ti_drivers.dir/elm.c.o"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lib_third_party_ti_drivers.dir/elm.c.o   -c /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/elm.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object drivers/CMakeFiles/lib_third_party_ti_drivers.dir/elm.c.o"
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lib_third_party_ti_drivers.dir/elm.c.o   -c /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/elm.c
 
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/elm.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lib_third_party_ti_drivers.dir/elm.c.i"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/elm.c > CMakeFiles/lib_third_party_ti_drivers.dir/elm.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/elm.c > CMakeFiles/lib_third_party_ti_drivers.dir/elm.c.i
 
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/elm.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lib_third_party_ti_drivers.dir/elm.c.s"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/elm.c -o CMakeFiles/lib_third_party_ti_drivers.dir/elm.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/elm.c -o CMakeFiles/lib_third_party_ti_drivers.dir/elm.c.s
 
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/gpio_v2.c.o: drivers/CMakeFiles/lib_third_party_ti_drivers.dir/flags.make
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/gpio_v2.c.o: /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/gpio_v2.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frank/eclipse-workspace/FreeRTOS_BBB/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object drivers/CMakeFiles/lib_third_party_ti_drivers.dir/gpio_v2.c.o"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lib_third_party_ti_drivers.dir/gpio_v2.c.o   -c /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/gpio_v2.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object drivers/CMakeFiles/lib_third_party_ti_drivers.dir/gpio_v2.c.o"
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lib_third_party_ti_drivers.dir/gpio_v2.c.o   -c /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/gpio_v2.c
 
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/gpio_v2.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lib_third_party_ti_drivers.dir/gpio_v2.c.i"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/gpio_v2.c > CMakeFiles/lib_third_party_ti_drivers.dir/gpio_v2.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/gpio_v2.c > CMakeFiles/lib_third_party_ti_drivers.dir/gpio_v2.c.i
 
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/gpio_v2.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lib_third_party_ti_drivers.dir/gpio_v2.c.s"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/gpio_v2.c -o CMakeFiles/lib_third_party_ti_drivers.dir/gpio_v2.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/gpio_v2.c -o CMakeFiles/lib_third_party_ti_drivers.dir/gpio_v2.c.s
 
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/gpmc.c.o: drivers/CMakeFiles/lib_third_party_ti_drivers.dir/flags.make
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/gpmc.c.o: /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/gpmc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frank/eclipse-workspace/FreeRTOS_BBB/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object drivers/CMakeFiles/lib_third_party_ti_drivers.dir/gpmc.c.o"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lib_third_party_ti_drivers.dir/gpmc.c.o   -c /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/gpmc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object drivers/CMakeFiles/lib_third_party_ti_drivers.dir/gpmc.c.o"
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lib_third_party_ti_drivers.dir/gpmc.c.o   -c /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/gpmc.c
 
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/gpmc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lib_third_party_ti_drivers.dir/gpmc.c.i"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/gpmc.c > CMakeFiles/lib_third_party_ti_drivers.dir/gpmc.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/gpmc.c > CMakeFiles/lib_third_party_ti_drivers.dir/gpmc.c.i
 
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/gpmc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lib_third_party_ti_drivers.dir/gpmc.c.s"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/gpmc.c -o CMakeFiles/lib_third_party_ti_drivers.dir/gpmc.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/gpmc.c -o CMakeFiles/lib_third_party_ti_drivers.dir/gpmc.c.s
 
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/hs_mmcsd.c.o: drivers/CMakeFiles/lib_third_party_ti_drivers.dir/flags.make
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/hs_mmcsd.c.o: /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/hs_mmcsd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frank/eclipse-workspace/FreeRTOS_BBB/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object drivers/CMakeFiles/lib_third_party_ti_drivers.dir/hs_mmcsd.c.o"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lib_third_party_ti_drivers.dir/hs_mmcsd.c.o   -c /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/hs_mmcsd.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object drivers/CMakeFiles/lib_third_party_ti_drivers.dir/hs_mmcsd.c.o"
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lib_third_party_ti_drivers.dir/hs_mmcsd.c.o   -c /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/hs_mmcsd.c
 
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/hs_mmcsd.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lib_third_party_ti_drivers.dir/hs_mmcsd.c.i"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/hs_mmcsd.c > CMakeFiles/lib_third_party_ti_drivers.dir/hs_mmcsd.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/hs_mmcsd.c > CMakeFiles/lib_third_party_ti_drivers.dir/hs_mmcsd.c.i
 
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/hs_mmcsd.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lib_third_party_ti_drivers.dir/hs_mmcsd.c.s"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/hs_mmcsd.c -o CMakeFiles/lib_third_party_ti_drivers.dir/hs_mmcsd.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/hs_mmcsd.c -o CMakeFiles/lib_third_party_ti_drivers.dir/hs_mmcsd.c.s
 
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/hsi2c.c.o: drivers/CMakeFiles/lib_third_party_ti_drivers.dir/flags.make
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/hsi2c.c.o: /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/hsi2c.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frank/eclipse-workspace/FreeRTOS_BBB/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object drivers/CMakeFiles/lib_third_party_ti_drivers.dir/hsi2c.c.o"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lib_third_party_ti_drivers.dir/hsi2c.c.o   -c /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/hsi2c.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object drivers/CMakeFiles/lib_third_party_ti_drivers.dir/hsi2c.c.o"
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lib_third_party_ti_drivers.dir/hsi2c.c.o   -c /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/hsi2c.c
 
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/hsi2c.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lib_third_party_ti_drivers.dir/hsi2c.c.i"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/hsi2c.c > CMakeFiles/lib_third_party_ti_drivers.dir/hsi2c.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/hsi2c.c > CMakeFiles/lib_third_party_ti_drivers.dir/hsi2c.c.i
 
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/hsi2c.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lib_third_party_ti_drivers.dir/hsi2c.c.s"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/hsi2c.c -o CMakeFiles/lib_third_party_ti_drivers.dir/hsi2c.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/hsi2c.c -o CMakeFiles/lib_third_party_ti_drivers.dir/hsi2c.c.s
 
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/mailbox.c.o: drivers/CMakeFiles/lib_third_party_ti_drivers.dir/flags.make
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/mailbox.c.o: /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/mailbox.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frank/eclipse-workspace/FreeRTOS_BBB/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object drivers/CMakeFiles/lib_third_party_ti_drivers.dir/mailbox.c.o"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lib_third_party_ti_drivers.dir/mailbox.c.o   -c /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/mailbox.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object drivers/CMakeFiles/lib_third_party_ti_drivers.dir/mailbox.c.o"
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lib_third_party_ti_drivers.dir/mailbox.c.o   -c /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/mailbox.c
 
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/mailbox.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lib_third_party_ti_drivers.dir/mailbox.c.i"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/mailbox.c > CMakeFiles/lib_third_party_ti_drivers.dir/mailbox.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/mailbox.c > CMakeFiles/lib_third_party_ti_drivers.dir/mailbox.c.i
 
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/mailbox.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lib_third_party_ti_drivers.dir/mailbox.c.s"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/mailbox.c -o CMakeFiles/lib_third_party_ti_drivers.dir/mailbox.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/mailbox.c -o CMakeFiles/lib_third_party_ti_drivers.dir/mailbox.c.s
 
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/mcasp.c.o: drivers/CMakeFiles/lib_third_party_ti_drivers.dir/flags.make
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/mcasp.c.o: /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/mcasp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frank/eclipse-workspace/FreeRTOS_BBB/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object drivers/CMakeFiles/lib_third_party_ti_drivers.dir/mcasp.c.o"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lib_third_party_ti_drivers.dir/mcasp.c.o   -c /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/mcasp.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object drivers/CMakeFiles/lib_third_party_ti_drivers.dir/mcasp.c.o"
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lib_third_party_ti_drivers.dir/mcasp.c.o   -c /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/mcasp.c
 
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/mcasp.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lib_third_party_ti_drivers.dir/mcasp.c.i"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/mcasp.c > CMakeFiles/lib_third_party_ti_drivers.dir/mcasp.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/mcasp.c > CMakeFiles/lib_third_party_ti_drivers.dir/mcasp.c.i
 
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/mcasp.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lib_third_party_ti_drivers.dir/mcasp.c.s"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/mcasp.c -o CMakeFiles/lib_third_party_ti_drivers.dir/mcasp.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/mcasp.c -o CMakeFiles/lib_third_party_ti_drivers.dir/mcasp.c.s
 
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/mcspi.c.o: drivers/CMakeFiles/lib_third_party_ti_drivers.dir/flags.make
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/mcspi.c.o: /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/mcspi.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frank/eclipse-workspace/FreeRTOS_BBB/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object drivers/CMakeFiles/lib_third_party_ti_drivers.dir/mcspi.c.o"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lib_third_party_ti_drivers.dir/mcspi.c.o   -c /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/mcspi.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object drivers/CMakeFiles/lib_third_party_ti_drivers.dir/mcspi.c.o"
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lib_third_party_ti_drivers.dir/mcspi.c.o   -c /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/mcspi.c
 
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/mcspi.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lib_third_party_ti_drivers.dir/mcspi.c.i"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/mcspi.c > CMakeFiles/lib_third_party_ti_drivers.dir/mcspi.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/mcspi.c > CMakeFiles/lib_third_party_ti_drivers.dir/mcspi.c.i
 
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/mcspi.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lib_third_party_ti_drivers.dir/mcspi.c.s"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/mcspi.c -o CMakeFiles/lib_third_party_ti_drivers.dir/mcspi.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/mcspi.c -o CMakeFiles/lib_third_party_ti_drivers.dir/mcspi.c.s
 
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/mdio.c.o: drivers/CMakeFiles/lib_third_party_ti_drivers.dir/flags.make
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/mdio.c.o: /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/mdio.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frank/eclipse-workspace/FreeRTOS_BBB/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object drivers/CMakeFiles/lib_third_party_ti_drivers.dir/mdio.c.o"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lib_third_party_ti_drivers.dir/mdio.c.o   -c /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/mdio.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object drivers/CMakeFiles/lib_third_party_ti_drivers.dir/mdio.c.o"
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lib_third_party_ti_drivers.dir/mdio.c.o   -c /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/mdio.c
 
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/mdio.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lib_third_party_ti_drivers.dir/mdio.c.i"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/mdio.c > CMakeFiles/lib_third_party_ti_drivers.dir/mdio.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/mdio.c > CMakeFiles/lib_third_party_ti_drivers.dir/mdio.c.i
 
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/mdio.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lib_third_party_ti_drivers.dir/mdio.c.s"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/mdio.c -o CMakeFiles/lib_third_party_ti_drivers.dir/mdio.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/mdio.c -o CMakeFiles/lib_third_party_ti_drivers.dir/mdio.c.s
 
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/phy.c.o: drivers/CMakeFiles/lib_third_party_ti_drivers.dir/flags.make
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/phy.c.o: /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/phy.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frank/eclipse-workspace/FreeRTOS_BBB/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object drivers/CMakeFiles/lib_third_party_ti_drivers.dir/phy.c.o"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lib_third_party_ti_drivers.dir/phy.c.o   -c /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/phy.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object drivers/CMakeFiles/lib_third_party_ti_drivers.dir/phy.c.o"
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lib_third_party_ti_drivers.dir/phy.c.o   -c /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/phy.c
 
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/phy.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lib_third_party_ti_drivers.dir/phy.c.i"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/phy.c > CMakeFiles/lib_third_party_ti_drivers.dir/phy.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/phy.c > CMakeFiles/lib_third_party_ti_drivers.dir/phy.c.i
 
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/phy.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lib_third_party_ti_drivers.dir/phy.c.s"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/phy.c -o CMakeFiles/lib_third_party_ti_drivers.dir/phy.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/phy.c -o CMakeFiles/lib_third_party_ti_drivers.dir/phy.c.s
 
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/raster.c.o: drivers/CMakeFiles/lib_third_party_ti_drivers.dir/flags.make
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/raster.c.o: /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/raster.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frank/eclipse-workspace/FreeRTOS_BBB/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object drivers/CMakeFiles/lib_third_party_ti_drivers.dir/raster.c.o"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lib_third_party_ti_drivers.dir/raster.c.o   -c /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/raster.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object drivers/CMakeFiles/lib_third_party_ti_drivers.dir/raster.c.o"
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lib_third_party_ti_drivers.dir/raster.c.o   -c /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/raster.c
 
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/raster.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lib_third_party_ti_drivers.dir/raster.c.i"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/raster.c > CMakeFiles/lib_third_party_ti_drivers.dir/raster.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/raster.c > CMakeFiles/lib_third_party_ti_drivers.dir/raster.c.i
 
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/raster.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lib_third_party_ti_drivers.dir/raster.c.s"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/raster.c -o CMakeFiles/lib_third_party_ti_drivers.dir/raster.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/raster.c -o CMakeFiles/lib_third_party_ti_drivers.dir/raster.c.s
 
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/rtc.c.o: drivers/CMakeFiles/lib_third_party_ti_drivers.dir/flags.make
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/rtc.c.o: /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/rtc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frank/eclipse-workspace/FreeRTOS_BBB/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object drivers/CMakeFiles/lib_third_party_ti_drivers.dir/rtc.c.o"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lib_third_party_ti_drivers.dir/rtc.c.o   -c /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/rtc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object drivers/CMakeFiles/lib_third_party_ti_drivers.dir/rtc.c.o"
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lib_third_party_ti_drivers.dir/rtc.c.o   -c /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/rtc.c
 
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/rtc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lib_third_party_ti_drivers.dir/rtc.c.i"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/rtc.c > CMakeFiles/lib_third_party_ti_drivers.dir/rtc.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/rtc.c > CMakeFiles/lib_third_party_ti_drivers.dir/rtc.c.i
 
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/rtc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lib_third_party_ti_drivers.dir/rtc.c.s"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/rtc.c -o CMakeFiles/lib_third_party_ti_drivers.dir/rtc.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/rtc.c -o CMakeFiles/lib_third_party_ti_drivers.dir/rtc.c.s
 
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/tsc_adc.c.o: drivers/CMakeFiles/lib_third_party_ti_drivers.dir/flags.make
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/tsc_adc.c.o: /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/tsc_adc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frank/eclipse-workspace/FreeRTOS_BBB/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object drivers/CMakeFiles/lib_third_party_ti_drivers.dir/tsc_adc.c.o"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lib_third_party_ti_drivers.dir/tsc_adc.c.o   -c /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/tsc_adc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object drivers/CMakeFiles/lib_third_party_ti_drivers.dir/tsc_adc.c.o"
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lib_third_party_ti_drivers.dir/tsc_adc.c.o   -c /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/tsc_adc.c
 
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/tsc_adc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lib_third_party_ti_drivers.dir/tsc_adc.c.i"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/tsc_adc.c > CMakeFiles/lib_third_party_ti_drivers.dir/tsc_adc.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/tsc_adc.c > CMakeFiles/lib_third_party_ti_drivers.dir/tsc_adc.c.i
 
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/tsc_adc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lib_third_party_ti_drivers.dir/tsc_adc.c.s"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/tsc_adc.c -o CMakeFiles/lib_third_party_ti_drivers.dir/tsc_adc.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/tsc_adc.c -o CMakeFiles/lib_third_party_ti_drivers.dir/tsc_adc.c.s
 
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/uart_irda_cir.c.o: drivers/CMakeFiles/lib_third_party_ti_drivers.dir/flags.make
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/uart_irda_cir.c.o: /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/uart_irda_cir.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frank/eclipse-workspace/FreeRTOS_BBB/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object drivers/CMakeFiles/lib_third_party_ti_drivers.dir/uart_irda_cir.c.o"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lib_third_party_ti_drivers.dir/uart_irda_cir.c.o   -c /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/uart_irda_cir.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object drivers/CMakeFiles/lib_third_party_ti_drivers.dir/uart_irda_cir.c.o"
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lib_third_party_ti_drivers.dir/uart_irda_cir.c.o   -c /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/uart_irda_cir.c
 
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/uart_irda_cir.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lib_third_party_ti_drivers.dir/uart_irda_cir.c.i"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/uart_irda_cir.c > CMakeFiles/lib_third_party_ti_drivers.dir/uart_irda_cir.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/uart_irda_cir.c > CMakeFiles/lib_third_party_ti_drivers.dir/uart_irda_cir.c.i
 
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/uart_irda_cir.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lib_third_party_ti_drivers.dir/uart_irda_cir.c.s"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/uart_irda_cir.c -o CMakeFiles/lib_third_party_ti_drivers.dir/uart_irda_cir.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/uart_irda_cir.c -o CMakeFiles/lib_third_party_ti_drivers.dir/uart_irda_cir.c.s
 
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/usb.c.o: drivers/CMakeFiles/lib_third_party_ti_drivers.dir/flags.make
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/usb.c.o: /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/usb.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frank/eclipse-workspace/FreeRTOS_BBB/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object drivers/CMakeFiles/lib_third_party_ti_drivers.dir/usb.c.o"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lib_third_party_ti_drivers.dir/usb.c.o   -c /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/usb.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object drivers/CMakeFiles/lib_third_party_ti_drivers.dir/usb.c.o"
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lib_third_party_ti_drivers.dir/usb.c.o   -c /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/usb.c
 
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/usb.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lib_third_party_ti_drivers.dir/usb.c.i"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/usb.c > CMakeFiles/lib_third_party_ti_drivers.dir/usb.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/usb.c > CMakeFiles/lib_third_party_ti_drivers.dir/usb.c.i
 
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/usb.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lib_third_party_ti_drivers.dir/usb.c.s"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/usb.c -o CMakeFiles/lib_third_party_ti_drivers.dir/usb.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/usb.c -o CMakeFiles/lib_third_party_ti_drivers.dir/usb.c.s
 
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/watchdog.c.o: drivers/CMakeFiles/lib_third_party_ti_drivers.dir/flags.make
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/watchdog.c.o: /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/watchdog.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frank/eclipse-workspace/FreeRTOS_BBB/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object drivers/CMakeFiles/lib_third_party_ti_drivers.dir/watchdog.c.o"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lib_third_party_ti_drivers.dir/watchdog.c.o   -c /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/watchdog.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object drivers/CMakeFiles/lib_third_party_ti_drivers.dir/watchdog.c.o"
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lib_third_party_ti_drivers.dir/watchdog.c.o   -c /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/watchdog.c
 
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/watchdog.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lib_third_party_ti_drivers.dir/watchdog.c.i"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/watchdog.c > CMakeFiles/lib_third_party_ti_drivers.dir/watchdog.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/watchdog.c > CMakeFiles/lib_third_party_ti_drivers.dir/watchdog.c.i
 
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/watchdog.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lib_third_party_ti_drivers.dir/watchdog.c.s"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/watchdog.c -o CMakeFiles/lib_third_party_ti_drivers.dir/watchdog.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/drivers && /usr/bin//arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers/watchdog.c -o CMakeFiles/lib_third_party_ti_drivers.dir/watchdog.c.s
 
 # Object files for target lib_third_party_ti_drivers
 lib_third_party_ti_drivers_OBJECTS = \
@@ -413,9 +410,9 @@ drivers/liblib_third_party_ti_drivers.a: drivers/CMakeFiles/lib_third_party_ti_d
 drivers/liblib_third_party_ti_drivers.a: drivers/CMakeFiles/lib_third_party_ti_drivers.dir/watchdog.c.o
 drivers/liblib_third_party_ti_drivers.a: drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build.make
 drivers/liblib_third_party_ti_drivers.a: drivers/CMakeFiles/lib_third_party_ti_drivers.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/frank/eclipse-workspace/FreeRTOS_BBB/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Linking C static library liblib_third_party_ti_drivers.a"
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/drivers && $(CMAKE_COMMAND) -P CMakeFiles/lib_third_party_ti_drivers.dir/cmake_clean_target.cmake
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/drivers && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lib_third_party_ti_drivers.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Linking C static library liblib_third_party_ti_drivers.a"
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/drivers && $(CMAKE_COMMAND) -P CMakeFiles/lib_third_party_ti_drivers.dir/cmake_clean_target.cmake
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/drivers && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lib_third_party_ti_drivers.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build: drivers/liblib_third_party_ti_drivers.a
@@ -423,10 +420,10 @@ drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build: drivers/liblib_third_pa
 .PHONY : drivers/CMakeFiles/lib_third_party_ti_drivers.dir/build
 
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/clean:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build/drivers && $(CMAKE_COMMAND) -P CMakeFiles/lib_third_party_ti_drivers.dir/cmake_clean.cmake
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/drivers && $(CMAKE_COMMAND) -P CMakeFiles/lib_third_party_ti_drivers.dir/cmake_clean.cmake
 .PHONY : drivers/CMakeFiles/lib_third_party_ti_drivers.dir/clean
 
 drivers/CMakeFiles/lib_third_party_ti_drivers.dir/depend:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/frank/eclipse-workspace/FreeRTOS_BBB/source /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers /home/frank/eclipse-workspace/FreeRTOS_BBB/build /home/frank/eclipse-workspace/FreeRTOS_BBB/build/drivers /home/frank/eclipse-workspace/FreeRTOS_BBB/build/drivers/CMakeFiles/lib_third_party_ti_drivers.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/frank/eclipse-workspace/FreeRTOS_BBB/source /home/frank/eclipse-workspace/FreeRTOS_BBB/source/lib/third_party/ti/drivers /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/drivers /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/drivers/CMakeFiles/lib_third_party_ti_drivers.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : drivers/CMakeFiles/lib_third_party_ti_drivers.dir/depend
 

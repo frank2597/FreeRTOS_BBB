@@ -23,9 +23,6 @@ SUFFIXES =
 .SUFFIXES: .hpux_make_needs_suffix_list
 
 
-# Produce verbose output by default.
-VERBOSE = 1
-
 # Suppress display of executed commands.
 $(VERBOSE).SILENT:
 
@@ -54,7 +51,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/frank/eclipse-workspace/FreeRTOS_BBB/source
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/frank/eclipse-workspace/FreeRTOS_BBB/build
+CMAKE_BINARY_DIR = /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -83,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/frank/eclipse-workspace/FreeRTOS_BBB/build/CMakeFiles /home/frank/eclipse-workspace/FreeRTOS_BBB/build/MemMang/CMakeFiles/progress.marks
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f CMakeFiles/Makefile2 MemMang/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frank/eclipse-workspace/FreeRTOS_BBB/build/CMakeFiles 0
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(CMAKE_COMMAND) -E cmake_progress_start /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/CMakeFiles /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/MemMang/CMakeFiles/progress.marks
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f CMakeFiles/Makefile2 MemMang/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f CMakeFiles/Makefile2 MemMang/clean
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f CMakeFiles/Makefile2 MemMang/clean
 .PHONY : clean
 
 # The main clean target
@@ -100,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f CMakeFiles/Makefile2 MemMang/preinstall
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f CMakeFiles/Makefile2 MemMang/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f CMakeFiles/Makefile2 MemMang/preinstall
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f CMakeFiles/Makefile2 MemMang/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 MemMang/CMakeFiles/lib_third_party_amazon_freertos_kernel_portable_MemMang.dir/rule:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f CMakeFiles/Makefile2 MemMang/CMakeFiles/lib_third_party_amazon_freertos_kernel_portable_MemMang.dir/rule
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f CMakeFiles/Makefile2 MemMang/CMakeFiles/lib_third_party_amazon_freertos_kernel_portable_MemMang.dir/rule
 .PHONY : MemMang/CMakeFiles/lib_third_party_amazon_freertos_kernel_portable_MemMang.dir/rule
 
 # Convenience name for target.
@@ -125,7 +122,7 @@ lib_third_party_amazon_freertos_kernel_portable_MemMang: MemMang/CMakeFiles/lib_
 
 # fast build rule for target.
 lib_third_party_amazon_freertos_kernel_portable_MemMang/fast:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f MemMang/CMakeFiles/lib_third_party_amazon_freertos_kernel_portable_MemMang.dir/build.make MemMang/CMakeFiles/lib_third_party_amazon_freertos_kernel_portable_MemMang.dir/build
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f MemMang/CMakeFiles/lib_third_party_amazon_freertos_kernel_portable_MemMang.dir/build.make MemMang/CMakeFiles/lib_third_party_amazon_freertos_kernel_portable_MemMang.dir/build
 .PHONY : lib_third_party_amazon_freertos_kernel_portable_MemMang/fast
 
 heap_4.o: heap_4.c.o
@@ -134,7 +131,7 @@ heap_4.o: heap_4.c.o
 
 # target to build an object file
 heap_4.c.o:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f MemMang/CMakeFiles/lib_third_party_amazon_freertos_kernel_portable_MemMang.dir/build.make MemMang/CMakeFiles/lib_third_party_amazon_freertos_kernel_portable_MemMang.dir/heap_4.c.o
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f MemMang/CMakeFiles/lib_third_party_amazon_freertos_kernel_portable_MemMang.dir/build.make MemMang/CMakeFiles/lib_third_party_amazon_freertos_kernel_portable_MemMang.dir/heap_4.c.o
 .PHONY : heap_4.c.o
 
 heap_4.i: heap_4.c.i
@@ -143,7 +140,7 @@ heap_4.i: heap_4.c.i
 
 # target to preprocess a source file
 heap_4.c.i:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f MemMang/CMakeFiles/lib_third_party_amazon_freertos_kernel_portable_MemMang.dir/build.make MemMang/CMakeFiles/lib_third_party_amazon_freertos_kernel_portable_MemMang.dir/heap_4.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f MemMang/CMakeFiles/lib_third_party_amazon_freertos_kernel_portable_MemMang.dir/build.make MemMang/CMakeFiles/lib_third_party_amazon_freertos_kernel_portable_MemMang.dir/heap_4.c.i
 .PHONY : heap_4.c.i
 
 heap_4.s: heap_4.c.s
@@ -152,7 +149,7 @@ heap_4.s: heap_4.c.s
 
 # target to generate assembly for a file
 heap_4.c.s:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f MemMang/CMakeFiles/lib_third_party_amazon_freertos_kernel_portable_MemMang.dir/build.make MemMang/CMakeFiles/lib_third_party_amazon_freertos_kernel_portable_MemMang.dir/heap_4.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f MemMang/CMakeFiles/lib_third_party_amazon_freertos_kernel_portable_MemMang.dir/build.make MemMang/CMakeFiles/lib_third_party_amazon_freertos_kernel_portable_MemMang.dir/heap_4.c.s
 .PHONY : heap_4.c.s
 
 # Help Target
@@ -178,6 +175,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

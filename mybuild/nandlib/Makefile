@@ -23,9 +23,6 @@ SUFFIXES =
 .SUFFIXES: .hpux_make_needs_suffix_list
 
 
-# Produce verbose output by default.
-VERBOSE = 1
-
 # Suppress display of executed commands.
 $(VERBOSE).SILENT:
 
@@ -54,7 +51,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/frank/eclipse-workspace/FreeRTOS_BBB/source
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/frank/eclipse-workspace/FreeRTOS_BBB/build
+CMAKE_BINARY_DIR = /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -83,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/frank/eclipse-workspace/FreeRTOS_BBB/build/CMakeFiles /home/frank/eclipse-workspace/FreeRTOS_BBB/build/nandlib/CMakeFiles/progress.marks
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f CMakeFiles/Makefile2 nandlib/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frank/eclipse-workspace/FreeRTOS_BBB/build/CMakeFiles 0
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(CMAKE_COMMAND) -E cmake_progress_start /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/CMakeFiles /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/nandlib/CMakeFiles/progress.marks
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f CMakeFiles/Makefile2 nandlib/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f CMakeFiles/Makefile2 nandlib/clean
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f CMakeFiles/Makefile2 nandlib/clean
 .PHONY : clean
 
 # The main clean target
@@ -100,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f CMakeFiles/Makefile2 nandlib/preinstall
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f CMakeFiles/Makefile2 nandlib/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f CMakeFiles/Makefile2 nandlib/preinstall
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f CMakeFiles/Makefile2 nandlib/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 nandlib/CMakeFiles/lib_third_party_ti_nandlib.dir/rule:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f CMakeFiles/Makefile2 nandlib/CMakeFiles/lib_third_party_ti_nandlib.dir/rule
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f CMakeFiles/Makefile2 nandlib/CMakeFiles/lib_third_party_ti_nandlib.dir/rule
 .PHONY : nandlib/CMakeFiles/lib_third_party_ti_nandlib.dir/rule
 
 # Convenience name for target.
@@ -125,7 +122,7 @@ lib_third_party_ti_nandlib: nandlib/CMakeFiles/lib_third_party_ti_nandlib.dir/ru
 
 # fast build rule for target.
 lib_third_party_ti_nandlib/fast:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f nandlib/CMakeFiles/lib_third_party_ti_nandlib.dir/build.make nandlib/CMakeFiles/lib_third_party_ti_nandlib.dir/build
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f nandlib/CMakeFiles/lib_third_party_ti_nandlib.dir/build.make nandlib/CMakeFiles/lib_third_party_ti_nandlib.dir/build
 .PHONY : lib_third_party_ti_nandlib/fast
 
 nand_gpmc.o: nand_gpmc.c.o
@@ -134,7 +131,7 @@ nand_gpmc.o: nand_gpmc.c.o
 
 # target to build an object file
 nand_gpmc.c.o:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f nandlib/CMakeFiles/lib_third_party_ti_nandlib.dir/build.make nandlib/CMakeFiles/lib_third_party_ti_nandlib.dir/nand_gpmc.c.o
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f nandlib/CMakeFiles/lib_third_party_ti_nandlib.dir/build.make nandlib/CMakeFiles/lib_third_party_ti_nandlib.dir/nand_gpmc.c.o
 .PHONY : nand_gpmc.c.o
 
 nand_gpmc.i: nand_gpmc.c.i
@@ -143,7 +140,7 @@ nand_gpmc.i: nand_gpmc.c.i
 
 # target to preprocess a source file
 nand_gpmc.c.i:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f nandlib/CMakeFiles/lib_third_party_ti_nandlib.dir/build.make nandlib/CMakeFiles/lib_third_party_ti_nandlib.dir/nand_gpmc.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f nandlib/CMakeFiles/lib_third_party_ti_nandlib.dir/build.make nandlib/CMakeFiles/lib_third_party_ti_nandlib.dir/nand_gpmc.c.i
 .PHONY : nand_gpmc.c.i
 
 nand_gpmc.s: nand_gpmc.c.s
@@ -152,7 +149,7 @@ nand_gpmc.s: nand_gpmc.c.s
 
 # target to generate assembly for a file
 nand_gpmc.c.s:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f nandlib/CMakeFiles/lib_third_party_ti_nandlib.dir/build.make nandlib/CMakeFiles/lib_third_party_ti_nandlib.dir/nand_gpmc.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f nandlib/CMakeFiles/lib_third_party_ti_nandlib.dir/build.make nandlib/CMakeFiles/lib_third_party_ti_nandlib.dir/nand_gpmc.c.s
 .PHONY : nand_gpmc.c.s
 
 nandlib.o: nandlib.c.o
@@ -161,7 +158,7 @@ nandlib.o: nandlib.c.o
 
 # target to build an object file
 nandlib.c.o:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f nandlib/CMakeFiles/lib_third_party_ti_nandlib.dir/build.make nandlib/CMakeFiles/lib_third_party_ti_nandlib.dir/nandlib.c.o
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f nandlib/CMakeFiles/lib_third_party_ti_nandlib.dir/build.make nandlib/CMakeFiles/lib_third_party_ti_nandlib.dir/nandlib.c.o
 .PHONY : nandlib.c.o
 
 nandlib.i: nandlib.c.i
@@ -170,7 +167,7 @@ nandlib.i: nandlib.c.i
 
 # target to preprocess a source file
 nandlib.c.i:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f nandlib/CMakeFiles/lib_third_party_ti_nandlib.dir/build.make nandlib/CMakeFiles/lib_third_party_ti_nandlib.dir/nandlib.c.i
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f nandlib/CMakeFiles/lib_third_party_ti_nandlib.dir/build.make nandlib/CMakeFiles/lib_third_party_ti_nandlib.dir/nandlib.c.i
 .PHONY : nandlib.c.i
 
 nandlib.s: nandlib.c.s
@@ -179,7 +176,7 @@ nandlib.s: nandlib.c.s
 
 # target to generate assembly for a file
 nandlib.c.s:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(MAKE) -f nandlib/CMakeFiles/lib_third_party_ti_nandlib.dir/build.make nandlib/CMakeFiles/lib_third_party_ti_nandlib.dir/nandlib.c.s
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(MAKE) -f nandlib/CMakeFiles/lib_third_party_ti_nandlib.dir/build.make nandlib/CMakeFiles/lib_third_party_ti_nandlib.dir/nandlib.c.s
 .PHONY : nandlib.c.s
 
 # Help Target
@@ -208,6 +205,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/frank/eclipse-workspace/FreeRTOS_BBB/mybuild && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
