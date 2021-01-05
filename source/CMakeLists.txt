@@ -48,6 +48,7 @@ set(CMAKE_ASM_FLAGS ${CMAKE_C_FLAGS})
 
 set(CMAKE_EXE_LINKER_FLAGS "")
 #set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -e Entry -Wl,-T,${PROJECT_SOURCE_DIR}/bbb.lds -Wl,-u,__aeabi_uidiv -Wl,-u,__aeabi_idiv")
+set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -e Entry -Wl,-T,~/eclipse-workspace/FreeRTOS_BBB/source/bbb.lds -Wl,-u,__aeabi_uidiv -Wl,-u,__aeabi_idiv")
 set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -Wl,-Map,\"${PROJECT_NAME}.map\"")
 set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -Wl,--print-output-format")
 
