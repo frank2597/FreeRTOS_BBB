@@ -1,5 +1,10 @@
        add_library(src_portable_lwip_ports_cpsw_netif "")
-        target_sources(src_portable_lwip_ports_cpsw_netif PRIVATE ${PROJECT_SOURCE_DIR}/src/portable/lwip/ports/cpsw/netif/cpswif.c)
+       target_compile_definitions(src_portable_lwip_ports_cpsw_netif
+                PRIVATE -DCONSOLE=UARTCONSOLE
+        )
+
+        target_sources(src_portable_lwip_ports_cpsw_netif
+		PRIVATE ${PROJECT_SOURCE_DIR}/src/portable/lwip/ports/cpsw/netif/cpswif.c)
 
 
 #adding entries for FreeRTOS

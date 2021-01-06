@@ -1,2 +1,0 @@
-/usr/bin/arm-linux-gnueabihf-ar qc liblib_third_party_ti_mmcsdlib.a  CMakeFiles/lib_third_party_ti_mmcsdlib.dir/hs_mmcsdlib.c.o CMakeFiles/lib_third_party_ti_mmcsdlib.dir/mmcsd_proto.c.o
-/usr/bin/arm-linux-gnueabihf-ranlib liblib_third_party_ti_mmcsdlib.a

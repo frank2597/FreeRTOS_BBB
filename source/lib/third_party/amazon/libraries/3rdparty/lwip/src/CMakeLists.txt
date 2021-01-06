@@ -1,5 +1,9 @@
 
       add_library(lib_third_party_amazon_libraries_3rdparty_lwip_src "")
+       target_compile_definitions(lib_third_party_amazon_libraries_3rdparty_lwip_src
+                PRIVATE -DCONSOLE=UARTCONSOLE
+        )
+
         target_sources(lib_third_party_amazon_libraries_3rdparty_lwip_src
                         PRIVATE ${PROJECT_SOURCE_DIR}/lib/third_party/amazon/libraries/3rdparty/lwip/src/netif/ethernet.c
                         PRIVATE ${PROJECT_SOURCE_DIR}/lib/third_party/amazon/libraries/3rdparty/lwip/src/netif/ethernetif.c

@@ -1,4 +1,7 @@
         add_library(lib_third_party_amazon_freertos_kernel "")
+        target_compile_definitions(lib_third_party_amazon_freertos_kernel
+                PRIVATE -DCONSOLE=UARTCONSOLE
+        )
         target_sources(lib_third_party_amazon_freertos_kernel 
                         PRIVATE ${PROJECT_SOURCE_DIR}/lib/third_party/amazon/freertos_kernel/event_groups.c
                         PRIVATE ${PROJECT_SOURCE_DIR}/lib/third_party/amazon/freertos_kernel/list.c

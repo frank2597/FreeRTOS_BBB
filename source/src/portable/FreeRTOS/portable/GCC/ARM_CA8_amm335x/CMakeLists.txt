@@ -1,4 +1,8 @@
        add_library(src_portable_FreeRTOS_portable_GCC_ARM_CA8_amm335x "")
+        target_compile_definitions(src_portable_FreeRTOS_portable_GCC_ARM_CA8_amm335x
+                PRIVATE -DCONSOLE=UARTCONSOLE
+        )
+
        target_sources(src_portable_FreeRTOS_portable_GCC_ARM_CA8_amm335x
                        PRIVATE ${PROJECT_SOURCE_DIR}/src/portable/FreeRTOS/portable/GCC/ARM_CA8_amm335x/port.c
                        PRIVATE ${PROJECT_SOURCE_DIR}/src/portable/FreeRTOS/portable/GCC/ARM_CA8_amm335x/portASM_CA8_am335x.S

@@ -3,17 +3,17 @@
                 PRIVATE -DCONSOLE=UARTCONSOLE
         )
         target_sources(lib_third_party_ti_system_config_armv7a
-    PRIVATE ${PROJECT_SOURCE_DIR}/lib/third_party/ti/system_config/armv7a/cache.c
-    PRIVATE ${PROJECT_SOURCE_DIR}/lib/third_party/ti/system_config/armv7a/mmu.c
-    PRIVATE ${PROJECT_SOURCE_DIR}/lib/third_party/ti/system_config/armv7a/gcc/cp15.S
-    PRIVATE ${PROJECT_SOURCE_DIR}/lib/third_party/ti/system_config/armv7a/gcc/cpu.c
-#   PRIVATE ${PROJECT_SOURCE_DIR}/lib/third_party/ti/system_config/armv7a/gcc/init.S #we have our own version in application
-    PRIVATE ${PROJECT_SOURCE_DIR}/lib/third_party/ti/system_config/armv7a/am335x/clock.c
-    PRIVATE ${PROJECT_SOURCE_DIR}/lib/third_party/ti/system_config/armv7a/am335x/device.c
-#   PRIVATE ${PROJECT_SOURCE_DIR}/lib/third_party/ti/system_config/armv7a/am335x/interrupt.c #we have our own version in application
-#   PRIVATE ${PROJECT_SOURCE_DIR}/lib/third_party/ti/system_config/armv7a/am335x/startup.c  #we have our own version in application
-#   PRIVATE ${PROJECT_SOURCE_DIR}/lib/third_party/ti/system_config/armv7a/am335x/gcc/exceptionhandler.S #(not used)
-        )
+	    PRIVATE ${PROJECT_SOURCE_DIR}/lib/third_party/ti/system_config/armv7a/cache.c
+	    PRIVATE ${PROJECT_SOURCE_DIR}/lib/third_party/ti/system_config/armv7a/mmu.c
+	    PRIVATE ${PROJECT_SOURCE_DIR}/lib/third_party/ti/system_config/armv7a/gcc/cp15.S
+	    PRIVATE ${PROJECT_SOURCE_DIR}/lib/third_party/ti/system_config/armv7a/gcc/cpu.c
+	#   PRIVATE ${PROJECT_SOURCE_DIR}/lib/third_party/ti/system_config/armv7a/gcc/init.S #we have our own version in application
+	    PRIVATE ${PROJECT_SOURCE_DIR}/lib/third_party/ti/system_config/armv7a/am335x/clock.c
+	    PRIVATE ${PROJECT_SOURCE_DIR}/lib/third_party/ti/system_config/armv7a/am335x/device.c
+	#   PRIVATE ${PROJECT_SOURCE_DIR}/lib/third_party/ti/system_config/armv7a/am335x/interrupt.c #we have our own version in application
+	#   PRIVATE ${PROJECT_SOURCE_DIR}/lib/third_party/ti/system_config/armv7a/am335x/startup.c  #we have our own version in application
+	#   PRIVATE ${PROJECT_SOURCE_DIR}/lib/third_party/ti/system_config/armv7a/am335x/gcc/exceptionhandler.S #(not used)
+        	)
 
 #adding entries for ti_starterware
         target_include_directories(lib_third_party_ti_system_config_armv7a  PUBLIC  "${PROJECT_SOURCE_DIR}/lib/third_party/ti/include")

@@ -1,5 +1,8 @@
 
         add_library(src_application "")
+        target_compile_definitions(src_application
+                PRIVATE -DCONSOLE=UARTCONSOLE
+        )
         target_sources(src_application 
                         PRIVATE ${PROJECT_SOURCE_DIR}/src/application/TaskLED2.c
                         PRIVATE ${PROJECT_SOURCE_DIR}/src/application/app_InitOSEvents.c
