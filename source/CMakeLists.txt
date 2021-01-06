@@ -50,12 +50,12 @@ set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -mlong-calls -fdata-sections -funsigned-char
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Dgcc -D${DEVICE} -D${EVM} -DSUPPORT_UNALIGNED -DUARTCONSOLE")
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -g3 -gdwarf-3 -gstrict-dwarf -Wall")
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wno-unused-value")
-set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} --specs=\"nosys.specs\"")
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} --specs=\"nosys.specs\"") #not used with arm-linux-gnueabihf-gcc
 set(CMAKE_ASM_FLAGS ${CMAKE_C_FLAGS})
 
 
 set(CMAKE_EXE_LINKER_FLAGS "")
-set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -e Entry -Wl,-T,${PROJECT_SOURCE_DIR}/bbb.lds -Wl,-u,__aeabi_uidiv -Wl,-u,__aeabi_idiv")
+set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -e Entry -Wl,-T,${PROJECT_SOURCE_DIR}/bbb.lds -Wl,-u,__aeabi_uidiv -Wl,-u,__aeabi_idiv") #not used with arm-linux-gnueabihf-gcc
 #set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -e Entry -Wl,-T,~/eclipse-workspace/FreeRTOS_BBB/source/bbb.lds -Wl,-u,__aeabi_uidiv -Wl,-u,__aeabi_idiv")
 set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -Wl,-Map,\"${PROJECT_NAME}.map\"")
 set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -Wl,--print-output-format")
